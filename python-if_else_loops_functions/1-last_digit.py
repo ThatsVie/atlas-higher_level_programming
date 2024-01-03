@@ -1,15 +1,24 @@
 #!/usr/bin/python3
 import random
+
+# Generate a random signed number between -10000 and 10000
 number = random.randint(-10000, 10000)
 
-# Get the last digit using modulo
-last_digit = abs(number) % 10
-print(f"Last digit of {number} is {last_digit}", end=" ")
-
-# Check conditions for the last digit
-if last_digit > 5:
-    print("and is greater than 5")
-elif last_digit == 0:
-    print("and is 0")
+# Determine the last digit and adjust its sign based on the original number
+if number < 0:
+    num = -(abs(number) % 10)
 else:
-    print(f"and is less than 6 and not 0")
+    num = abs(number) % 10
+
+# Create a formatted string indicating the last digit of the original number
+output = f"Last digit of {number} is {num}"
+
+# Add additional information based on the value of the last digit
+if num > 5:
+    output += " and is greater than 5"
+elif num == 0:
+    output += " and is 0"
+else:
+    output += " and is less than 6 and not 0"
+
+print(output)
