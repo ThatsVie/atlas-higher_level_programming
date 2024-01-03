@@ -1,4 +1,13 @@
 #!/usr/bin/python3
-for tens_place in range(10):
-    for ones_place in range(tens_place + 1, 10):
-        print("{:d}{:d}".format(tens_place, ones_place), end=(", " if ones_place < 9 else "\n"))
+
+# Iterate over the tens place from 0 to 8
+for i in range(0, 9):
+    # Iterate over the ones place from i + 1 to 9
+    for j in range(i + 1, 10):
+        # Check if it is the last combination
+        if i == 8 and j == 9:
+            # Print the combination without a trailing comma and space
+            print("{:d}{:d}".format(i, j))
+        else:
+            # Print the combination followed by a comma and space
+            print("{:d}{:d}".format(i, j), end=", ")
