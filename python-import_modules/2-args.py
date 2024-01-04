@@ -8,11 +8,11 @@ if __name__ == "__main__":
 
     # Display the appropriate message based on the number of arguments
     if num_args == 1:
-        print("Number of argument: 1:")
+        print("1 argument:")
     elif num_args > 1:
-        print("Number of arguments: {}:".format(num_args))
+        print("{} arguments:".format(num_args))
     else:
-        print("Number of arguments: .")
+        print("0 arguments.")
 
     # Display each argument along with its position
     for i, arg in enumerate(sys.argv[1:], start=1):
