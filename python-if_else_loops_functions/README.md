@@ -32,5 +32,32 @@ This script prints combinations of two-digit numbers.
 
 This script prints combinations of two-digit numbers without repetition.
 
+### 7-islower.py
+
+This script defines a function to check if a given character is lowercase.
+
+### 8-uppercase.py
+
+This script defines a function to convert lowercase characters in a string to uppercase.
+
+### 9-print_last_digit.py
+
+This script defines a function to print and return the last digit of a number.
+
+### 10-add.py
+
+This script defines a function to add two numbers.
+
+### 11-pow.py
+
+This script defines a function to calculate the power of one number raised to another.
+
+### 12-fizzbuzz.py
+
+This script defines a function to implement the classic FizzBuzz problem for numbers from 1 to 100.
+
+
+
+
 
 
