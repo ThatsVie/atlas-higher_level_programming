@@ -1,7 +1,7 @@
 # Atlas - Higher Level Programming
 ## Python - Hello, World
 
-This repository contains a collection of Python scripts demonstrating various concepts, from simple print statements to string manipulation. Each script is designed to showcase different aspects of Python programming.
+This directory contains a collection of Python scripts demonstrating various concepts, from simple print statements to string manipulation. Each script is designed to showcase different aspects of Python programming.
 <details>
 <summary> Files</summary>
 <ul><li> 
@@ -25,7 +25,7 @@ This script imports and prints the Zen of Python, a set of guiding principles fo
   
 ## Python-if_else_loops_functions
 
-This repository contains a collection of Python scripts that cover various programming concepts, including if-else statements, loops, and functions. Each script is designed to demonstrate specific features of the Python programming language.
+This directory contains a collection of Python scripts that cover various programming concepts, including if-else statements, loops, and functions. Each script is designed to demonstrate specific features of the Python programming language.
 <details>
 <summary> Files</summary>
 <ul><li> 
@@ -59,7 +59,7 @@ This script defines a function to implement the classic FizzBuzz problem for num
   
 ## Python - import & modules
 
-This repository contains a set of Python scripts that showcase the usage of import statements and modules in Python. Each script demonstrates different aspects of importing functions, working with command-line arguments, and exploring hidden modules.
+This directory contains a set of Python scripts that showcase the usage of import statements and modules in Python. Each script demonstrates different aspects of importing functions, working with command-line arguments, and exploring hidden modules.
 
 <details>
 <summary> Files</summary>
