@@ -2,7 +2,7 @@
 
 def print_reversed_list_integer(my_list=[]):
 # Check if the input list is None
-if my_list is None:
+    if my_list is None:
     # Return None if the list is None
     return None
 # Iterate through the list in reverse order
