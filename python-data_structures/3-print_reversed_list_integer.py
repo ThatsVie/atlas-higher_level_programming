@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 def print_reversed_list_integer(my_list=[]):
-# Check if the input list is None
+    # Check if the input list is None
     if my_list is None:
         # Return None if the list is None
         return None
