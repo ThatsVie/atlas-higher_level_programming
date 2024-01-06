@@ -23,7 +23,7 @@ This script involves string slicing to concatenate specific segments of a longer
 This script imports and prints the Zen of Python, a set of guiding principles for writing computer programs.</li>
 </details>
   
-## Python-if_else_loops_functions
+## Python - If and else Loops Functions
 
 This directory contains a collection of Python scripts that cover various programming concepts, including if-else statements, loops, and functions. Each script is designed to demonstrate specific features of the Python programming language.
 <details>
@@ -57,7 +57,7 @@ This script defines a function to calculate the power of one number raised to an
 This script defines a function to implement the classic FizzBuzz problem for numbers from 1 to 100.</li>
 </details>
   
-## Python - import & modules
+## Python - Import & Modules
 
 This directory contains a set of Python scripts that showcase the usage of import statements and modules in Python. Each script demonstrates different aspects of importing functions, working with command-line arguments, and exploring hidden modules.
 
@@ -77,3 +77,52 @@ This script explores the names in the hidden module hidden_4 and prints those th
 <li> 5-variable_load.py
 This script imports the variable 'a' from the module variable_load_5 and prints its value. </li>
 </details>
+  
+## Python - Data Structures
+
+This repository contains Python scripts that demonstrate various operations on data structures such as lists and tuples. Each script focuses on a specific task and is designed to be easy to understand and use.
+
+<details>
+<summary> Files</summary>
+<ul><li>
+0-print_list_integer.py
+Iterates through each element in the list and prints each integer using the `str.format()` method.</li>
+
+<li>1-element_at.py
+ Returns the element at a specific position in the list. Returns `None` if the index is negative or out of range.</li>
+
+<li>2-replace_in_list.py
+Replaces the element at a specific position in the list. Returns the original list if the index is negative or out of range.</li>
+
+<li>3-print_reversed_list_integer.py
+Prints all integers of a list in reverse order using the `str.format()` method.</li>
+
+<li>4-new_in_list.py
+Replaces an element in a list at a specific position without modifying the original list. Returns a copy of the original list if the index is negative or out of range.</li>
+
+<li>5-no_c.py
+Removes all characters 'c' and 'C' from a string.</li>
+
+<li>6-print_matrix_integer.py
+Prints a matrix of integers using the `str.format()` method.</li>
+
+<li>7-add_tuple.py
+Adds two tuples and returns a tuple with the sum of corresponding elements.</li>
+
+<li>8-multiple_returns.py
+Returns a tuple with the length of a string and its first character. Returns (0, None) if the string is empty.</li>
+
+<li>9-max_integer.py
+Finds the biggest integer in a list.</li>
+
+<li>10-divisible_by_2.py
+Finds all multiples of 2 in a list and returns a new list with `True` or `False`.</li>
+
+<li>11-delete_at.py
+Deletes the item at a specific position in a list.</li>
+
+<li>12-switch.py
+A script that swaps the values of two variables `a` and `b` and prints the result.</li>
+
+
+
