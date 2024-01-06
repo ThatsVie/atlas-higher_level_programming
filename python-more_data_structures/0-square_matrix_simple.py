@@ -12,4 +12,3 @@ def square_matrix_simple(matrix=[]):
         # Append the squared row to the result matrix
         result_matrix.append(result_row)
     return result_matrix
-
