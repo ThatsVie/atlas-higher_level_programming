@@ -10,4 +10,3 @@ def search_replace(my_list, search, replace):
         # Add current element,modified or original,to list of modified elems
         modified_list.append(modified_element)
     return modified_list
-
