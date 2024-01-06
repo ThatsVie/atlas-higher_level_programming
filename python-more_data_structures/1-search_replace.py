@@ -2,7 +2,7 @@
 
 def search_replace(my_list, search, replace):
     # Create a new list to store the modified elements
-    result_list = []
+    modified_list = []
     # Iterate over elements in the original list
     for element in my_list:
         # Replace element if it matches search value, if not keep original
