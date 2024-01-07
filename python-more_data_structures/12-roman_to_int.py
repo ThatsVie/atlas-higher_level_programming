@@ -4,8 +4,8 @@ def roman_to_int(roman_string):
     if not roman_string:
         return 0
     # Dictionary to map Roman numerals to integers
-    roman_numerals = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500,
-                        'M': 1000}
+    roman_numerals = {
+            'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
     # Initialize the result
     result = 0
     # Initialize the previous value
