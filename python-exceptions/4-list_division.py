@@ -24,5 +24,5 @@ def list_division(my_list_1, my_list_2, list_length):
             # Append the current result to the division_results list
             division_results.append(result)
 
-        # Return the list containing the division results
-        return division_results
+    # Return the list containing the division results
+    return division_results
