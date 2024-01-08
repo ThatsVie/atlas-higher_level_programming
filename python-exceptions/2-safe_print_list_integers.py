@@ -15,4 +15,4 @@ def safe_print_list_integers(my_list=[], x=0):
     # Print a new line to separate the printed elements
     print()
     # Return the count of integers successfully printed
-    return printed_integers        
+    return printed_integers
