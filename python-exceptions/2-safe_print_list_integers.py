@@ -3,7 +3,7 @@ def safe_print_list_integers(my_list=[], x=0):
     # Initialize a counter for number of integers printed
     printed_integers = 0
     # Iterate over the range from 0 to x-1
-     for i in range(x):
+    for i in range(x):
         try:
             # Attempt to print the current element as an integer
             print("{:d}".format(my_list[i]), end="")
