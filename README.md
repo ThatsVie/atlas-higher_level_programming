@@ -157,3 +157,26 @@ This repository contains Python scripts that demonstrate the use of various data
 
 <li>12-roman_to_int.py: Converts a Roman numeral to an integer.</li>
 </details>
+
+## Python - Exceptions
+
+This repository contains Python scripts demonstrating the use of exception handling in various scenarios. Each script focuses on a specific aspect of exception handling and is designed to showcase how to handle errors gracefully.
+
+<details>
+<summary> Files</summary>
+<ul><li>
+0-safe_print_list.py: Safely prints the elements of a list up to a specified number. Handles cases where the specified number is greater than the length of the list.</li>
+
+<li>1-safe_print_integer.py: Safely prints an integer using the `"{:d}".format()` method. Handles cases where the value is not an integer.</li>
+
+<li>2-safe_print_list_integers.py: Safely prints integers from a list up to a specified number. Skips elements that are not integers. </li>
+
+<li>3-safe_print_division.py: Safely performs division and prints the result. Handles cases of division by zero and prints the result, whether it's the actual result or `None`.</li>
+
+<li>4-list_division.py: Performs element-wise division of two lists and handles various exceptions, including division by zero, wrong type, and index out of range.</li>
+
+<li>5-raise_exception.py: Raises a `TypeError` with a custom message.</li>
+
+<li>6-raise_exception_msg.py: Raises a `NameError` with a custom message.</li>
+</details>
+
