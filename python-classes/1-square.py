@@ -14,7 +14,8 @@ class Square:
 
 
     Note:
-        The size attribute (__size) is marked as private with double underscore.
+        The size attribute (__size) is marked as private with
+        double underscore.
     """
 
     def __init__(self, size):
