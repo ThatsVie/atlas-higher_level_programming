@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""This module defines a Square class"""
+
+"""
+This module defines a Square class
+"""
 
 
 class Square:
@@ -13,12 +16,14 @@ class Square:
     Note:
         The size attribute (__size) is marked as private with double underscore.
     """
-def __init__(self, size):
-    """
-    Initializes a new square with specified size.
+
+    def __init__(self, size):
+        """
+        Initializes a new square with specified size.
 
 
-    Parameters:
-        size (int): size of the square
-    """
-    self.__size = size
+        Parameters:
+            size (int): size of the square
+        """
+
+        self.__size = size
