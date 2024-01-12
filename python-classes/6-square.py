@@ -89,4 +89,18 @@ class Square:
 
         If size is equal to 0, print an empty line.
         """
+        # Check if the size of the square is 0.
         if self.__size == 0:
+            # If the size is 0, print an empty line and return.
+            print("")
+            return
+
+        # Print newlines before the square to position it vertically.
+        for _ in range(self.__position[1]):
+            print("")
+        # Print each row of the square with appropriate indentation and characters.
+        for _ in range(self.__size):
+            # Indent the row based on the horizontal position.
+            print(" " * self.__position[0], end="")
+            # Print the characters '#' to represent the square.
+            print("#" * self.__size)
