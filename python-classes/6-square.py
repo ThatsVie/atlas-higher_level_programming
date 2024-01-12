@@ -98,7 +98,7 @@ class Square:
         # Print newlines before the square to position it vertically.
         for _ in range(self.__position[1]):
             print("")
-        # Print each row of the square with appropriate indentation and characters.
+        # Print each row of square with appropriate indentation and characters.
         for _ in range(self.__size):
             # Indent the row based on the horizontal position.
             print(" " * self.__position[0], end="")
