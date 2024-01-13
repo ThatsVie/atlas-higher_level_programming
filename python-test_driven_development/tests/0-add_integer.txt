@@ -34,7 +34,7 @@ Handling Invalid Inputs:
 	>>> add_integer(6, "Python")
 	Traceback (more recent call last):
 	...
-	TypeError: b must be and integer
+	TypeError: b must be an integer
 
 	Passing None
 	>>> add_integer(None)
@@ -43,7 +43,7 @@ Handling Invalid Inputs:
 	TypeError: a must be an integer
 
 	Adding a letter and number
-	>>> add_integer(Zz, 3)
+	>>> add_integer("Zz", 3)
 	Traceback (most recent call last):
 	...
 	TypeError: a must be an integer
