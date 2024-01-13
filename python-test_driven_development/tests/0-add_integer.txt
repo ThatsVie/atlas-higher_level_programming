@@ -48,11 +48,17 @@ Handling Invalid Inputs:
 	...
 	TypeError: a must be an integer
 	
-	Passing None
+	a is None
 	>>> add_integer(None)
 	Traceback (most recent call last):
 	...
-	TypeError: a must be an integer  
+	TypeError: a must be an integer
+	
+	b is None
+	>>> add_integer(55, None)
+	Traceback (most recent call last):
+	...
+	TypeError: b must be an integer  
 
 	Adding a tuple
 	>>> add_integer((7, 2))
