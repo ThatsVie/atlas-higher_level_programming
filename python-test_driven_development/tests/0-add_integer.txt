@@ -31,7 +31,7 @@ Casting Floats to Integers:
 
 Handling Invalid Inputs:
 	B not int
-	>>> add_integer(6, "Python")
+	>>> add_integer(6, "Puggy")
 	Traceback (more recent call last):
 	...
 	TypeError: b must be an integer
