@@ -1,0 +1,97 @@
+The ``0-add_integer`` module
+======================
+Testing add_integer Function
+-----------------------------
+
+Importing function from the module
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+Basic Addition:
+	Adding 5 and 17
+	>>> add_integer(5, 17)
+	22
+Negative Numbers Subtraction:
+	Adding 99 and -9 or Subtracting 99 and 9
+	>>> add_integer(99, -9)
+	90
+
+Default Variable b= 98:
+    	>>> add_integer(7)
+    	105
+
+Casting Floats to Integers:
+	Adding 3.8 and 5
+	>>> add_integer(3.8, 5)
+	8
+
+	Subtracting 20.5 and 3
+	>>> add_integer(20.5, -3)
+	17
+
+Handling Invalid Inputs:
+	Adding an integer and string
+	>>> add_integer(6, "Python")
+	Traceback (more recent call last):
+	...
+	TypeError: b must be and integer
+
+	Passing None
+	>>> add_integer(None)
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+
+	Adding a letter and number
+	>>> add_integer(Zz, 3)
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+
+	Adding two letters
+	>>> add_integer('A', 'B')
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+
+	Adding a tuple
+	>>> add_integer((7, 2))
+    	Traceback (most recent call last):
+        ...
+    	TypeError: a must be an integer
+
+    	Adding a number and a list
+    	>>> add_integer(99, [1, 2, 3])
+    	Traceback (most recent call last):
+        ...
+    	TypeError: b must be an integer
+
+    	Passing a string
+    	>>> add_integer("Pugs")
+    	Traceback (most recent call last):
+        ...
+    	TypeError: a must be an integer
+
+Handling Floats:
+    	Adding two float numbers
+    	>>> add_integer(4.5, 3.3)
+    	7
+
+Handling Special Cases:
+    	Case Overflow:
+    	>>> add_integer(float('inf'), 5)
+    	Traceback (most recent call last):
+        ...
+    	OverflowError: cannot convert float infinity to integer
+
+    	Case Overflow 2:
+    	>>> add_integer(float('inf'), float('-inf'))
+    	Traceback (most recent call last):
+        ...
+    	OverflowError: cannot convert float infinity to integer
+
+    	Case NaN:
+    	>>> add_integer(0, float('nan'))
+    	Traceback (most recent call last):
+        ...
+   	ValueError: cannot convert float NaN to integer
+
