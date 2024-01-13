@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+This module contains add_integer function
+"""
+
 
 def add_integer(a, b=98):
     """
