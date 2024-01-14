@@ -1,4 +1,4 @@
-# The ``2-matrix_divided`` module
+# 2-matrix_divided module
 =============================
 Testing matrix_divided Function
 -----------------------------
@@ -17,7 +17,29 @@ Valid Input:
     >>> matrix_divided(matrix, 0.5)
     [[4.0, 8.0, 12.0], [16.0, 20.0, 24.0], [28.0, 32.0, 36.0]]
 
+    Dividing all elements of a matrix by 3
+    >>> matrix = [[3, 6, 9], [12, 15, 18], [21, 24, 27]]
+    >>> matrix_divided(matrix, 3)
+    [[1.0, 2.0, 3.0], [4.0, 5.0, 6.0], [7.0, 8.0, 9.0]]
+
+    Dividing all elements of a matrix by 1.5
+    >>> matrix = [[1.5, 3.0, 4.5], [6.0, 7.5, 9.0], [10.5, 12.0, 13.5]]
+    >>> matrix_divided(matrix, 1.5)
+    [[1.0, 2.0, 3.0], [4.0, 5.0, 6.0], [7.0, 8.0, 9.0]]
+
 Invalid Input:
+    Missing one argument
+    >>> matrix_divided()
+    Traceback (most recent call last):
+      ...
+    TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+
+    Missing two arguments
+    >>> matrix_divided([])
+    Traceback (most recent call last):
+      ...
+    TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
     Non-numeric divisor
     >>> matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
     >>> matrix_divided(matrix, 'invalid')
