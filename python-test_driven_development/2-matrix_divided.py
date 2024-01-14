@@ -22,8 +22,10 @@ def matrix_divided(matrix, div):
         list: A new matrix representing the result of the division.
     """
     # Check if matrix is a list of lists
-    if not isinstance(matrix, list) or not all(isinstance(row, list) for row in matrix):
-        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+    if (not isinstance(matrix, list) or
+        not all(isinstance(row, list) for row in matrix):
+        raise TypeError("matrix must be a matrix (list of lists) of "
+        "integers/floats")
 
     # Check if each row of the matrix has the same size
     if any(len(row) != len(matrix[0]) for row in matrix):
@@ -38,6 +40,8 @@ def matrix_divided(matrix, div):
         raise ZeroDivisionError("division by zero")
 
     # Divide each element of the matrix by div and round to 2 decimal places
-    result_matrix = [[round(element / div, 2) for element in row] for row in matrix]
+    result_matrix = [
+        [round(element / div, 2) for element in row] for row in matrix
+    ]
 
     return result_matrix
