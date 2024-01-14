@@ -52,11 +52,10 @@ Invalid Input:
       ...
     ZeroDivisionError: division by zero
 
-    Non-numeric divisor
-    >>> matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-    >>> print(matrix_divided(matrix, "invalid"))
+    Div as string:
+    >>> matrix_divided([[1, 2, 3], [1, 2, 3]], "Pugs")
     Traceback (most recent call last):
-      ...
+    ...
     TypeError: div must be a number
 
     Inconsistent row size
