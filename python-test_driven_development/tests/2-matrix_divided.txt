@@ -57,7 +57,7 @@ Invalid Input:
     >>> matrix_divided(matrix, "invalid")
     Traceback (most recent call last):
       ...
-    TypeError: matrix must be a matrix (list of lists) of integers/floats
+    TypeError: div must be a number
 
     Inconsistent row size
     >>> matrix = [[1, 2, 3], [4, 5], [7, 8, 9]]
