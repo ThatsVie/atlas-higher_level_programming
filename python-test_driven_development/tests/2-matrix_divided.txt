@@ -67,7 +67,7 @@ Invalid Input:
     TypeError: Each row of the matrix must have the same size
 
     Non-matrix input
-    >>> matrix_divided(not, 2)
+    >>> matrix_divided("not", 2)
     Traceback (most recent call last):
       ...
     TypeError: matrix must be a matrix (list of lists) of integers/floats
