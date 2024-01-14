@@ -7,27 +7,27 @@ Importing function from the module
 	>>> say_my_name = __import__('3-say_my_name').say_my_name
 
 Both first name and last name are provided
-	>>> say_my_name("Puggy", "Wuggy")
-	My name is Puggy Wuggy
+    >>> say_my_name("Puggy", "Wuggy")
+    My name is Puggy Wuggy
 
 Only the first name is provided
-	>>> say_my_name("Puggy")
-	My name is Puggy
+    >>> say_my_name("Puggy")
+    My name is Puggy
 
 Invalid input - None as first name
-	>>> say_my_name(None)
-	Traceback (most recent call last):
-	...
-	TypeError: first_name must be a string
+    >>> say_my_name(None)
+    Traceback (most recent call last):
+    ...
+    TypeError: first_name must be a string
 
 Invalid input - None as both first and last names
-	>>> say_my_name(None, None)
-	Traceback (most recent call last):
-	...
-	TypeError: first_name must be a string
+    >>> say_my_name(None, None)
+    Traceback (most recent call last):
+    ...
+    TypeError: first_name must be a string
 
 Invalid input - None as last name
-	>>> say_my_name("Puggy", None)
-	Traceback (most recent call last):
-	...
-	TypeError: last_name must be a string
+    >>> say_my_name("Puggy", None)
+    Traceback (most recent call last):
+    ...
+    TypeError: last_name must be a string
