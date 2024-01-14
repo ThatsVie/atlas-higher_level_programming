@@ -5,10 +5,10 @@ This module contains matrix_divided function
 
 
 def matrix_divided(matrix, div):
-     """
-     Divide all elements of a matrix by a given divisor.
+    """
+    Divide all elements of a matrix by a given divisor.
 
-     Parameters:
+    Parameters:
         matrix (list): A list of lists containing integers or floats.
         div (int/float): The divisor.
 
