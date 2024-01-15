@@ -7,8 +7,8 @@ Importing function from the module
 	>>> text_indentation = __import__('5-text_indentation').text_indentation
 
 Basic Test:
-	>>> text_indentation("I love pugs.")
-	I love pugs. 
+	>>> text_indentation("I love pugs")
+	I love pugs
     
 Non-String Input:
 	>>> text_indentation(123)
