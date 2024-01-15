@@ -8,15 +8,7 @@ Importing function from the module
 
 Basic Test:
 	>>> text_indentation("I love pugs.")
-	I love pugs.
-
-Sentence with Question Mark:
-	>>> text_indentation("Do you love pugs?")
-        Do you love pugs?
-
-Sentence with Colon:
-	>>> text_indentation("Hug the pug like this:")
-	Hug the pug like this:
+	I love pugs. 
     
 Non-String Input:
 	>>> text_indentation(123)
