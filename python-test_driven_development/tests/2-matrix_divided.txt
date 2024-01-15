@@ -53,9 +53,9 @@ Invalid Input:
     ZeroDivisionError: division by zero
 
     Div as string:
-    >>> matrix_divided([[1, 2, 3], [1, 2, 3]], "Pugs")
+    >>> matrix_divided([[5, 25], [6, 4]], "pugs")
     Traceback (most recent call last):
-    ...
+    	      ...
     TypeError: div must be a number
 
     Inconsistent row size
