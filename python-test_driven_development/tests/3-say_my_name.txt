@@ -12,7 +12,7 @@ Both first name and last name are provided
 
 Only the first name is provided
     >>> say_my_name("Puggy")
-    My name is Puggy
+    My name is Puggy 
 
 Invalid input - None as first name
     >>> say_my_name(None)
