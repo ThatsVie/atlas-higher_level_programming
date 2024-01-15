@@ -39,6 +39,12 @@ def matrix_divided(matrix, div):
     if div == 0:
         raise ZeroDivisionError("division by zero")
 
+    # Check if each element in the matrix is a number
+    if not all(isinstance(element, (int, float))
+                for row in matrix for element in row):
+        raise TypeError("matrix must be a matrix (list of lists) of "
+                        "integers/floats")
+
     # Divide each element of the matrix by div and round to 2 decimal places
     result_matrix = [
         [round(element / div, 2) for element in row] for row in matrix
