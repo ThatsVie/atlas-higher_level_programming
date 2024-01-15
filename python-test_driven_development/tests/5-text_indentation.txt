@@ -27,6 +27,7 @@ No arguments
 	>>> text_indentation()
 	Traceback (most recent call last):
 	TypeError: text_indentation() missing 1 required positional argument: 'text'
+
 Two arguments
 	>>> text_indentation(5, 5)
 	Traceback (most recent call last):
@@ -36,10 +37,12 @@ Single .
 	>>> text_indentation(".")
 	.
 	<BLANKLINE>
+
 Single :
 	>>> text_indentation(":")
 	:
 	<BLANKLINE>
+
 Single ?
 	>>> text_indentation("?")
 	?
