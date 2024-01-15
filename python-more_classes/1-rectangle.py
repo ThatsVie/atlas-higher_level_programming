@@ -6,7 +6,6 @@ class Rectangle:
     """
     Class representing a rectangle.
     """
-    
     def __init__(self, width=0, height=0):
         """
         Initializes a new rectangle instance.
