@@ -41,7 +41,7 @@ def matrix_divided(matrix, div):
 
     # Check if each element in the matrix is a number
     if not all(isinstance(element, (int, float))
-                for row in matrix for element in row):
+            for row in matrix for element in row):
         raise TypeError("matrix must be a matrix (list of lists) of "
                         "integers/floats")
 
