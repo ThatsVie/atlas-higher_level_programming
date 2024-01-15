@@ -16,7 +16,7 @@ Only the first name is provided
 
 No last name provided
     >>> say_my_name("Puggy")
-    My name is Puggy
+    My name is Puggy 
 
 First name is Not a string
     >>> say_my_name(5, "Puggy")
