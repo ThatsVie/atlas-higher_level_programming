@@ -18,19 +18,9 @@ def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
 
-    # Initialize an empty line buffer
-    line_buffer = []
+    # Add 2 new lines after each specified character
+    for char in '.:?':
+        text = text.replace(char, char + '\n\n')
 
-    # Iterate through each character in the text
-    for char in text:
-        # If character is one of specified punctuation marks,
-        # print buffered line and reset buffer
-        if char in ('.', '?', ':'):
-            print("".join(line_buffer))
-            line_buffer = []
-        # Otherwise, add the character to the buffer
-        else:
-            line_buffer.append(char)
-
-    # Print the last line (even if it doesn't end with ., ? or :)
-    print("".join(line_buffer))
+    # Print the modified text with stripped lines
+    print(*(ln.strip() for ln in (text + '\n').splitlines()), sep='\n', end='')
