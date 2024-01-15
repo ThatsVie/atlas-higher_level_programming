@@ -30,5 +30,13 @@ class TestMaxInteger(unittest.TestCase):
         """Test a list with repeated elements"""
         self.assertEqual(max_integer([5, 5, 5, 5]), 5)
 
+    def test_max_at_beginning(self):
+        """Test a list with the maximum at the beginning"""
+        self.assertEqual(max_integer([99, 1, 2, 3]), 99)
+
+    def test_one_negative_number(self):
+        """Test a list with one negative number"""
+        self.assertEqual(max_integer([-8, 1, 2, 3]), 3)
+
 if __name__ == '__main__':
     unittest.main()
