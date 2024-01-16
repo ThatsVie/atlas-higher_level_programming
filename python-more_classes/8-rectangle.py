@@ -4,11 +4,22 @@
 
 class Rectangle:
     """Class that defines a rectangle."""
+    
     number_of_instances = 0
     print_symbol = "#"
 
     def __init__(self, width=0, height=0):
-        """Initialize a rectangle with given width and height."""
+        """
+        Initialize a rectangle with given width and height.
+
+        Parameters:
+            width (int): Width of the rectangle. Default 0.
+            height (int): Height of the rectangle. Default 0.
+
+        Raises:
+            TypeError: If width or height is not an integer.
+            ValueError: If width or height is less than 0.
+        """
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
