@@ -7,7 +7,7 @@
 class Rectangle:
     """
     Class that defines a rectangle.
-    
+
     Attributes:
     __width (int): Private attribute representing width of rectangle.
     __height (int): Private attribute representing height of rectangle.
@@ -15,7 +15,7 @@ class Rectangle:
     print_symbol (any): Public attribute representing symbol for string
     representation
     """
-    
+
     number_of_instances = 0
     print_symbol = "#"
 
@@ -81,7 +81,7 @@ class Rectangle:
                           for _ in range(self.__height)])
 
     def __repr__(self):
-            """Return a string representation of the rectangle for recreation."""
+        """Return a string representation of the rectangle for recreation."""
             return "Rectangle({}, {})".format(self.width, self.height)
 
     def __del__(self):
