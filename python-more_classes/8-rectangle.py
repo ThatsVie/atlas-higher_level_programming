@@ -7,6 +7,13 @@
 class Rectangle:
     """
     Class that defines a rectangle.
+    
+    Attributes:
+    __width (int): Private attribute representing width of rectangle.
+    __height (int): Private attribute representing height of rectangle.
+    number_of_instances (int): Public attribute representing num of instances.
+    print_symbol (any): Public attribute representing symbol for string
+    representation
     """
     
     number_of_instances = 0
