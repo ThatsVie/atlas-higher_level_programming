@@ -180,3 +180,106 @@ This repository contains Python scripts demonstrating the use of exception handl
 <li><strong>6-raise_exception_msg.py:</strong> Raises a `NameError` with a custom message.</li>
 </details>
 
+## Python - Classes
+This collection consists of Python scripts that introduce and utilize classes for creating squares. Each script is designed to demonstrate various aspects of class implementation, encapsulation, and methods for interacting with square objects.
+
+<details>
+<summary>Files</summary>
+<ul><li>
+<strong>0-square.py:</strong>
+- A basic class named Square with no additional attributes or methods.</li>
+
+<li><strong>1-square.py:</strong>
+- Introduces a private attribute __size to represent the size of the square. Includes proper initialization and attribute documentation.</li>
+
+<li><strong>2-square.py:</strong
+- Enhances the Square class with input validation for the size attribute. Raises TypeError if size is not an integer and ValueError if size is less than 0.</li>
+
+<li><strong>3-square.py:</strong>
+- Expands the Square class by adding a method area that calculates and returns the area of the square.</li>
+
+<li><strong>4-square.py:</strong>
+- Introduces a property and setter for the size attribute, allowing better control over its manipulation.</li>
+
+<li><strong>5-square.py</strong>
+- Adds a new private attribute __position to the Square class, representing the position of the square. Implements a method my_print to visually represent the square.</li>
+
+<li><strong>6-square.py</strong>
+- Enhances the Square class with proper initialization of the new __position attribute, along with additional features in the my_print method for proper positioning and output.</li>
+</details>
+  
+## Python - Test-driven development
+Welcome to the Python Test-driven Development (TDD) repository! This collection of modules showcases the implementation of various functions, each rigorously tested using the TDD methodology.TDD involves writing tests for desired functionalities before implementing the actual code. Below, you'll find details about each module, its associated function, and corresponding unit tests.
+<details>
+<summary>Modules and Functions</summary>
+<ul><li>
+
+<strong>0-add_integer.py:</strong>
+  - add_integer(a, b=98)
+    - The add_integer function adds two numbers and returns the result as an integer. It validates input types and handles special cases, such as division by zero and overflow errors.</li>
+
+<li><strong>2-matrix_divided.py</strong>
+  - matrix_divided(matrix, div)
+    - The matrix_divided function divides all elements of a matrix by a given divisor. It ensures the matrix is well-formed, the divisor is a number, and handles various edge cases.</li>
+
+<li><strong>3-say_my_name.py:</strong>
+  - say_my_name(first_name, last_name="")
+    - The say_my_name function prints "My name is <first name> <last name>". It checks if the input names are strings.</li>
+
+<li><strong>4-print_square.py:</strong>
+  - print_square(size)
+    - The print_square function prints a square of '#' characters. It validates the size input and handles errors accordingly.</li>
+
+<li><strong>5-text_indentation.py:</strong>
+  - text_indentation(text)
+    - The text_indentation function prints a text with two new lines after each of these characters: ., ? and :. It validates the input text and adds new lines as required.</li>
+
+<li><strong>6-max_integer.py:</strong>
+  - max_integer(list=[])
+    - The max_integer function finds and returns the maximum integer in a list of integers. If the list is empty, the function returns None. It includes various test cases to ensure accurate functionality.</li>
+    
+<li> <strong>Unit Tests</strong>
+
+Each module is accompanied by a set of unit tests located in the <strong>tests</strong> folder. These tests thoroughly validate the correctness and functionality of the implemented functions.</li>
+</details>
+
+## Python - More Classes and Objects
+
+This collection contains a series of Python modules that define a Rectangle class, demonstrating the concept of classes and objects in Python. Each module introduces new features and functionalities to the Rectangle class.
+
+<details>
+<summary> Modules</summary>
+<ul><li>
+<strong>0-rectangle.py:</strong>
+  - Introduction to the Rectangle class.
+  - Represents an empty rectangle.</li>
+    
+<li><strong>1-rectangle.py</strong>
+  - Enhanced Rectangle class with width and height attributes.
+  - Implements initialization with optional width and height parameters.
+  - Handles validation for width and height parameters.</li>
+    
+<li><strong>2-rectangle.py:</strong>
+  - Adds methods to calculate area and perimeter of the rectangle.</li>
+    
+<li><strong>3-rectangle.py</strong>
+  - Implements a string representation of the rectangle using the <strong> __str__ </strong> method.</li>
+    
+<li><strong>4-rectangle.py:</strong>
+  - Introduces the <strong> __repr__ </strong> method for a string representation that can recreate the object.</li>
+    
+<li><strong>5-rectangle.py:</strong>
+  - Implements a method to delete an instance of the Rectangle class.</li>
+    
+<li><strong>6-rectangle.py:</strong>
+  - Adds a class attribute number_of_instances to track the number of instances created.</li>
+    
+<li><strong>7-rectangle.py:</strong>
+  - Introduces a public class attribute print_symbol to customize the string representation.</li>
+    
+<li><strong>8-rectangle.py:</strong>
+  - Implements a static method bigger_or_equal to compare two rectangles based on their area.</li>
+    
+<li><strong>9-rectangle.py:</strong>
+  - Introduces a class method square to create a square Rectangle instance with equal width and height. </li>
+  </details>
