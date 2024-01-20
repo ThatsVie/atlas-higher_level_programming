@@ -15,10 +15,10 @@ Check too many arguments for area:
 	 TypeError: area() takes 1 positional argument but 2 were given
 
 Check integer validator for passing integer:
-	 >>> bg.integer_validator("int", 1)
+	 >>> bg.integer_validator("integer", 1)
 
 Check for 0:
-	 >>> bg.integer_validator("int", 0)
+	 >>> bg.integer_validator("integer", 0)
 	 Traceback (most recent call last):
          ...
          ValueError: integer must be greater than 0
@@ -52,13 +52,13 @@ Check for no arguments to integer_validator:
 	 TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
 Check for only 1 argument to integer_validator:
-	 >>> bg.integer_validator("int")
+	 >>> bg.integer_validator("integer")
 	 Traceback (most recent call last):
          ...
 	 TypeError: integer_validator() missing 1 required positional argument: 'value'
 
 Check for too many arguments:
-	 >>> bg.integer_validator("int", 5, 12)
+	 >>> bg.integer_validator("integer", 5, 12)
 	 Traceback (most recent call last):
          ...
 	 TypeError: integer_validator() takes 3 positional arguments but 4 were given
