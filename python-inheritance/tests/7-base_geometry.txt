@@ -8,29 +8,35 @@ Check for area failure
 	Exception: area() is not implemented
 
 Check integer validator passing integer
+	>>> BG = BaseGeometry()
 	>>> BG.integer_validator("integer", 1)
 
 Check too many arguments for area
+	>>> BG = BaseGeometry()
 	>>> BG.area(2)
 	Traceback (most recent call last):
 	TypeError: area() takes 1 positional argument but 2 were given
 
 Check integer is 0
-	>>>BG.integer_validator("int", 0)
+	>>> BG = BaseGeometry()
+	>>> BG.integer_validator("int", 0)
 	Traceback (most recent call last):
 	ValueError: integer must be greater than 0
 
 Check integer less than 0
+	>>> BG = BaseGeometry()
 	>>>BG.integer_validator("int", -8)
 	Traceback (most recent call last):
 	ValueError: integer must be greater than 0
 
 Check no arguments to integer_validator
+	>>> BG = BaseGeometry()
 	>>> BG.integer_validator()
 	Traceback (most recent call last):
 	TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
 Check only 1 argument to integer_validator
+	>>> BG = BaseGeometry()
 	>>> BG.integer_validator("int")
 	Traceback (most recent call last):
 	TypeError: integer_validator() missing 1 required positional argument: 'value'
