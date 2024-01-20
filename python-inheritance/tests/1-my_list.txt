@@ -1,5 +1,6 @@
 Import function from the module:
 	>>> MyList = __import__("1-my_list").MyList
+	>>> l = MyList()
 
 Check in correct order
 	>>> l.print_sorted()
