@@ -6,16 +6,16 @@ Check for empty list:
 	>>> l.print_sorted()
 	[]
 
-Check for list in correct order:
-	>>> l.print_sorted()
-	[1, 2, 3, 4]
-
 Check appendng works:
 	>>> l.append(1)
 	>>> l.append(2)
 	>>> l.append(3)
 	>>> l.append(4)
 	>>> print(l)
+	[1, 2, 3, 4]
+
+Check list is in correct order:
+	>>> l.print_sorted()
 	[1, 2, 3, 4]
 
 Check reversed order list:
