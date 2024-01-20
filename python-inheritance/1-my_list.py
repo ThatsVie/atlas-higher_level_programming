@@ -7,5 +7,4 @@ class MyList(list):
 
     def print_sorted(self):
         """Public instance method that prints the list in ascending order."""
-        sorted_list = sorted(self)
-        print(sorted_list)
+        print(sorted(self))
