@@ -2,58 +2,63 @@ Import function from the module:
         >>> BG = __import__("7-base_geometry").BaseGeometry
 
 Check for area failure:
-	 >>> bg = BG()
-	 >>> bg.area()
-	 Traceback (most recent call last):
-	 ...
-	 Exception: area() is not implemented
+	>>> bg = BG()
+	>>> bg.area()
+	Traceback (most recent call last):
+	...
+	Exception: area() is not implemented
 
 Check too many arguments for area:
-	 >>> bg.area(1)
-	 Traceback (most recent call last):
-         ...
-	 TypeError: area() takes 1 positional argument but 2 were given
+	>>> bg.area(1)
+	Traceback (most recent call last):
+        ...
+	TypeError: area() takes 1 positional argument but 2 were given
 
 Check integer validator for passing integer:
-	 >>> bg.integer_validator("integer", 1)
+	>>> bg.integer_validator("integer", 1)
 
 Check for 0:
-	 >>> bg.integer_validator("integer", 0)
-	 Traceback (most recent call last):
-         ...
-         ValueError: integer must be greater than 0
+	>>> bg.integer_validator("integer", 0)
+	Traceback (most recent call last):
+        ...
+        ValueError: integer must be greater than 0
 
 Check for integer less than 0;
-	 >>> bg.integer_validator("integer", -2)
-	 Traceback (most recent call last):
-         ...
-         ValueError: integer must be greater than 0
+	>>> bg.integer_validator("integer", -2)
+	Traceback (most recent call last):
+        ...
+        ValueError: integer must be greater than 0
 
 Checks for non-integer types:
-	 >>> bg.integer_validator("float", 5.5)
-         Traceback (most recent call last):
-         ...
-         TypeError: float must be an integer
+	>>> bg.integer_validator("float", 5.5)
+        Traceback (most recent call last):
+        ...
+        TypeError: float must be an integer
 
-	 >>> bg.integer_validator("complex", complex(1, 1))
-         Traceback (most recent call last):
-         ...
-         TypeError: complex must be an integer
+	>>> bg.integer_validator("complex", complex(1, 1))
+        Traceback (most recent call last):
+        ...
+	TypeError: complex must be an integer
+
+	>>> bg.integer_validator("bool", True)
+	Traceback (most recent call last):
+        ...
+        TypeError: bool must be an integer
 
 Check for no arguments to integer_validator:
-	 >>> bg.integer_validator()
-	 Traceback (most recent call last):
-         ...
-	 TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+	>>> bg.integer_validator()
+	Traceback (most recent call last):
+        ...
+	TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
 Check for only 1 argument to integer_validator:
-	 >>> bg.integer_validator("integer")
-	 Traceback (most recent call last):
-         ...
-	 TypeError: integer_validator() missing 1 required positional argument: 'value'
+	>>> bg.integer_validator("integer")
+	Traceback (most recent call last):
+        ...
+	TypeError: integer_validator() missing 1 required positional argument: 'value'
 
 Check for too many arguments:
-	 >>> bg.integer_validator("integer", 5, 12)
-	 Traceback (most recent call last):
-         ...
-	 TypeError: integer_validator() takes 3 positional arguments but 4 were given
+	>>> bg.integer_validator("integer", 5, 12)
+	Traceback (most recent call last):
+        ...
+	TypeError: integer_validator() takes 3 positional arguments but 4 were given
