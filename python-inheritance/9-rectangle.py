@@ -14,7 +14,7 @@ class Rectangle(BaseGeometry):
     def __init__(self, width, height):
         """
         Initializes a Rectangle instance with given width and height.
-        
+
         Raises:
         TypeError: If width or height is not an integer.
         ValueError: If width or height is less than or equal to 0.
