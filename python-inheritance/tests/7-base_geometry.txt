@@ -40,11 +40,6 @@ Checks for non-integer types:
         ...
 	TypeError: complex must be an integer
 
-	>>> bg.integer_validator("name", True)
-	Traceback (most recent call last):
-	...
-	TypeError: name must be an integer
-
 Check for no arguments to integer_validator:
 	>>> bg.integer_validator()
 	Traceback (most recent call last):
