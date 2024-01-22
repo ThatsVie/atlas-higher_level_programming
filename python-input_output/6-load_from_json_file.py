@@ -9,7 +9,7 @@ def load_from_json_file(filename):
 
     Args:
     filename (str): The name of the JSON file.
-    
+
     Returns:
     The object represented by the JSON file.
     """
