@@ -37,4 +37,4 @@ class Student:
         json (dict): A dictionary representing the attributes to replace.
         """
 
-         self.__dict__.update(json)
+        self.__dict__.update(json)
