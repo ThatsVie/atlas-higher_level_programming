@@ -30,7 +30,7 @@ Check for integer less than 0;
         ValueError: integer must be greater than 0
 
 Checks for non-integer types:
-	>>> bg = BaseGeometry()
+	>>> bg = BG()
 	>>> bg.integer_validator("name", True)
 	Traceback (most recent call last):
 	...
