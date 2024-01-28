@@ -31,7 +31,6 @@ class Square(Rectangle):
         """
 
         super().__init__(size, size, x, y, id)
-
     def update(self, *args, **kwargs):
         """Update Square attributes using positional and keyword arguments.
 
