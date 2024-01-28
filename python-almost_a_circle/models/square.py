@@ -32,6 +32,36 @@ class Square(Rectangle):
 
         super().__init__(size, size, x, y, id)
 
+    def update(self, *args, **kwargs):
+        """Update Square attributes using positional and keyword arguments.
+
+        Args:
+        *args: No-keyword arguments representing new attribute values.
+        1st argument should be the id attribute.
+        2nd argument should be the size attribute.
+        3rd argument should be the x attribute.
+        4th argument should be the y attribute.
+        **kwargs: Keyword arguments representing new attribute values.
+        Each key in the dictionary represents an attribute to the instance.
+
+        Note:
+        **kwargs must be skipped if *args exists and is not empty.
+        """
+        if args:
+            # Handle positional arguments
+            if len(args) >= 1:
+                self.id = args[0]
+            if len(args) >= 2:
+                self.size = args[1]
+            if len(args) >= 3:
+                self.x = args[2]
+            if len(args) >= 4:
+                self.y = args[3]
+        elif kwargs:
+            # Handle keyword arguments if *args is empty
+            for key, value in kwargs.items():
+                setattr(self, key, value)
+
     @property
     def size(self):
         """Getter for size attribute."""
