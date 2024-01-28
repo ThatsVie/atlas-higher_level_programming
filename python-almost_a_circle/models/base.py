@@ -2,6 +2,7 @@
 """Module defines model base class"""
 import json
 
+
 class Base:
     """
     Base class for managing IDs in this project.
