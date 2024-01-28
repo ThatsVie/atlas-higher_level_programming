@@ -31,6 +31,15 @@ class Square(Rectangle):
         """
 
         super().__init__(size, size, x, y, id)
+
+    def to_dictionary(self):
+        """Return the dictionary representation of a Square."""
+        return {
+            "id": self.id,
+            "size": self.width,  # Using width as size for Square
+            "x": self.x,
+            "y": self.y
+        }
     def update(self, *args, **kwargs):
         """Update Square attributes using positional and keyword arguments.
 
