@@ -115,7 +115,7 @@ class Rectangle(Base):
         )
 
     def update(self, *args):
-        """Update the Rectangle attributes using positional arguments
+        """Update Rectangle attributes using positional and keyword arguments
 
         Args:
         *args: No-keyword arguments representing new attribute values.
@@ -124,8 +124,15 @@ class Rectangle(Base):
         3rd argument should be the height attribute.
         4th argument should be the x attribute.
         5th argument should be the y attribute.
+        **kwargs: Keyword arguments representing new attribute values.
+        Each key in the dictionary represents an attribute to the instance.
+
+        Note:
+        **kwargs must be skipped if *args exists and is not empty.
         """
 
+    if args:
+        # Handle positional arguments
         if len(args) >= 1:
             self.id = args[0]
         if len(args) >= 2:
@@ -136,3 +143,7 @@ class Rectangle(Base):
             self.x = args[3]
         if len(args) >= 5:
             self.y = args[4]
+    elif kwargs:
+         # Handle keyword arguments if *args is empty
+         for key, value in kwargs.items():
+             setattr(self, key, value)
