@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Module defines model base class"""
-
+import json
 
 class Base:
     """
