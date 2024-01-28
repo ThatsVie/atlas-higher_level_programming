@@ -114,7 +114,7 @@ class Rectangle(Base):
                 f"{self.x}/{self.y} - {self.width}/{self.height}"
         )
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Update Rectangle attributes using positional and keyword arguments
 
         Args:
