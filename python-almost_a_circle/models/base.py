@@ -71,3 +71,16 @@ class Base:
         # Apply real values using update method
         new_instance.update(**dictionary)
         return new_instance
+
+    @classmethod
+    def load_from_file(cls):
+        """Return a list of instances loaded from a JSON file."""
+        filename = cls.__name__ + ".json"
+        try:
+            with open(filename, 'r') as file:
+                json_string = file.read()
+            return []
+
+        list_dicts = json.loads(json_string)
+        instances = [cls.create(**d) for d in list_dicts]
+        return instances
