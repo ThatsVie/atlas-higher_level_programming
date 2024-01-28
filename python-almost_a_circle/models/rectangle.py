@@ -146,4 +146,4 @@ class Rectangle(Base):
     elif kwargs:
         # Handle keyword arguments if *args is empty
         for key, value in kwargs.items():
-             setattr(self, key, value)
+            setattr(self, key, value)
