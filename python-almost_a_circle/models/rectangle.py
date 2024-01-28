@@ -144,6 +144,6 @@ class Rectangle(Base):
         if len(args) >= 5:
             self.y = args[4]
     elif kwargs:
-         # Handle keyword arguments if *args is empty
-         for key, value in kwargs.items():
+        # Handle keyword arguments if *args is empty
+        for key, value in kwargs.items():
              setattr(self, key, value)
