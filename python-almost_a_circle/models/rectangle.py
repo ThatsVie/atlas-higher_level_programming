@@ -131,19 +131,19 @@ class Rectangle(Base):
         **kwargs must be skipped if *args exists and is not empty.
         """
 
-    if args:
-        # Handle positional arguments
-        if len(args) >= 1:
-            self.id = args[0]
-        if len(args) >= 2:
-            self.width = args[1]
-        if len(args) >= 3:
-            self.height = args[2]
-        if len(args) >= 4:
-            self.x = args[3]
-        if len(args) >= 5:
-            self.y = args[4]
-    elif kwargs:
-        # Handle keyword arguments if *args is empty
-        for key, value in kwargs.items():
-            setattr(self, key, value)
+        if args:
+            # Handle positional arguments
+            if len(args) >= 1:
+                self.id = args[0]
+            if len(args) >= 2:
+                self.width = args[1]
+            if len(args) >= 3:
+                self.height = args[2]
+            if len(args) >= 4:
+                self.x = args[3]
+            if len(args) >= 5:
+                self.y = args[4]
+        elif kwargs:
+            # Handle keyword arguments if *args is empty
+            for key, value in kwargs.items():
+                isetattr(self, key, value)
