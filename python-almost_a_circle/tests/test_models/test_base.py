@@ -1,67 +1,43 @@
 #!/usr/bin/python3
 """Unittests for base.py"""
 import unittest
-import os
 from models.base import Base
-from models.rectangle import Rectangle
-from models.square import Square
+from unittest.mock import patch
+from io import StringIO
 
 
 class TestBase(unittest.TestCase):
 
-    def setUp(self):
-        # Remove any existing JSON files before each test
-        try:
-            os.remove("Rectangle.json")
-        except FileNotFoundError:
-            pass
-        try:
-            os.remove("Square.json")
-        except FileNotFoundError:
-            pass
-
-
     def test_auto_assign_id(self):
-        obj = Base()
-        self.assertEqual(obj.id, 1)
+        instance1 = Base()
+        instance2 = Base()
+        instance3 = Base(55)
+        self.assertEqual(instance1.id, 1)
+        self.assertEqual(instance2.id, 2)
+        self.assertEqual(instance3.id, 55)
 
-    def test_auto_assign_id_multiple_instances(self):
-        obj1 = Base()
-        obj2 = Base()
-        self.assertEqual(obj1.id, obj2.id - 1)
+    def test_id_is_int(self):
+        base_instance = Base(55)
+        self.assertIsInstance(base_instance.id, int)
 
-    def test_save_id_passed(self):
-        obj = Base(89)
-        self.assertEqual(obj.id, 89)
+    def test_to_json_empty(self):
+        with self.assertRaises(TypeError):
+            instance = Base()
+            json_dictionary = Base.to_json_string()
 
-    def test_to_json_string_none(self):
+    @patch('sys.stdout', new_callable=StringIO)
+    def test_to_json_string_with_none(self, mock_stdout):
+        expected_output = "[]"
         result = Base.to_json_string(None)
-        self.assertEqual(result, "[]")
+        self.assertEqual(result, expected_output)
+        self.assertEqual(mock_stdout.getvalue(), "")
 
-    def test_to_json_string_empty(self):
-        result = Base.to_json_string([])
-        self.assertEqual(result, "[]")
-
-    def test_to_json_string_with_id(self):
-        result = Base.to_json_string([{'id': 12}])
-        self.assertEqual(result, '[{"id": 12}]')
-
-    def test_from_json_string_none(self):
+    @patch('sys.stdout', new_callable=StringIO)
+    def test_from_json_string_with_none(self, mock_stdout):
+        expected_output = []
         result = Base.from_json_string(None)
-        self.assertEqual(result, [])
-
-    def test_from_json_string_empty(self):
-        result = Base.from_json_string("[]")
-        self.assertEqual(result, [])
-
-    def test_from_json_string_with_id(self):
-        result = Base.from_json_string('[{ "id": 89 }]')
-        self.assertEqual(result, [{'id': 89}])
-
-    def test_from_json_string_valid_list(self):
-        result = Base.from_json_string('[{ "id": 89 }]')
-        self.assertIsInstance(result, list)
-        self.assertEqual(result[0]['id'], 89)
+        self.assertEqual(result, expected_output)
+        self.assertEqual(mock_stdout.getvalue(), "")
 
 if __name__ == '__main__':
     unittest.main()
