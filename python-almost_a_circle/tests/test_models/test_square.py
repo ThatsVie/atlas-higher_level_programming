@@ -59,6 +59,39 @@ class TestSquare(unittest.TestCase):
         with self.assertRaises(ValueError):
             Square(0)
 
+    def test_string_representation(self):
+        square = Square(9, 2, 3, 88)
+        self.assertEqual(str(square), "[Square] (88) 2/3 - 9")
+
+    def test_to_dict_representation(self):
+        square = Square(20, 10, 10, 99)
+        self.assertEqual(square.to_dictionary(), {'id': 99, 'size': 20, 'x': 10, 'y': 10})
+
+    def test_update_attributes(self):
+        square = Square(45, 18, 18, 9)
+        square.update(111, 42, 42, 33)
+
+        self.assertEqual(square.id, 111)
+        self.assertEqual(square.size, 42)
+        self.assertEqual(square.x, 42)
+        self.assertEqual(square.y, 33)
+
+    def test_create_instance_from_dictionary(self):
+        square = Square.create(**{'id': 33})
+        self.assertEqual(square.id, 33)
+
+    def test_save_to_file_with_none(self):
+        with patch('builtins.open', create=True) as mock_open:
+            Square.save_to_file(None)
+
+            mock_open.assert_called_once_with('Square.json', mode='w', encoding='utf-8')
+
+            write_args = mock_open.return_value.__enter__.return_value.write.call_args[0]
+
+            loaded_data = json.loads(write_args[0])
+
+            self.assertEqual(loaded_data, [])
+
 
 if __name__ == '__main__':
     unittest.main()
