@@ -42,5 +42,15 @@ class TestBase(unittest.TestCase):
         self.assertIsInstance(result, list)
         self.assertEqual(result[0]['id'], 89)
 
+    def test_create_with_valid_arguments(self):
+        result = Base.create(id=1, name="test")
+        self.assertIsInstance(result, Base)
+        self.assertEqual(result.id, 1)
+        self.assertEqual(result.name, "test")
+
+    def test_create_with_invalid_arguments(self):
+        with self.assertRaises(AttributeError):
+            result = Base.create(id=1, width=2)
+
 if __name__ == '__main__':
     unittest.main()
