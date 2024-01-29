@@ -111,11 +111,12 @@ class Rectangle(Base):
 
     def display(self):
         """Print the Rectangle using the #, taking care of x and y"""
-        for _ in range(self.y):
+        print("\n" * self.__y, end='')
+        for row in range(self.__height):
+            print(" " * self.__x, end='')
+            for col in range(self.__width):
+                print("#", end='')
             print()
-
-        for _ in range(self.height):
-            print(" " * self.x + "#" * self.width)
 
     def __str__(self):
         """Return the string representation of the Rectangle."""
