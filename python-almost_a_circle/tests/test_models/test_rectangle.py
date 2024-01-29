@@ -93,6 +93,92 @@ class TestRectangle(unittest.TestCase):
 
         self.assertEqual(output_buffer.getvalue(), "#####\n#####\n#####\n")
 
+    def test_display_with_position(self):
+        rec = Rectangle(6, 4, 3, 1, 2)
+
+        output_buffer = StringIO()
+        sys.stdout = output_buffer
+
+        rec.display()
+
+        sys.stdout = sys.__stdout__
+
+        self.assertEqual(output_buffer.getvalue(), "\n   ######\n   ######\n   ######\n   ######\n")
+
+    def test_to_dictionary_representation(self):
+        rec = Rectangle(5, 8, 3, 3, 456)
+
+        self.assertEqual(rec.to_dictionary(), {'id': 456, 'width': 5, 'height': 8, 'x': 3, 'y': 3})
+
+    def test_update_attributes(self):
+        rec = Rectangle(8, 5, 4, 2, 123)
+        rec.update(987, 7, 3, 4, 5)
+
+        self.assertEqual(rec.id, 987)
+        self.assertEqual(rec.width, 7)
+        self.assertEqual(rec.height, 3)
+        self.assertEqual(rec.x, 4)
+        self.assertEqual(rec.y, 5)
+
+    def test_create_instance_from_dictionary(self):
+        rec = Rectangle.create(**{'id': 654})
+
+        self.assertEqual(rec.id, 654)
+
+    def test_save_to_file_with_none(self):
+        with patch('builtins.open', create=True) as mock_open:
+            Rectangle.save_to_file(None)
+
+            mock_open.assert_called_once_with('Rectangle.json', mode='w', encoding='utf-8')
+
+            write_args = mock_open.return_value.__enter__.return_value.write.call_args[0]
+
+            written_json = json.loads(write_args[0])
+
+            self.assertEqual(written_json, [])
+
+    def test_save_to_file_with_empty_list(self):
+        with patch('builtins.open', create=True) as mock_open:
+            Rectangle.save_to_file([])
+
+            mock_open.assert_called_once_with('Rectangle.json', mode='w', encoding='utf-8')
+
+            write_args = mock_open.return_value.__enter__.return_value.write.call_args[0]
+
+            loaded_data = json.loads(write_args[0])
+
+            self.assertEqual(loaded_data, [])
+
+    def test_save_to_file_with_single_rectangle_instance(self):
+        rec = Rectangle(2, 3)
+
+        with patch('builtins.open', create=True) as mock_open:
+            Rectangle.save_to_file([rec])
+
+            mock_open.assert_called_once_with('Rectangle.json', mode='w', encoding='utf-8')
+
+            write_args = mock_open.return_value.__enter__.return_value.write.call_args[0]
+
+            loaded_data = json.loads(write_args[0])
+
+            self.assertEqual(len(loaded_data), 1)
+            self.assertEqual(loaded_data[0]['id'], rec.id)
+            self.assertEqual(loaded_data[0]['width'], rec.width)
+            self.assertEqual(loaded_data[0]['height'], rec.height)
+            self.assertEqual(loaded_data[0]['x'], rec.x)
+            self.assertEqual(loaded_data[0]['y'], rec.y)
+
+    @patch('builtins.open', new_callable=MagicMock)
+    def test_load_from_file_file_not_found(self, mock_open):
+        mock_open.side_effect = FileNotFoundError
+        mock_open.return_value.__enter__.return_value.read.return_value = ""
+
+        file_contents = Rectangle.load_from_file()
+
+        mock_open.assert_called_once_with('Rectangle.json', 'r')
+
+        self.assertEqual(file_contents, [])
+
 
 if __name__ == '__main__':
     unittest.main()
