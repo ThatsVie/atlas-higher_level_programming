@@ -20,5 +20,33 @@ class TestRectangle(unittest.TestCase):
         with self.assertRaises(ValueError):
             Rectangle(1, 2, -3)
 
+    def test_init_with_missing_arguments_1(self):
+        with self.assertRaises(TypeError):
+            Rectangle(1, 2)
+
+    def test_init_with_missing_arguments_2(self):
+        with self.assertRaises(TypeError):
+            Rectangle(1, 2, 3)
+
+    def test_init_with_missing_arguments_3(self):
+        with self.assertRaises(TypeError):
+            Rectangle(1, 2, 3, 4)
+
+    def test_init_with_invalid_type_1(self):
+        with self.assertRaises(TypeError):
+            Rectangle("1", 2)
+
+    def test_init_with_invalid_type_2(self):
+        with self.assertRaises(TypeError):
+            Rectangle(1, "2")
+
+    def test_init_with_invalid_type_3(self):
+        with self.assertRaises(TypeError):
+            Rectangle(1, 2, "3")
+
+    def test_init_with_invalid_type_4(self):
+        with self.assertRaises(TypeError):
+            Rectangle(1, 2, 3, "4")
+
 if __name__ == '__main__':
     unittest.main()
