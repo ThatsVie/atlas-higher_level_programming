@@ -92,6 +92,47 @@ class TestSquare(unittest.TestCase):
 
             self.assertEqual(loaded_data, [])
 
+    def test_save_to_file_with_empty_list(self):
+        with patch('builtins.open', create=True) as mock_open:
+            Square.save_to_file([])
+
+            mock_open.assert_called_once_with('Square.json', mode='w', encoding='utf-8')
+
+            write_args = mock_open.return_value.__enter__.return_value.write.call_args[0]
+
+            loaded_data = json.loads(write_args[0])
+
+            self.assertEqual(loaded_data, [])
+
+    def test_save_to_file_with_single_square(self):
+        square = Square(8)
+
+        with patch('builtins.open', create=True) as mock_open:
+            Square.save_to_file([square])
+
+            mock_open.assert_called_once_with('Square.json', mode='w', encoding='utf-8')
+
+            write_args = mock_open.return_value.__enter__.return_value.write.call_args[0]
+
+            loaded_data = json.loads(write_args[0])
+
+            self.assertEqual(len(loaded_data), 1)
+            self.assertEqual(loaded_data[0]['id'], square.id)
+            self.assertEqual(loaded_data[0]['size'], square.size)
+            self.assertEqual(loaded_data[0]['x'], square.x)
+            self.assertEqual(loaded_data[0]['y'], square.y)
+
+    @patch('builtins.open', new_callable=MagicMock)
+    def test_load_from_file_file_not_found(self, mock_open):
+        mock_open.side_effect = FileNotFoundError
+        mock_open.return_value.__enter__.return_value.read.return_value = ""
+
+        file_contents = Square.load_from_file()
+
+        mock_open.assert_called_once_with('Square.json', 'r')
+
+        self.assertEqual(file_contents, [])
+
 
 if __name__ == '__main__':
     unittest.main()
