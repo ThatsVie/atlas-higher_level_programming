@@ -16,16 +16,17 @@ def filter_states():
     db_connection = MySQLdb.connect(
         host="localhost",
         port=3306,
-        user=sys.argv[1], # MySQL username
-        passwd=sys.argv[2], # MySQL password
-        db=sys.argv[3] # Database name
+        user=sys.argv[1],  # MySQL username
+        passwd=sys.argv[2],  # MySQL password
+        db=sys.argv[3]  # Database name
     )
 
     # Create cursor
     db_cursor = db_connection.cursor()
 
     # Execute SQL query to select states where the name matches the argument
-    db_cursor.execute("SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER BY id".format(sys.argv[4]))
+    db_cursor.execute("SELECT * FROM states WHERE name LIKE BINARY '{}' "
+                       "ORDER BY id".format(sys.argv[4]))
 
     # Fetch matching states
     matching_states = db_cursor.fetchall()
