@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Script that list all states with a name starting 
+Script that list all states with a name starting
 with 'N' from the database hbtn_0e_0_usa
 """
 import MySQLdb
@@ -9,7 +9,7 @@ import sys
 
 def list_states_starting_with_N():
     """
-    Connects to the MySQL database and lists all 
+    Connects to the MySQL database and lists all
     states whose names start with 'N'.
     """
     # Connect to MySQL server
