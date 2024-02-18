@@ -26,7 +26,7 @@ def filter_states():
 
     # Execute SQL query to select states where the name matches the argument
     db_cursor.execute("SELECT * FROM states WHERE name LIKE BINARY '{}' "
-                       "ORDER BY id".format(sys.argv[4]))
+                      "ORDER BY id".format(sys.argv[4]))
 
     # Fetch matching states
     matching_states = db_cursor.fetchall()
