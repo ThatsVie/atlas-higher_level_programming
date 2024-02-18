@@ -12,8 +12,11 @@ if __name__ == "__main__":
     db_username = sys.argv[1]
     db_password = sys.argv[2]
     db_name = sys.argv[3]
-    db_engine = create_engine(f'mysql+mysqldb://{db_username}:{db_password}@localhost/{db_name}', pool_pre_ping=True)
-    
+    db_engine = create_engine(
+            f'mysql+mysqldb://{db_username}:{db_password}@localhost/{db_name}',
+            pool_pre_ping=True
+    )
+
     # Create all tables in the database
     Base.metadata.create_all(db_engine)
 
