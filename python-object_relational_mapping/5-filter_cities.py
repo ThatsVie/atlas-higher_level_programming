@@ -14,9 +14,9 @@ def list_all_cities_by_state():
     db_connection = MySQLdb.connect(
         host="localhost",
         port=3306,
-        user=sys.argv[1], # MySQL username
-        passwd=sys.argv[2], # MySQL password
-        db=sys.argv[3] # Database name
+        user=sys.argv[1],  # MySQL username
+        passwd=sys.argv[2],  # MySQL password
+        db=sys.argv[3]  # Database name
     )
 
     # Create a cursor object
