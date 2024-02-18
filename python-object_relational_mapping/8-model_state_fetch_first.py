@@ -16,19 +16,19 @@ if __name__ == '__main__':
       f'mysql+mysqldb://{db_username}:{db_password}@localhost:3306/{db_name}',
       pool_pre_ping=True
     )
-    
+
     # Create tables in the database if they don't exist
     Base.metadata.create_all(engine)
-    
+
     # Create a sessionmaker object bound to the engine
     Session = sessionmaker(bind=engine)
-    
+
     # Create a session to interact with the database
     db_session = Session()
-    
+
     # Query the database to get the first State object
     first_state = db_session.query(State).order_by(State.id).first()
-    
+
     # Check if a State object was found
     if first_state is not None:
         # Print the id and name of the State object
