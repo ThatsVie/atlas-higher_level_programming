@@ -14,9 +14,9 @@ def list_all_states():
     db_connection = MySQLdb.connect(
             host="localhost",
             port=3306,
-            user=sys.argv[1], # MySQL username
-            passwd=sys.argv[2], # MySQL password
-            db=sys.argv[3] # Database name
+            user=sys.argv[1],  # MySQL username
+            passwd=sys.argv[2],  # MySQL password
+            db=sys.argv[3]  # Database name
     )
 
     # Create cursor
@@ -35,6 +35,7 @@ def list_all_states():
     # close cursor and connection
     db_cursor.close()
     db_connection.close()
+
 
 if __name__ == "__main__":
     list_all_states()
