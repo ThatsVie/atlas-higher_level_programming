@@ -11,15 +11,15 @@ import sys
 def query_states_by_name_safely():
     """
     Connects to the MySQL database and retrieves states where the name matches
-    the specified argument using parameterized queries to prevent SQL injection.
+    the specified argument using parameterized queries to prevent SQL injection
     """
     # Connect to MySQL server
     db_connection = MySQLdb.connect(
         host="localhost",
         port=3306,
-        user=sys.argv[1], # MySQL username
-        passwd=sys.argv[2], # MySQL password
-        db=sys.argv[3] # Database name
+        user=sys.argv[1],  # MySQL username
+        passwd=sys.argv[2],  # MySQL password
+        db=sys.argv[3]  # Database name
     )
 
     # Create cursor
