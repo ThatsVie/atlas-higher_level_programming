@@ -15,17 +15,18 @@ def list_all_cities():
     db_connection = MySQLdb.connect(
         host="localhost",
         port=3306,
-        user=sys.argv[1], # MySQL username
-        passwd=sys.argv[2], # MySQL password
-        db=sys.argv[3] # Database name
+        user=sys.argv[1],  # MySQL username
+        passwd=sys.argv[2],  # MySQL password
+        db=sys.argv[3]  # Database name
     )
 
     # Create cursor
     db_cursor = db_connection.cursor()
 
-    # Execute SQL query to select all cities with their corresponding state names
+    # Execute SQL query to select all cities with corresponding state names
     sql_query = "SELECT cities.id, cities.name, states.name " \
-                "FROM cities LEFT JOIN states ON states.id = cities.state_id ORDER BY cities.id"
+                "FROM cities LEFT JOIN states ON states.id = cities.state_id"
+                "ORDER BY cities.id"
 
     db_cursor.execute(sql_query)
 
