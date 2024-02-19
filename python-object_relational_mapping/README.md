@@ -73,3 +73,34 @@ This repository contains scripts written in Python for performing Object Relatio
 
 2. **model_city.py**:
    - Contains the class definition of a City, which inherits from the Base class, and an instance Base = declarative_base().
+
+## Usage
+
+This "Usage" section provides instructions on how to run the Python scripts and execute the SQL scripts provided in the repository. It also includes examples of command-line usage for running the Python scripts with appropriate arguments.
+
+To run any of the Python scripts in this repository, you need to have Python3 installed on your system along with MySQL 8.0, MySQLdb module version 2.0.x, and SQLAlchemy module version 1.4.x
+
+### Running Python Scripts
+
+1. Clone this repository to your local machine:
+
+   git clone https://github.com/ThatsVie/atlas-higher_level_programming.git
+
+Navigate to the directory containing the script you want to run:
+
+python-object_relational_mapping
+
+Run the desired Python script with the appropriate command-line arguments. For example:
+
+./0-select_states.py <db_username> <db_password> <db_name>
+
+Replace <db_username>, <db_password>, and <db_name> with your MySQL database credentials and database name, respectively.
+
+
+### SQL Scripts
+If you want to create the necessary databases and tables using the SQL scripts provided, you can execute them using a MySQL client such as mysql or any MySQL GUI tool.
+
+mysql -u username -p < 0-select_states.sql
+
+Replace username with your MySQL username.
+
