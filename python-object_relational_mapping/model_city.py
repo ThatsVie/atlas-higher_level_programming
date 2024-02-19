@@ -9,7 +9,7 @@ from model_state import Base, State
 class City(Base):
     """
     Class representing a city, inherits from Base.
-    
+
     Attributes:
         id (int): The unique identifier for the city.
         name (str): The name of the city.
