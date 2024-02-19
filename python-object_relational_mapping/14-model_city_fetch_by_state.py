@@ -12,7 +12,7 @@ if __name__ == '__main__':
     # Create an engine that connects to the database
     db_engine = create_engine(f'mysql+mysqldb://{argv[1]}:{argv[2]}'
                               f'@localhost:3306/{argv[3]}', pool_pre_ping=True)
-    
+
     # Create the tables if they don't exist
     Base.metadata.create_all(db_engine)
 
@@ -20,7 +20,8 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=db_engine)
     db_session = Session()
 
-    # Query the database to get all City objects along with their corresponding State names
+    # Query the database to get all City objects along with
+    # their corresponding State names
     cities_with_states = db_session.query(City, State).join(State).all()
 
     # Print each city along with its state name
