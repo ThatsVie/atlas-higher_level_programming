@@ -24,7 +24,7 @@ if __name__ == "__main__":
 
     # Query the database for all State objects with names containing 'a'
     states_to_delete = db_session.query(State).filter(State.name.like('%a%')) \
-                                             .all()
+                                              .all()
 
     # Delete the queried State objects
     for state in states_to_delete:
@@ -34,4 +34,4 @@ if __name__ == "__main__":
     db_session.commit()
 
     # Close session
-    db_session.close()  
+    db_session.close()
