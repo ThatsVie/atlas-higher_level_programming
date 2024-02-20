@@ -112,7 +112,7 @@ mysql -u username -p < 0-select_states.sql
 Replace username with your MySQL username.
 
 
-### These usage examples demonstrates how to execute SQL scripts to create and manipulate database tables and how to use Python scripts to interact with the database and retrieve specific data:
+**These usage examples demonstrates how to execute SQL scripts to create and manipulate database tables and how to use Python scripts to interact with the database and retrieve specific data, along with the expected outputs where applicable:**
 
 
 **Create states table in hbtn_0e_0_usa with some data**
