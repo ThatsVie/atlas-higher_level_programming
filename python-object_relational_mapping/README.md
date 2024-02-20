@@ -80,27 +80,63 @@ This "Usage" section provides instructions on how to run the Python scripts and 
 
 To run any of the Python scripts in this repository, you need to have Python3 installed on your system along with MySQL 8.0, MySQLdb module version 2.0.x, and SQLAlchemy module version 1.4.x
 
-### Running Python Scripts
+This usage example demonstrates how to execute SQL scripts to create and manipulate database tables and how to use Python scripts to interact with the database and retrieve specific data:
 
-1. Clone this repository to your local machine:
+1. **Create States Table**: Execute the `0-select_states.sql` script to create a `states` table in the `hbtn_0e_0_usa` database and populate it with some initial data.
 
-   git clone https://github.com/ThatsVie/atlas-higher_level_programming.git
+guillaume@ubuntu:~/$ cat 0-select_states.sql | mysql -uroot -p
+Enter password:
 
-Navigate to the directory containing the script you want to run:
+Filter States: Run the 1-filter_states.py script to filter and display specific states from the states table.
 
-python-object_relational_mapping
+guillaume@ubuntu:~/$ ./1-filter_states.py root root hbtn_0e_0_usa
+(4, 'New York')
+(5, 'Nevada')
 
-Run the desired Python script with the appropriate command-line arguments. For example:
+Replace root with your MySQL username and password if necessary. Ensure you have appropriate permissions to execute these commands.
 
-./0-select_states.py <db_username> <db_password> <db_name>
+This example demonstrates how to create a database structure and populate it with sample data using SQL scripts, and then how to use a Python script to fetch and display specific information from the database:
 
-Replace <db_username>, <db_password>, and <db_name> with your MySQL database credentials and database name, respectively.
+1. **Create Database and Tables**: Execute the `14-model_city_fetch_by_state.sql` script to create a database named `hbtn_0e_14_usa` and two tables (`states` and `cities`). This script also populates the tables with sample data.
 
 
-### SQL Scripts
-If you want to create the necessary databases and tables using the SQL scripts provided, you can execute them using a MySQL client such as mysql or any MySQL GUI tool.
+guillaume@ubuntu:~/$ cat 14-model_city_fetch_by_state.sql | mysql -uroot -p
 
-mysql -u username -p < 0-select_states.sql
+Enter password:
 
-Replace username with your MySQL username.
+Fetch Cities by State: Run the 14-model_city_fetch_by_state.py script to fetch and display cities grouped by their respective states from the database.
 
+
+guillaume@ubuntu:~/$ ./14-model_city_fetch_by_state.py root root hbtn_0e_14_usa
+
+California: (1) San Francisco
+
+California: (2) San Jose
+
+California: (3) Los Angeles
+
+California: (4) Fremont
+
+California: (5) Livermore
+
+Arizona: (6) Page
+
+Arizona: (7) Phoenix
+
+Texas: (8) Dallas
+
+Texas: (9) Houston
+
+Texas: (10) Austin
+
+New York: (11) New York
+
+Nevada: (12) Las Vegas
+
+Nevada: (13) Reno
+
+Nevada: (14) Henderson
+
+Nevada: (15) Carson City
+
+Replace root with your MySQL username and password if required. Ensure appropriate permissions to execute the commands.
