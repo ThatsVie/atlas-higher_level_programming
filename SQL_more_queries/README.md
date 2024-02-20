@@ -26,3 +26,123 @@ This repository contains SQL scripts for advanced queries and database managemen
 
 1. Ensure you have MySQL installed and running.
 2. Execute each SQL script using a MySQL client or command-line tool, ensuring any required databases are created and any necessary user privileges are granted.
+
+1. **Check and Grant Privileges**: 
+   
+    ```bash
+    guillaume@ubuntu:~/$ cat 0-privileges.sql | mysql -hlocalhost -uroot -p
+    Enter password: 
+    ```
+
+    ```bash
+    guillaume@ubuntu:~/$ echo "CREATE USER 'user_0d_1'@'localhost';" |  mysql -hlocalhost -uroot -p
+    Enter password: 
+    ```
+
+    ```bash
+    guillaume@ubuntu:~/$ echo "GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost';" |  mysql -hlocalhost -uroot -p
+    Enter password: 
+    ```
+
+    ```bash
+    guillaume@ubuntu:~/$ cat 0-privileges.sql | mysql -hlocalhost -uroot -p
+    Enter password: 
+    ```
+
+2. **Create Users with Specific Privileges**:
+
+    ```bash
+    guillaume@ubuntu:~/$ cat 1-create_user.sql | mysql -hlocalhost -uroot -p
+    Enter password: 
+    ```
+
+    ```bash
+    guillaume@ubuntu:~/$ cat 2-create_read_user.sql | mysql -hlocalhost -uroot -p
+    Enter password: 
+    ```
+
+3. **Ensure Specific Table Constraints**:
+
+    ```bash
+    guillaume@ubuntu:~/$ cat 3-force_name.sql | mysql -hlocalhost -uroot -p hbtn_0d_2
+    Enter password: 
+    ```
+
+    ```bash
+    guillaume@ubuntu:~/$ echo 'INSERT INTO force_name (id, name) VALUES (89, "Best School");' | mysql -hlocalhost -uroot -p hbtn_0d_2
+    Enter password: 
+    ```
+
+    ```bash
+    guillaume@ubuntu:~/$ cat 4-never_empty.sql | mysql -hlocalhost -uroot -p hbtn_0d_2
+    Enter password: 
+    ```
+
+    ```bash
+    guillaume@ubuntu:~/$ echo 'INSERT INTO id_not_null (id, name) VALUES (89, "Best School");' | mysql -hlocalhost -uroot -p hbtn_0d_2
+    Enter password: 
+    ```
+
+    ```bash
+    guillaume@ubuntu:~/$ cat 5-unique_id.sql | mysql -hlocalhost -uroot -p hbtn_0d_2
+    Enter password: 
+    ```
+
+    ```bash
+    guillaume@ubuntu:~/$ cat 6-states.sql | mysql -hlocalhost -uroot -p
+    Enter password: 
+    ```
+
+    ```bash
+    guillaume@ubuntu:~/$ cat 7-cities.sql | mysql -hlocalhost -uroot -p
+    Enter password: 
+    ```
+
+4. **Fetch Data**:
+
+    ```bash
+    guillaume@ubuntu:~/$ cat 8-cities_of_california_subquery.sql | mysql -hlocalhost -uroot -p hbtn_0d_usa
+    Enter password: 
+    ```
+
+    ```bash
+    guillaume@ubuntu:~/$ cat 9-cities_by_state_join.sql | mysql -hlocalhost -uroot -p hbtn_0d_usa
+    Enter password: 
+    ```
+
+    ```bash
+    guillaume@ubuntu:~/$ cat 10-genre_id_by_show.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
+    Enter password: 
+    ```
+
+    ```bash
+    guillaume@ubuntu:~/$ cat 11-genre_id_all_shows.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
+    Enter password: 
+    ```
+
+    ```bash
+    guillaume@ubuntu:~/$ cat 12-no_genre.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
+    Enter password: 
+    ```
+
+    ```bash
+    guillaume@ubuntu:~/$ cat 13-count_shows_by_genre.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
+    Enter password: 
+    ```
+
+    ```bash
+    guillaume@ubuntu:~/$ cat 14-my_genres.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
+    Enter password: 
+    ```
+
+    ```bash
+    guillaume@ubuntu:~/$ cat 15-comedy_only.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
+    Enter password: 
+    ```
+
+    ```bash
+    guillaume@ubuntu:~/$ cat 16-shows_by_genre.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
+    Enter password: 
+    ```
+
+Replace `root` with your MySQL username and password if required. Ensure appropriate permissions to execute the commands.
