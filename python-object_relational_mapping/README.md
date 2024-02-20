@@ -76,67 +76,244 @@ This repository contains scripts written in Python for performing Object Relatio
 
 ## Usage
 
-This "Usage" section provides instructions on how to run the Python scripts and execute the SQL scripts provided in the repository. It also includes examples of command-line usage for running the Python scripts with appropriate arguments.
+This section provides instructions on how to run the Python scripts and execute the SQL scripts provided in the repository. It also includes examples of command-line usage for running the Python scripts with appropriate arguments.
 
 To run any of the Python scripts in this repository, you need to have Python3 installed on your system along with MySQL 8.0, MySQLdb module version 2.0.x, and SQLAlchemy module version 1.4.x
 
-This usage example demonstrates how to execute SQL scripts to create and manipulate database tables and how to use Python scripts to interact with the database and retrieve specific data:
+### Running Python Scripts
+**Clone this repository to your local machine:**
 
-1. **Create States Table**: Execute the `0-select_states.sql` script to create a `states` table in the `hbtn_0e_0_usa` database and populate it with some initial data.
+```bash
+   git clone https://github.com/ThatsVie/atlas-higher_level_programming.git
+```
 
+**Navigate to the directory containing the script you want to run:**
+   
+```bash
+python-object_relational_mapping
+```
+
+**Run the desired Python script with the appropriate command-line arguments. For example:**
+
+```bash
+./0-select_states.py <db_username> <db_password> <db_name>
+```
+
+Replace <db_username>, <db_password>, and <db_name> with your MySQL database credentials and database name, respectively.
+
+
+### SQL Scripts
+If you want to create the necessary databases and tables using the SQL scripts provided, you can execute them using a MySQL client such as mysql or any MySQL GUI tool.
+
+```bash
+mysql -u username -p < 0-select_states.sql
+```
+
+Replace username with your MySQL username.
+
+
+### These usage examples demonstrates how to execute SQL scripts to create and manipulate database tables and how to use Python scripts to interact with the database and retrieve specific data:
+
+
+**Create states table in hbtn_0e_0_usa with some data**
+
+```bash
 guillaume@ubuntu:~/$ cat 0-select_states.sql | mysql -uroot -p
 Enter password:
+```
 
-Filter States: Run the 1-filter_states.py script to filter and display specific states from the states table.
+ **Fetch all states from hbtn_0e_0_usa**
 
+```bash
+guillaume@ubuntu:~/$ ./0-select_states.py root root hbtn_0e_0_usa
+(1, 'California')
+(2, 'Arizona')
+(3, 'Texas')
+(4, 'New York')
+(5, 'Nevada')
+```
+
+**Filter states by name using a Python script**
+
+```bash
 guillaume@ubuntu:~/$ ./1-filter_states.py root root hbtn_0e_0_usa
 (4, 'New York')
 (5, 'Nevada')
+```
 
-Replace root with your MySQL username and password if necessary. Ensure you have appropriate permissions to execute these commands.
+**Filter states by name using a Python script**
 
-This example demonstrates how to create a database structure and populate it with sample data using SQL scripts, and then how to use a Python script to fetch and display specific information from the database:
+```bash
+guillaume@ubuntu:~/$ ./2-my_filter_states.py root root hbtn_0e_0_usa 'Arizona'
+(2, 'Arizona')
+```
 
-1. **Create Database and Tables**: Execute the `14-model_city_fetch_by_state.sql` script to create a database named `hbtn_0e_14_usa` and two tables (`states` and `cities`). This script also populates the tables with sample data.
+**Filter states by name using a Python script with SQL injection protection**
 
+```bash
+guillaume@ubuntu:~/$ ./3-my_safe_filter_states.py root root hbtn_0e_0_usa 'Arizona'
+(2, 'Arizona')
+```
 
-guillaume@ubuntu:~/$ cat 14-model_city_fetch_by_state.sql | mysql -uroot -p
+**Create states and cities tables in hbtn_0e_4_usa with some data**
 
+```bash
+guillaume@ubuntu:~/$ cat 4-cities_by_state.sql | mysql -uroot -p
 Enter password:
+```
 
-Fetch Cities by State: Run the 14-model_city_fetch_by_state.py script to fetch and display cities grouped by their respective states from the database.
+**Fetch all cities with their corresponding states from hbtn_0e_4_usa**
 
+```bash
+guillaume@ubuntu:~/$ ./4-cities_by_state.py root root hbtn_0e_4_usa
+(1, 'San Francisco', 'California')
+(2, 'San Jose', 'California')
+(3, 'Los Angeles', 'California')
+(4, 'Fremont', 'California')
+(5, 'Livermore', 'California')
+(6, 'Page', 'Arizona')
+(7, 'Phoenix', 'Arizona')
+(8, 'Dallas', 'Texas')
+(9, 'Houston', 'Texas')
+(10, 'Austin', 'Texas')
+(11, 'New York', 'New York')
+(12, 'Las Vegas', 'Nevada')
+(13, 'Reno', 'Nevada')
+(14, 'Henderson', 'Nevada')
+(15, 'Carson City', 'Nevada')
+```
 
+**Filter cities by state name using a Python script**
+
+```bash
+guillaume@ubuntu:~/$ ./5-filter_cities.py root root hbtn_0e_4_usa Texas
+Dallas, Houston, Austin
+```
+
+**Create states table in hbtn_0e_6_usa**
+
+```bash
+guillaume@ubuntu:~/$ cat 6-model_state.sql | mysql -uroot -p
+Enter password:
+```
+
+**Run Python script to create the State model**
+
+```bash
+guillaume@ubuntu:~/$ ./6-model_state.py root root hbtn_0e_6_usa
+```
+
+**Insert states into hbtn_0e_6_usa using SQL**
+
+```bash
+guillaume@ubuntu:~/$ cat 7-model_state_fetch_all.sql | mysql -uroot -p hbtn_0e_6_usa
+Enter password:
+```
+
+**Fetch all states from hbtn_0e_6_usa using Python**
+
+```bash
+guillaume@ubuntu:~/$ ./7-model_state_fetch_all.py root root hbtn_0e_6_usa
+1: California
+2: Arizona
+3: Texas
+4: New York
+5: Nevada
+```
+
+**Fetch the first state from hbtn_0e_6_usa using Python**
+
+```bash
+guillaume@ubuntu:~/$ ./8-model_state_fetch_first.py root root hbtn_0e_6_usa
+1: California
+```
+
+**Filter states containing letter 'a' from hbtn_0e_6_usa using Python**
+```bash
+guillaume@ubuntu:~/$ ./9-model_state_filter_a.py root root hbtn_0e_6_usa
+1: California
+2: Arizona
+3: Texas
+5: Nevada
+```
+
+**Get state ID by name from hbtn_0e_6_usa using Python**
+
+```bash
+guillaume@ubuntu:~/$ ./10-model_state_my_get.py root root hbtn_0e_6_usa Texas
+3
+```
+
+**Insert a new state into hbtn_0e_6_usa using Python**
+
+```bash
+guillaume@ubuntu:~/$ ./11-model_state_insert.py root root hbtn_0e_6_usa
+6
+```
+
+**Fetch all states from hbtn_0e_6_usa after insertion**
+```bash
+guillaume@ubuntu:~/$ ./7-model_state_fetch_all.py root root hbtn_0e_6_usa
+1: California
+2: Arizona
+3: Texas
+4: New York
+5: Nevada
+6: Louisiana
+```
+
+**Update state name with ID 2 in hbtn_0e_6_usa using Python**
+
+```bash
+guillaume@ubuntu:~/$ ./12-model_state_update_id_2.py root root hbtn_0e_6_usa
+```
+
+**Fetch all states from hbtn_0e_6_usa after update**
+
+```bash
+guillaume@ubuntu:~/$ ./7-model_state_fetch_all.py root root hbtn_0e_6_usa
+2: New Mexico
+4: New York
+```
+
+**Delete states containing letter 'a' from hbtn_0e_6_usa using Python**
+
+```bash
+guillaume@ubuntu:~/$ ./13-model_state_delete_a.py root root hbtn_0e_6_usa
+```
+
+**Fetch all states from hbtn_0e_6_usa after deletion**
+
+```bash
+guillaume@ubuntu:~/$ ./7-model_state_fetch_all.py root root hbtn_0e_6_usa
+2: New Mexico
+4: New York
+```
+
+**Create states and cities tables in hbtn_0e_14_usa with some data**
+
+```bash
+guillaume@ubuntu:~/$ cat 14-model_city_fetch_by_state.sql | mysql -uroot -p
+Enter password:
+```
+
+**Fetch all cities with their corresponding states from hbtn_0e_14_usa using Python**
+
+```bash
 guillaume@ubuntu:~/$ ./14-model_city_fetch_by_state.py root root hbtn_0e_14_usa
-
 California: (1) San Francisco
-
 California: (2) San Jose
-
 California: (3) Los Angeles
-
 California: (4) Fremont
-
 California: (5) Livermore
-
 Arizona: (6) Page
-
 Arizona: (7) Phoenix
-
 Texas: (8) Dallas
-
 Texas: (9) Houston
-
 Texas: (10) Austin
-
 New York: (11) New York
-
 Nevada: (12) Las Vegas
-
 Nevada: (13) Reno
-
 Nevada: (14) Henderson
-
 Nevada: (15) Carson City
-
-Replace root with your MySQL username and password if required. Ensure appropriate permissions to execute the commands.
+```
