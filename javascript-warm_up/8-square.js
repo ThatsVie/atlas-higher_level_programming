@@ -9,12 +9,12 @@ if (parseInt(process.argv[2])) {
   // Loop 'number' times to build each row of the square
   for (let num = 0; num < number; num++) {
     let row = ''; // Initialize an empty string to store the characters of the row
-    
+
     // Loop 'number' times to add 'X' characters to the row
     for (let n = 0; n < number; n++) {
       row += 'X'; // Append 'X' to the row
     }
-    
+
     // Print the row
     console.log(row);
   }

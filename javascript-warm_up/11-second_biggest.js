@@ -5,8 +5,8 @@ const userInput = process.argv.slice(2);
 
 // If there are no arguments or only one argument, print 0 and exit
 if (userInput.length <= 1) {
-    console.log(0);
-    process.exit(0);
+  console.log(0);
+  process.exit(0);
 }
 
 // Convert all arguments to integers

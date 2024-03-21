@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 // Define the add function with the given prototype
-function add(a, b) {
+function add (a, b) {
   return a + b; // Perform addition and return the result
 }
 
