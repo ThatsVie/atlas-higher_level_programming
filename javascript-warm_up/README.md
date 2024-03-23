@@ -130,7 +130,7 @@ Navigate to javascript-warm_up directory
 ```bash
 cd javascript-warm_up
 ```
-**0-javascript_is_amazing.js:**
+### 0-javascript_is_amazing.js:
 
 Input this command in your terminal:
 
@@ -151,7 +151,7 @@ Since no issues are found in the code, semistandard exits without producing any 
 
 ![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/a1348838-19eb-45c6-a978-307b29901560)
 
-**1-multi_languages.js**
+### 1-multi_languages.js
 
 Input this command in your terminal:
 
@@ -165,7 +165,7 @@ The JavaScript code inside 1-multi_languages.js contains three console.log() sta
 
 ![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/e558e3aa-b5f8-4d03-9592-d3d655925220)
 
-**2-arguments.js**
+### 2-arguments.js
 
 These commands are executing the JavaScript file named 2-arguments.js using the Node.js runtime environment. When you run each of these commands in your terminal, Node.js executes the JavaScript code contained in the file.
 
@@ -197,7 +197,7 @@ When multiple arguments ("Puggie" and "Wuggie) are provided after the script nam
 
 ![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/47ae6236-5bdb-46e4-a567-410a74a33e99)
 
-**3-value_argument.js**
+### 3-value_argument.js
 
 These commands are executing a JavaScript file named 3-value_argument.js using the Node.js runtime environment. When you run each of these commands in your terminal, Node.js executes the JavaScript code contained in the file.
 
@@ -219,7 +219,7 @@ When one argument ("Puggie") is provided after the script name, the JavaScript c
 
 ![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/41baf691-17fe-4601-a588-d84608efaf44)
 
-**4-concat.js**
+### 4-concat.js
 
 These commands are executing a JavaScript file named 4-concat.js using the Node.js runtime environment. When you run each of these commands in your terminal, Node.js executes the JavaScript code contained in the file.
 
@@ -249,7 +249,7 @@ When no arguments are provided after the script name, the JavaScript code inside
 
 ![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/0990e759-e30a-452a-8f73-ff107daa8de5)
 
-**5-to_integer.js**
+### 5-to_integer.js
 
 These commands are executing a JavaScript file named 5-to_integer.js using the Node.js runtime environment. When you run each of these commands in your terminal, Node.js executes the JavaScript code contained in the file.
 
@@ -297,7 +297,7 @@ When the argument "Pugs" (without quotes) is provided after the script name, the
 
 ![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/13793e91-1b1a-4d41-a9d2-d04f74b142dc)
 
-**6-multi_languages_loop.js**
+### 6-multi_languages_loop.js
 
 Input this command in your terminal:
 ```bash
@@ -308,7 +308,7 @@ The command ./6-multi_languages_loop.js is executing a JavaScript script named 6
 
 ![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/abb7671a-aef0-46e1-8346-083728bbf6c0)
 
-**7-multi_c.js**
+### 7-multi_c.js
 
 Input this command in your terminal:
 
@@ -343,7 +343,7 @@ This command executes the JavaScript script named 7-multi_c.js with the argument
 
 ![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/5cad04d8-17f3-42e3-9e22-1f86a1704631)
 
-**8-square.js**
+### 8-square.js
 
 Input this command in your terminal:
 
@@ -387,7 +387,7 @@ This command executes the JavaScript script named 8-square.js with the argument 
 
 ![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/49044db0-3b41-424b-835c-40c322d53b0a)
 
-**9-add.js**
+### 9-add.js
 
 Input this command in your terminal:
 
@@ -407,9 +407,10 @@ Similar to the first command, this command executes the 9-add.js script with two
 
 ![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/5fff4789-5ffc-46d8-a859-652b772a7de0)
 
-**10-factorial.js**
+### 10-factorial.js
 
 Input this command in your terminal:
+
 ```bash
 ./10-factorial.js
 ```
@@ -441,7 +442,7 @@ Similarly, the script is executed with the argument 333. Inside the script, it c
 
 ![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/33812835-80c9-4013-8122-fdb1da737710)
 
-**11-second_biggest.js**
+### 11-second_biggest.js
 
 Input this command in your terminal:
 ```bash
@@ -467,7 +468,7 @@ In this command, the script is executed with multiple arguments: 4 2 5 3 0 -3. I
 
 ![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/449c6129-6dbf-4803-a211-e49ac8899551)
 
-**12-object.js**
+### 12-object.js
 
 Input this command in your terminal:
 
@@ -480,7 +481,7 @@ The script defines an object myObject with type and value properties initially s
 
 ![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/0437ff9d-1080-45e8-b1c4-4f4269170d56)
 
-**13-add.js**
+### 13-add.js
 
 Input this command in your terminal:
 ```bash
