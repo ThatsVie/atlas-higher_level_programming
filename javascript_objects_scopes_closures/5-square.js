@@ -1,22 +1,12 @@
 #!/usr/bin/node
 
-// Importing the Rectangle class from the './4-rectangle' module.
-const Rectangle = require('./4-rectangle');
-
-// Defining the Square class that extends the Rectangle class.
-class Square extends Rectangle {
+// Exporting a class named Square that extends the Rectangle class
+// imported from the './4-rectangle.js' module.
+module.exports = class Square extends require('./4-rectangle.js') {
+  // Define the constructor function for the Square class.
   constructor (size) {
-    // Calling the constructor of the parent class (Rectangle) using super().
-    // Passing the size argument to initialize both width and height attributes of the square.
+    // Call the constructor of the parent class (Rectangle) using super().
+    // Pass the size argument to initialize both width and height attributes of the square.
     super(size, size);
-
-    // Validating that the size is a positive number.
-    if (size <= 0 || isNaN(size)) {
-      // If the size is not a positive number or is NaN, throw an error.
-      throw new Error('Size must be a positive number.');
-    }
   }
-}
-
-// Exporting the Square class to make it available for use in other modules.
-module.exports = Square;
+};
