@@ -1,18 +1,17 @@
 #!/usr/bin/node
 
-// Exporting a class named Square that extends the Rectangle class
-// imported from the './4-rectangle.js' module.
-module.exports = class Square extends require('./4-rectangle.js') {
+// Import the Rectangle class from the './4-rectangle.js' module.
+const Rectangle = require('./4-rectangle.js');
+
+// Define the Square class that extends the Rectangle class.
+class Square extends Rectangle {
   // Define the constructor function for the Square class.
-  constructor(size) {
-    if (size <= 0) {
-      // If size is less than or equal to 0, log 'undefined undefined' to the stdout and return.
-      console.log('undefined undefined');
-      return;
-    }
-    
+  constructor (size) {
     // Call the constructor of the parent class (Rectangle) using super().
     // Pass the size argument to initialize both width and height attributes of the square.
     super(size, size);
   }
-};
+}
+
+// Export the Square class to make it available for use in other modules.
+module.exports = Square;
