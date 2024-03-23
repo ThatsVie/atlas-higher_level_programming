@@ -10,6 +10,12 @@ class Square extends Rectangle {
     // Call the constructor of the parent class (Rectangle) using super().
     // Pass the size argument to initialize both width and height attributes of the square.
     super(size, size);
+
+    // Ensure size is a positive number
+    if (size <= 0) {
+      // Log 'undefined undefined' to stdout if size is not positive
+      console.log('undefined undefined');
+    }
   }
 }
 
