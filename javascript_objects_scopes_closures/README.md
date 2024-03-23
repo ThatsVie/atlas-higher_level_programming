@@ -47,6 +47,38 @@ sudo npm install semistandard --global
 
 ## Tasks Overview
 
+### 0-rectangle.js:
+
+This file contains an empty class `Rectangle` defined using the class notation. It serves as the starting point for creating a `Rectangle` class with properties and methods.
+
+### 0-main.js:
+
+This file is a script that demonstrates the usage of the `Rectangle` class defined in `0-rectangle.js`. It imports the `Rectangle` class, creates an instance of `Rectangle` named `r1`, and prints out the instance and its constructor.
+
+### 1-rectangle.js:
+
+This script defines a class Rectangle with a constructor that initializes width and height attributes based on the parameters passed to it.
+
+### 1-main.js:
+
+This script is written in Node.js and serves as a demonstration of the Rectangle class defined in 1-rectangle.js. It imports the Rectangle class using require('./1-rectangle'), creates multiple instances of Rectangle with different sets of parameters, and then logs the instances and their properties to the console.
+
+### 2-rectangle.js:
+
+This file defines a class Rectangle using the class notation. The class has a constructor that initializes the width and height attributes if both parameters provided are positive integers. If w or h is not a positive integer or equal to 0, it returns an empty object.
+
+### 2-main.js:
+
+This script demonstrates the usage of the Rectangle class defined in 2-rectangle.js. It imports the Rectangle class, creates multiple instances of Rectangle with different sets of parameters, and then logs the instances and their properties to the console.
+
+### 3-rectangle.js:
+
+This file defines a class named Rectangle using the class notation in JavaScript. The constructor takes two arguments, w for width and h for height. If both w and h are positive numbers, the instance attributes width and height are initialized with these values. The class also includes a method print() which prints a rectangle made of 'X' characters based on the width and height.
+
+### 3-main.js: 
+
+This script demonstrates the usage of the Rectangle class defined in 3-rectangle.js. It imports the Rectangle class, creates two instances (r1 and r2) with different width and height values, and calls the print() method on each instance to print rectangles made of 'X' characters.
+
 ## Usage
 Clone this repository
 
@@ -59,3 +91,76 @@ Navigate to javascript_objects_scopes_closures directory
 ```bash
 cd javascript_objects_scopes_closures
 ```
+### 0-rectangle.js & 0-main.js
+
+Input this command in your terminal:
+```bash
+./0-main.js
+```
+
+When you run ./0-main.js, the script 0-main.js is executed. Inside this script, it imports the Rectangle class from 0-rectangle.js using require('./0-rectangle'). Then, it creates an instance of the Rectangle class named r1 using new Rectangle(). Finally, it logs r1 and its constructor to the console. In this case, r1 is an empty instance of the Rectangle class, and its constructor is the Rectangle class itself. Therefore, you see Rectangle {} and [class Rectangle] printed in the terminal.
+
+![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/d44fad95-1be8-432f-8d16-b9569927abbf)
+
+### 1-rectangle.js & 1-main.js
+
+Input this command in your terminal:
+```bash
+./1-main.js
+```
+
+In the output, ./1-main.js creates instances of the Rectangle class with different sets of parameters, such as (2, 3), (2, -3), and (2). For the first instance, the width is set to 2 and the height is set to 3. For the second instance, the width is 2, but the height is -3. For the third instance, only the width is provided, resulting in the height being undefined. Each instance and its properties are then logged to the console.
+
+![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/77b726e9-8890-4d88-a8a2-4a4c9357d27d)
+
+### 2-rectangle.js & 2-main.js
+
+Input this command in your terminal:
+
+```bash
+./2-main.js
+```
+
+The output shows an instance of Rectangle with width 2 and height 3 is created (r1).
+Another instance is created with invalid parameters (negative height), resulting in an empty object (r2).
+Two more instances with invalid parameters (one with one parameter and the other with a height of 0) also result in empty objects (r3 and r4).
+
+![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/d1480ae7-a6ca-44ce-a488-ddc25e40e877)
+
+### 3-rectangle.js & 3-main.js
+
+Input this command in the terminal:
+```bash
+./3-main.js
+```
+
+This output indicates that the print() method of the Rectangle class successfully printed two rectangles. The first rectangle has a width of 2 and a height of 3, so it prints two rows of 'X' characters, each row containing two 'X' characters.
+The second rectangle has a width of 10 and a height of 5, so it prints five rows of 'X' characters, each row containing ten 'X' characters.
+
+![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/59fab7df-140e-4197-bd2f-aa5ee2cb0ea9)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
