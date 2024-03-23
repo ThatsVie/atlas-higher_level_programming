@@ -121,4 +121,141 @@ Update a script to replace a specific value within an object.
 Write a function that returns the addition of two integers, visible from outside.
 
 ## Usage
-Each task is implemented in a separate JavaScript file within the javascript-warm_up directory. To run a specific task, execute the corresponding script using Node.js. For example:
+Clone this repository
+```bash
+git clone https://github.com/ThatsVie/atlas-higher_level_programming.git
+```
+
+Navigate to javascript-warm_up directory
+```bash
+cd javascript-warm_up
+```
+**0-javascript_is_amazing.js:**
+
+Input this command in your terminal:
+
+```bash
+./0-javascript_is_amazing.js
+```
+
+The command ./0-javascript_is_amazing.js is executing a JavaScript file named 0-javascript_is_amazing.js using the Node.js runtime environment. The ./ before the filename indicates that the file is located in the current directory. When you run this command in your terminal, Node.js executes the JavaScript code in the specified file. As a result, it prints the string "JavaScript is amazing" to the terminal.
+
+Input this command in your terminal:
+
+```bash
+semistandard ./0-javascript_is_amazing.js
+```
+
+The command semistandard ./0-javascript_is_amazing.js is using the semistandard tool to check the JavaScript file 0-javascript_is_amazing.js for coding style and standards compliance. semistandard is a linter that enforces the semicolon standard for JavaScript code. It ensures that the code follows a specific set of rules, such as indentation, spacing, and semicolon usage. If there are any violations, semistandard will report them in the terminal along with the corresponding line numbers.
+Since no issues are found in the code, semistandard exits without producing any output, indicating that the code meets the style standards enforced by semistandard.
+
+![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/a1348838-19eb-45c6-a978-307b29901560)
+
+**1-multi_languages.js**
+
+Input this command in your terminal:
+
+```bash
+./1-multi_languages.js
+```
+
+The command ./1-multi_languages.js is executing a JavaScript file named 1-multi_languages.js using the Node.js runtime environment. When you run this command in your terminal, Node.js executes the JavaScript code contained in the file.
+
+The JavaScript code inside 1-multi_languages.js contains three console.log() statements, each printing a different string to the terminal. Therefore, executing the script results in printing the following lines to the terminal:
+
+![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/e558e3aa-b5f8-4d03-9592-d3d655925220)
+
+**2-arguments.js**
+
+These commands are executing the JavaScript file named 2-arguments.js using the Node.js runtime environment. When you run each of these commands in your terminal, Node.js executes the JavaScript code contained in the file.
+
+Input this commands in your terminal:
+```bash
+./2-arguments.js
+```
+
+Prints "No argument" to the terminal.
+When no additional arguments are provided after the script name, the JavaScript code inside 2-arguments.js detects this and prints "No argument" to the terminal.
+
+Input this command in your terminal:
+
+```bash
+./2-arguments.js Puggie
+```
+
+Prints "Argument found" to the terminal.
+When one argument ("Puggie") is provided after the script name, the JavaScript code inside 2-arguments.js detects this and prints "Argument found" to the terminal.
+
+Input this command in your terminal"
+
+```bash
+./2-arguments.js Puggie Wuggie
+```
+
+Prints "Arguments found" to the terminal.
+When multiple arguments ("Puggie" and "Wuggie) are provided after the script name, the JavaScript code inside 2-arguments.js detects this and prints "Arguments found" to the terminal.
+
+![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/47ae6236-5bdb-46e4-a567-410a74a33e99)
+
+**3-value_argument.js**
+
+These commands are executing a JavaScript file named 3-value_argument.js using the Node.js runtime environment. When you run each of these commands in your terminal, Node.js executes the JavaScript code contained in the file.
+
+Input this command in your terminal:
+
+```bash
+./3-value_argument.js
+```
+Prints "No argument" to the terminal.
+When no additional arguments are provided after the script name, the JavaScript code inside 3-value_argument.js detects this and prints "No argument" to the terminal.
+
+Input this command in your terminal:
+```bash
+./3-value_argument.js Puggie
+```
+
+Prints "Puggie" to the terminal.
+When one argument ("Puggie") is provided after the script name, the JavaScript code inside 3-value_argument.js detects this and prints the provided argument ("Puggie") to the terminal. The script simply prints the first argument passed to it.
+
+![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/41baf691-17fe-4601-a588-d84608efaf44)
+
+**4-concat.js**
+
+These commands are executing a JavaScript file named 4-concat.js using the Node.js runtime environment. When you run each of these commands in your terminal, Node.js executes the JavaScript code contained in the file.
+
+Input this command in your terminal:
+```bash
+./4-concat.js Pug Cool
+```
+Prints "Pug is Cool" to the terminal.
+When two arguments ("Pug" and "Cool") are provided after the script name, the JavaScript code inside 4-concat.js detects this and concatenates the two arguments with the string " is " in between, then prints the result ("Pug is Cool") to the terminal.
+
+Input this commandin your terminal:
+```bash
+./4-concat.js Pug
+```
+
+Prints "Pug is undefined" to the terminal.
+When one argument ("Pug") is provided after the script name, the JavaScript code inside 4-concat.js detects this and attempts to concatenate it with an undefined second argument. Since the second argument is not provided, it is undefined, resulting in the output "Pug is undefined".
+
+Input this command in your terminal:
+
+```bash
+./4-concat.js
+```
+
+Prints "undefined is undefined" to the terminal.
+When no arguments are provided after the script name, the JavaScript code inside 4-concat.js detects this and attempts to concatenate two undefined arguments, resulting in the output "undefined is undefined".
+
+![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/0990e759-e30a-452a-8f73-ff107daa8de5)
+
+
+
+
+
+
+
+
+
+
+
