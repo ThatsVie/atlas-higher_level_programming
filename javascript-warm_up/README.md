@@ -493,6 +493,7 @@ The script 13-main.js is executing the function add from the 13-add.js module. T
 ![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/1c10b258-b381-4d2c-8211-bc0589cc7f74)
 
 With love,
+
 Vie Paula - [Github](https://github.com/ThatsVie)
 
 ![download](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/dab7a278-e769-49a0-9530-c84221806220)
