@@ -1,4 +1,4 @@
-# Javascript Objects Scopes Closures
+# Javascript - Objects, Scopes, & Closures
 
 ## Learning Objectives
 
@@ -79,9 +79,35 @@ This script contains a class named Rectangle that defines a rectangle. It has a 
 
 This script demonstrates the usage of the Rectangle class defined in 4-rectangle.js. It imports the Rectangle class, creates an instance of Rectangle named r1 with width 2 and height 3, and prints it using the print() method. Then, it doubles the size of the rectangle using the double() method and prints it again. Finally, it rotates the rectangle using the rotate() method and prints it once more.
 
-###
+### 5-square.js:
 
+This script defines a class named Square using the class notation in JavaScript. It imports the Rectangle class from the 4-rectangle.js module. The Square class extends the Rectangle class, inheriting its properties and methods. The constructor of Square takes one argument, size, and calls the constructor of the parent class (Rectangle) using super(size, size), effectively initializing both the width and height attributes of the square. Finally, the Square class is exported to make it available for use in other modules.
 
+### 5-main.js:
+
+This script imports the Square class from 5-square.js. It creates an instance s1 of Square with a size of 4. It then calls the print() method of s1 to print the square, doubles its size using the double() method, and prints the doubled square again. The output of the script shows the square before and after doubling, where X represents the sides of the square.
+
+### 6-square.js:
+
+This script defines a class named Square that inherits from the BaseSquare class imported from 5-square.js.
+It includes an instance method charPrint(c) that prints the square using the character c.
+If c is undefined, it defaults to the character 'X'.
+The Square class is exported to make it available for use in other modules.
+
+### 6-main.js:
+
+This file imports the Square class from 6-square.js.
+It creates an instance s1 of Square with a size of 4.
+It calls the charPrint() method on s1 without passing any argument, which prints the square using the default character 'X'.
+Then, it calls the charPrint('C') method on s1, which prints the square using the character 'C'.
+
+### 7-occurrences.js:
+
+This script defines a function named nbOccurences that takes a list and a search element as arguments. It iterates over each element in the list and counts how many times the search element occurs. Finally, it returns the count of occurrences.
+
+### 7-main.js:
+
+This script imports the nbOccurences function and uses it to find the number of occurrences of specific elements in different lists. When executed, it prints out the number of occurrences of the search element in each list as per the provided test cases.
 
 
 ## Setup
@@ -160,7 +186,7 @@ The second rectangle has a width of 10 and a height of 5, so it prints five rows
 
 Input this command in your terminal:
 
-``bash
+```bash
 ./4-main.js
 ```
 
@@ -174,20 +200,47 @@ Rotate: After rotating the rectangle, its width becomes 6 and height becomes 4. 
 
 ![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/c3ab1923-a37d-45e2-8785-54038604e520)
 
+### 5-square.js & 5-main.js
 
+Input this command in your terminal:
 
+```bash
+./5-main.js
+```
 
+The command ./5-main.js is executing the script 5-main.js using the Node.js interpreter. This script imports the Square class from 5-square.js, creates an instance of Square with a size of 4, prints the square, doubles its size, and prints the doubled square. Therefore, running ./5-main.js will execute these actions and produce the corresponding output.
 
+![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/76bd6b4a-1dd0-419e-ab6c-fe6d264cdd97)
 
+### 6-square.js & 6-main.js
 
+Input this command in your terminal:
 
+```bash
+./6-main.js
+```
 
+The command ./6-main.js is executing the JavaScript file 6-main.js. This file contains code that utilizes the Square class defined in 6-square.js. When executed, 6-main.js creates an instance of Square named s1 with a size of 4. It then calls the charPrint() method on s1 without passing any argument, which prints the square using the default character 'X'. After that, it calls the charPrint('C') method on s1, which prints the square using the character 'C'.
 
+![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/d6d4df7e-21c9-42b1-b09b-ef2a7a28e2f5)
 
+### 7-occurrences.js & 7-main.js
 
+Input this command in your terminal:
 
+```bash
+./7-main.js
+```
 
+The command ./7-main.js is executing the JavaScript file 7-main.js. This file contains code that imports the nbOccurences function from 7-occurrences.js and uses it to find the number of occurrences of specific elements in different lists. When executed, the command will run the code in 7-main.js and produce output indicating the number of occurrences of the search element in each list.
 
+For the first list [1, 2, 3, 4, 5, 6], the search element 3 occurs once.
+
+For the second list [3, 2, 3, 4, 5, 3, 3], the search element 3 occurs four times.
+
+For the third list ["S", 12, "c", "S", "School", 8], the search element "S" occurs twice.
+
+![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/0a8a9e00-d275-439f-b7d5-13922b3a142c)
 
 
 
