@@ -109,6 +109,21 @@ This script defines a function named nbOccurences that takes a list and a search
 
 This script imports the nbOccurences function and uses it to find the number of occurrences of specific elements in different lists. When executed, it prints out the number of occurrences of the search element in each list as per the provided test cases.
 
+### 8-esrever.js:
+
+This script contains a Node.js module that exports a function named esrever.
+The esrever function takes a list as input and returns the reversed version of that list.
+It iterates over the original list in reverse order and constructs a new array with the elements in reverse order.
+The reversed list is then returned by the function.
+
+### 8-main.js:
+
+This script utilizes the esrever function defined in 8-esrever.js.
+It imports the esrever function and calls it with two different lists.
+The script then logs the reversed lists to the console, demonstrating the functionality of the esrever function.
+The output of the script shows the reversed version of each list.
+
+
 
 ## Setup
 To get started with the project, ensure you have Node.js installed on your system. [ Visit this site for details about which version may be appropriate for you ](https://github.com/nodejs/Release)
@@ -241,6 +256,26 @@ For the second list [3, 2, 3, 4, 5, 3, 3], the search element 3 occurs four time
 For the third list ["S", 12, "c", "S", "School", 8], the search element "S" occurs twice.
 
 ![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/0a8a9e00-d275-439f-b7d5-13922b3a142c)
+
+### 8-esrever.js & 8-main.js
+
+Input this command in your terminal:
+```bash
+./8-main.js
+```
+
+The command ./8-main.js executes the JavaScript file 8-main.js. This file contains code that imports the esrever function from 8-esrever.js and uses it to reverse the elements of different lists. When executed, the command will run the code in 8-main.js and produce output showing the reversed version of each list.
+
+![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/2b84fd31-66c6-4bff-aef8-b9c354d26cc8)
+
+
+
+
+
+
+
+
+
 
 
 
