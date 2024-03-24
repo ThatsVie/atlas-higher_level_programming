@@ -123,7 +123,22 @@ It imports the esrever function and calls it with two different lists.
 The script then logs the reversed lists to the console, demonstrating the functionality of the esrever function.
 The output of the script shows the reversed version of each list.
 
+### 9-logme.js:
 
+This script define a function named logMe that takes an item argument. 
+It initializes a property count on the logMe function to keep track of the number of arguments printed, if it's not already defined.
+It then logs the value of count followed by the current item.
+After printing, it increment the count property to prepare for the next call.
+
+### 9-main.js:
+This script imports the logMe function from 9-logme.js and calls it three times with different arguments: "Hello", "Best", and "School".
+
+### 10-converter.js:
+In this script the function 'converter' is exported. This function takes a base argument and returns another function convertToBase, which recursively converts a number from base 10 to the specified base. It does so by repeatedly dividing the number by the base and concatenating the remainders.
+
+### 10-main.js:
+
+In this script the converter function from 10-converter.js is imported. It's then used to create a converter function myConverter for a specific base (initially 10). This converter function is invoked multiple times with different numbers, and the converted results are logged to the console. After that, the base of the converter is changed to 16, and again the converter is used to convert numbers to hexadecimal format
 
 ## Setup
 To get started with the project, ensure you have Node.js installed on your system. [ Visit this site for details about which version may be appropriate for you ](https://github.com/nodejs/Release)
@@ -268,14 +283,41 @@ The command ./8-main.js executes the JavaScript file 8-main.js. This file contai
 
 ![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/2b84fd31-66c6-4bff-aef8-b9c354d26cc8)
 
+### 9-logme.js & 9-main.js
+
+Input this command in your terminal:
+
+```bash
+./9-main.js
+```
+
+The command ./9-main.js runs the JavaScript script 9-main.js using the Node.js interpreter. This script imports the logMe function from 9-logme.js and calls it three times with different arguments: "Hello", "Best", and "School".
+
+![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/a1d8204d-dfd3-4877-b0bf-ae095d26bbf5)
+
+### 10-converter.js & 10-main.js
+
+Input this command in your terminal:
+```bash
+./10-main.js
+```
+
+The command ./10-main.js runs the JavaScript file 10-main.js using the Node.js interpreter.
+
+In 10-main.js, we import the converter function from 10-converter.js. We create a converter function myConverter for base 10 initially, and then we call myConverter with different numbers (2, 12, 89) to convert them to base 10, which returns the numbers themselves since the base is 10.
+
+Then, we change the base of the converter to 16, and again call myConverter with different numbers (2, 12, 89). In base 16 (hexadecimal), 2 remains 2, 12 becomes 'C', and 89 becomes '59'.
+
+The output reflects the conversion of the given numbers to base 10 and base 16 respectively.
+
+![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/1cdb9934-8423-4a74-a9b4-ba83212ecfa4)
 
 
+With love,
 
+Vie Paula - [Github](https://github.com/ThatsVie)
 
-
-
-
-
+![images](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/5a94889f-1a83-41ad-a67a-21a27ca05385)
 
 
 
