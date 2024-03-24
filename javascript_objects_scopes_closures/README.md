@@ -36,14 +36,6 @@ Prototypes are a core concept in JavaScript's object-oriented programming model.
 
 Inheritance in JavaScript can be achieved through prototype chaining or using the class syntax introduced in ES6. By setting an object's prototype to another object, you can inherit properties and methods from the parent object, enabling code reuse and abstraction.
 
-## Setup
-To get started with the project, ensure you have Node.js installed on your system. [Visit the website](https://nodejs.org/en)
-
-
-Additionally, install semistandard globally using npm:
-```bash
-sudo npm install semistandard --global
-```
 
 ## Tasks Overview
 
@@ -61,11 +53,11 @@ This script defines a class Rectangle with a constructor that initializes width 
 
 ### 1-main.js:
 
-This script is written in Node.js and serves as a demonstration of the Rectangle class defined in 1-rectangle.js. It imports the Rectangle class using require('./1-rectangle'), creates multiple instances of Rectangle with different sets of parameters, and then logs the instances and their properties to the console.
+This script serves as a demonstration of the Rectangle class defined in 1-rectangle.js. It imports the Rectangle class using require('./1-rectangle'), creates multiple instances of Rectangle with different sets of parameters, and then logs the instances and their properties to the console.
 
 ### 2-rectangle.js:
 
-This file defines a class Rectangle using the class notation. The class has a constructor that initializes the width and height attributes if both parameters provided are positive integers. If w or h is not a positive integer or equal to 0, it returns an empty object.
+This script defiines a class Rectangle using the class notation. The class has a constructor that initializes the width and height attributes if both parameters provided are positive integers. If w or h is not a positive integer or equal to 0, it returns an empty object.
 
 ### 2-main.js:
 
@@ -73,12 +65,34 @@ This script demonstrates the usage of the Rectangle class defined in 2-rectangle
 
 ### 3-rectangle.js:
 
-This file defines a class named Rectangle using the class notation in JavaScript. The constructor takes two arguments, w for width and h for height. If both w and h are positive numbers, the instance attributes width and height are initialized with these values. The class also includes a method print() which prints a rectangle made of 'X' characters based on the width and height.
+This script defines a class named Rectangle using the class notation in JavaScript. The constructor takes two arguments, w for width and h for height. If both w and h are positive numbers, the instance attributes width and height are initialized with these values. The class also includes a method print() which prints a rectangle made of 'X' characters based on the width and height.
 
 ### 3-main.js: 
 
 This script demonstrates the usage of the Rectangle class defined in 3-rectangle.js. It imports the Rectangle class, creates two instances (r1 and r2) with different width and height values, and calls the print() method on each instance to print rectangles made of 'X' characters.
 
+### 4-rectangle.js
+
+This script contains a class named Rectangle that defines a rectangle. It has a constructor that takes two arguments, w for width and h for height, initializes the width and height properties of the rectangle, and returns an empty object if either w or h is not a positive integer. It also defines three methods: print(), rotate(), and double(). The print() method prints the rectangle using the character 'X', the rotate() method exchanges the width and height of the rectangle, and the double() method multiplies the width and height of the rectangle by 2.
+
+### 4-main.js
+
+This script demonstrates the usage of the Rectangle class defined in 4-rectangle.js. It imports the Rectangle class, creates an instance of Rectangle named r1 with width 2 and height 3, and prints it using the print() method. Then, it doubles the size of the rectangle using the double() method and prints it again. Finally, it rotates the rectangle using the rotate() method and prints it once more.
+
+###
+
+
+
+
+## Setup
+To get started with the project, ensure you have Node.js installed on your system. [ Visit this site for details about which version may be appropriate for you ](https://github.com/nodejs/Release)
+
+
+Additionally, install semistandard globally using npm:
+
+```bash
+sudo npm install semistandard --global
+```
 ## Usage
 Clone this repository
 
@@ -94,6 +108,7 @@ cd javascript_objects_scopes_closures
 ### 0-rectangle.js & 0-main.js
 
 Input this command in your terminal:
+
 ```bash
 ./0-main.js
 ```
@@ -105,6 +120,7 @@ When you run ./0-main.js, the script 0-main.js is executed. Inside this script, 
 ### 1-rectangle.js & 1-main.js
 
 Input this command in your terminal:
+
 ```bash
 ./1-main.js
 ```
@@ -130,6 +146,7 @@ Two more instances with invalid parameters (one with one parameter and the other
 ### 3-rectangle.js & 3-main.js
 
 Input this command in the terminal:
+
 ```bash
 ./3-main.js
 ```
@@ -139,13 +156,23 @@ The second rectangle has a width of 10 and a height of 5, so it prints five rows
 
 ![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/59fab7df-140e-4197-bd2f-aa5ee2cb0ea9)
 
+### 4-rectangle.js & 4-main.js
 
+Input this command in your terminal:
 
+``bash
+./4-main.js
+```
 
+The command ./4-main.js is executing the JavaScript file named 4-main.js using the Node.js interpreter. This script contains code that imports the Rectangle class from another file (4-rectangle.js), creates instances of the Rectangle class, and performs various operations such as printing, doubling, and rotating rectangles. When executed, this command runs the script and outputs the results of these operations to the console.
 
+Normal: The initial rectangle has a width of 2 and a height of 3, so it prints three rows of 'X' characters, each row containing two 'X' characters.
 
+Double: After doubling the size of the rectangle, its width becomes 4 and height becomes 6. Therefore, it prints six rows of 'X' characters, each row containing four 'X' characters.
 
+Rotate: After rotating the rectangle, its width becomes 6 and height becomes 4. Hence, it prints four rows of 'X' characters, each row containing six 'X' characters.
 
+![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/c3ab1923-a37d-45e2-8785-54038604e520)
 
 
 
