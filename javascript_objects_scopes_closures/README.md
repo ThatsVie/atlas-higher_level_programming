@@ -1,5 +1,7 @@
 # Javascript - Objects, Scopes, & Closures
 
+This repository contains a series of JavaScript scripts that demonstrate various concepts related to objects, scopes, and closures in JavaScript.
+
 ## Learning Objectives
 
 **Why JavaScript programming is amazing:**
