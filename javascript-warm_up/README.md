@@ -68,7 +68,7 @@ In JavaScript, dictionaries are referred to as objects and can be manipulated us
 In Node.js, you can import a file/module using the require function, specifying the path to the file/module you want to import.
 
 ## Setup
-To get started with the project, ensure you have Node.js installed on your system. [Visit the website](https://nodejs.org/en)
+To get started with the project, ensure you have Node.js installed on your system. [ Visit this site for details about which version may be appropriate for you ](https://github.com/nodejs/Release)
 
 
 Additionally, install semistandard globally using npm:
