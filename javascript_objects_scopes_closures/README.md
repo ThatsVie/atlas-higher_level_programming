@@ -155,7 +155,7 @@ Semistandard is a JavaScript coding style guide and linting tool that enforces c
 
 Run semistandard on your JavaScript files to check for adherence to the coding style guide.
 
-You can use ```bash semistandard --fix``` to automatically fix some of the linting errors.
+You can use ``` semistandard --fix``` to automatically fix some of the linting errors.
 
 ## Usage
 Clone this repository
