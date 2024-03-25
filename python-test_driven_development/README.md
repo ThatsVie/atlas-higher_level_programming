@@ -1,5 +1,5 @@
 # Python - Test-driven development
-Welcome to the Python Test-driven Development (TDD) repository! This collection of modules showcases the implementation of various functions, each rigorously tested using the TDD methodology.TDD involves writing tests for desired functionalities before implementing the actual code. Below, you'll find details about each module, its associated function, and corresponding unit tests.
+This collection of modules showcases the implementation of various functions, each rigorously tested using the TDD methodology.TDD involves writing tests for desired functionalities before implementing the actual code. Below, you'll find details about each module, its associated function, and corresponding unit tests.
 
 ## Modules and Functions
 
