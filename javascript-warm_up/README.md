@@ -76,6 +76,12 @@ Additionally, install semistandard globally using npm:
 sudo npm install semistandard --global
 ```
 
+Semistandard is a JavaScript coding style guide and linting tool that enforces consistent coding conventions, including the use of semicolons at the end of statements. It helps maintain clean, readable, and error-free code by ensuring adherence to standardized coding practices.
+
+Run semistandard on your JavaScript files to check for adherence to the coding style guide.
+
+You can use ```bash semistandard --fix``` to automatically fix some of the linting errors.
+
 ## Tasks Overview
 
 **0-javascript_is_amazing.js:** 
