@@ -236,7 +236,7 @@ Input this command in your terminal:
 Prints "Pug is Cool" to the terminal.
 When two arguments ("Pug" and "Cool") are provided after the script name, the JavaScript code inside 4-concat.js detects this and concatenates the two arguments with the string " is " in between, then prints the result ("Pug is Cool") to the terminal.
 
-Input this commandin your terminal:
+Input this command in your terminal:
 ```bash
 ./4-concat.js Pug
 ```
@@ -470,7 +470,7 @@ Input this command in your terminal:
 ./11-second_biggest.js 4 2 5 3 0 -3
 ```
 
-In this command, the script is executed with multiple arguments: 4 2 5 3 0 -3. Inside the script, it identifies the second biggest integer from the list (4 being the largest and 3 being the second largest) and prints 4 to the console.
+In this command, the script is executed with multiple arguments: 4 2 5 3 0 -3. Inside the script, it identifies the second biggest integer from the list (5 being the largest and 4 being the second largest) and prints 4 to the console.
 
 ![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/449c6129-6dbf-4803-a211-e49ac8899551)
 
