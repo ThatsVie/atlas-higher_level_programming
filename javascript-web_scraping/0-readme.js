@@ -8,7 +8,7 @@
 const fs = require('fs');
 
 // Define an asynchronous function to read and print the content of a file
-async function readAndPrintFileContent(filename) {
+async function readAndPrintFileContent (filename) {
   // Read the content of the file asynchronously
   fs.readFile(filename, 'utf-8', (error, data) => {
     // Check if an error occurred during file reading
