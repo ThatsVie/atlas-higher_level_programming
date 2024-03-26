@@ -14,13 +14,13 @@ In JavaScript, objects are key components used to store and organize data. You c
 
 (ES6, or ECMAScript 2015, is the sixth edition of the ECMAScript standard, which is the specification that JavaScript is based on. ES6 introduced many new features and enhancements to the JavaScript language, including arrow functions, classes, template literals, let and const keywords for variable declaration, and much more. It significantly improved the syntax and functionality of JavaScript, making it more powerful and expressive for developers.)
 
-**What this means:**
+**What `this` means:**
 
-The this keyword refers to the current execution context in JavaScript. Its value depends on how a function is called and can dynamically change. It's commonly used within object methods to access and manipulate object properties.
+The `this` keyword refers to the current execution context in JavaScript. Its value depends on how a function is called and can dynamically change. It's commonly used within object methods to access and manipulate object properties.
 
-**What undefined means:**
+**What `undefined` means:**
 
-In JavaScript, undefined is a primitive value that represents the absence of a value. It's returned when accessing a variable that has not been initialized, or when a function does not explicitly return a value.
+In JavaScript, `undefined` is a primitive value that represents the absence of a value. It's returned when accessing a variable that has not been initialized, or when a function does not explicitly return a value.
 
 **Why variable type and scope is important:**
 
@@ -43,11 +43,11 @@ Inheritance in JavaScript can be achieved through prototype chaining or using th
 
 ### 0-rectangle.js:
 
-This file contains an empty class `Rectangle` defined using the class notation. It serves as the starting point for creating a `Rectangle` class with properties and methods.
+This script contains an empty class `Rectangle` defined using the class notation. It serves as the starting point for creating a `Rectangle` class with properties and methods.
 
 ### 0-main.js:
 
-This file is a script that demonstrates the usage of the `Rectangle` class defined in `0-rectangle.js`. It imports the `Rectangle` class, creates an instance of `Rectangle` named `r1`, and prints out the instance and its constructor.
+This script demonstrates the usage of the `Rectangle` class defined in `0-rectangle.js`. It imports the `Rectangle` class, creates an instance of `Rectangle` named `r1`, and prints out the instance and its constructor.
 
 ### 1-rectangle.js:
 
@@ -59,7 +59,7 @@ This script serves as a demonstration of the Rectangle class defined in 1-rectan
 
 ### 2-rectangle.js:
 
-This script defiines a class Rectangle using the class notation. The class has a constructor that initializes the width and height attributes if both parameters provided are positive integers. If w or h is not a positive integer or equal to 0, it returns an empty object.
+This script defines a class Rectangle using the class notation. The class has a constructor that initializes the width and height attributes if both parameters provided are positive integers. If w or h is not a positive integer or equal to 0, it returns an empty object.
 
 ### 2-main.js:
 
