@@ -152,5 +152,31 @@ The output 3 indicates that the script has counted the number of movies where th
 
 ### 5-request_store.js
 
-5-request_store.js is a Node.js script designed to
+5-request_store.js is a Node.js script designed to get the contents of a webpage and stores it in a file.
+
+Input this commands in your terminal:
+```bash
+./5-request_store.js http://loripsum.net/api loripsum
+```
+
+This command executes the script 5-request_store.js, passing the Loripsum API URL (http://loripsum.net/api) as the first argument and the file path (loripsum) as the second argument.
+
+The script sends a request to the Loripsum API to fetch content and stores the response in a file named loripsum.
+
+Input this command in your terminal:
+```bash
+cat loripsum
+```
+
+This command prints the contents of the loripsum file to the terminal. The output shows the lorem ipsum text obtained from the Loripsum API and stored in the loripsum file.
+
+
+![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/adb2cb0a-9af0-4748-848b-64cd2f555346)
+
+
+
+
+
+
+
 
