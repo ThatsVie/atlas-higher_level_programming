@@ -18,6 +18,7 @@ Request Module: The request module simplifies making HTTP requests in Node.js. I
 Fetch API: In web browsers, the Fetch API provides a modern alternative to XMLHttpRequest for making network requests. It offers a more powerful and flexible interface for fetching resources asynchronously from the server. The Fetch API uses Promises, making it easier to handle asynchronous operations and chain requests.
 
 **How to read and write a file using fs module:**
+
 The fs (file system) module in Node.js provides functions for interacting with the file system. To read from a file, developers can use the fs.readFile() method, specifying the file path and encoding (optional) to receive the file's content asynchronously. To write to a file, the fs.writeFile() method is used, specifying the file path, data to be written, and encoding (optional). These methods allow developers to perform file I/O operations, such as reading configuration files, logging data, or storing application data.
 
 **Additionally:**
