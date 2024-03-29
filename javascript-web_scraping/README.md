@@ -137,7 +137,20 @@ These commands allow you to retrieve and print the title of a specific Star Wars
 
 ### 4-starwars_count.js
 
-4-starwars_count.js is a Node.js script designed to
+4-starwars_count.js is a Node.js script designed to print the number of movies where the character "Wedge Antilles" is present.
 
+Input this command in your terminal:
+```bash
+./4-starwars_count.js https://swapi-api.hbtn.io/api/films
+```
 
+The command ./4-starwars_count.js https://swapi-api.hbtn.io/api/films is running the script 4-starwars_count.js with the URL https://swapi-api.hbtn.io/api/films as a command-line argument.
+
+The output 3 indicates that the script has counted the number of movies where the character "Wedge Antilles" is present, and in this case, it has found that there are three such movies.
+
+![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/ad5cdbbf-1be9-4f11-a2ce-42427fbe9525)
+
+### 5-request_store.js
+
+5-request_store.js is a Node.js script designed to
 
