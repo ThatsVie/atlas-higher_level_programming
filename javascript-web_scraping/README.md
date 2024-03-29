@@ -55,3 +55,37 @@ echo "": This command simply prints a newline character to the terminal, providi
 
 The output of cat my_file.txt displays the content of the file my_file.txt, which is "Pugs bring me joy". The echo "" command is used here to add an empty line after the content of the file for better readability.
 
+### 2-statuscode.js
+
+2-statuscode.js is a Node.js script designed to make a GET request to a specified URL and display the status code of the response.
+
+Input this command in your terminal: 
+```bash
+./2-statuscode.js https://homewardboundpugs.com/
+```
+
+This command runs the script 2-statuscode.js with the URL https://homewardboundpugs.com/ as an argument.
+
+The script makes a GET request to the specified URL using the request module.
+
+The server responds with a status code of 200, which means "OK". This indicates that the request was successful, and the resource exists on the server.
+
+The script prints code: 200 to the console, indicating that the status code returned by the server is 200.
+
+Input this command in your terminal:
+```bash
+./2-statuscode.js https://homewardboundpugs.com/nope
+```
+This command runs the script 2-statuscode.js with the URL https://homewardboundpugs.com/nope as an argument.
+
+The script makes a GET request to the specified URL using the request module.
+
+The server responds with a status code of 404, which means "Not Found". This indicates that the requested resource could not be found on the server.
+
+The script prints code: 404 to the console, indicating that the status code returned by the server is 404.
+
+![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/36b4a941-3d59-4b63-b81d-96a11943f982)
+
+The commands are testing the script with different URLs to see how it behaves when making GET requests to different endpoints. The script retrieves the status codes returned by the server and prints them to the console, allowing you to verify whether the requests were successful and the resources exist on the server.
+
+### 3-starwars_title.js
