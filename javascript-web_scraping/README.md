@@ -1,5 +1,48 @@
 # Javascript Web Scraping
+
+## Learning Objectives
+
+## Tasks Overview
+
+## Setup
+To get started with the project, ensure you have Node.js installed on your system. [ Visit this site for details about which version may be appropriate for you ](https://github.com/nodejs/Release)
+
+
+Additionally, install semistandard globally using npm:
+
+```bash
+sudo npm install semistandard --global
+```
+Semistandard is a JavaScript coding style guide and linting tool that enforces consistent coding conventions, including the use of semicolons at the end of statements. It helps maintain clean, readable, and error-free code by ensuring adherence to standardized coding practices.
+
+Run semistandard on your JavaScript files to check for adherence to the coding style guide.
+
+You can use ``` semistandard --fix``` to automatically fix some of the linting errors
+
+Before running the scripts, make sure you have installed the request module. You can install it globally using npm:
+
+```bash
+$ sudo npm install request --global
+```
+After installing the module, export the NODE_PATH to point to the global node_modules directory:
+```bash
+$ export NODE_PATH=/usr/lib/node_modules
+```
+
+Note: The request module has been deprecated since February 2020. However, it’s a simple and powerful module for practicing web scraping in JavaScript.
+
 ## Usage
+Clone this repository
+
+```bash
+git clone https://github.com/ThatsVie/atlas-higher_level_programming.git
+```
+
+Navigate to javascript_objects_scopes_closures directory
+
+```bash
+cd javascript-web_scraping
+```
 ### 0-readme.js
 
 0-readme.js is a Node.js script designed to read and print the content of a file specified as a command line argument.
@@ -173,10 +216,25 @@ This command prints the contents of the loripsum file to the terminal. The outpu
 
 ![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/adb2cb0a-9af0-4748-848b-64cd2f555346)
 
+### 6-completed_tasks.js
+
+6-completed_tasks.js is a Node.js script designed to compute the number of tasks completed by user id.
+
+Input this command in your terminal:
+```bash
+./6-completed_tasks.js https://jsonplaceholder.typicode.com/todos
+```
+
+The command is executing a Node.js script named 6-completed_tasks.js, and it's passing the URL https://jsonplaceholder.typicode.com/todos as a command-line argument to the script.
+
+Upon execution, the script retrieves data from the specified API URL, which is a list of todos. It then processes the todos to count the number of completed tasks for each user and prints the results to the console.
+
+The output displayed is a JSON object where each key represents a user ID, and the corresponding value represents the number of completed tasks by that user.
 
 
+![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/d10d1e83-5bc1-4d0a-83bb-9990ca3fe824)
 
 
+With love,
 
-
-
+Vie Paula - [Github](https://github.com/ThatsVie)
