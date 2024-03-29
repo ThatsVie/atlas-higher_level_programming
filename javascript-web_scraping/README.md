@@ -1,8 +1,29 @@
 # Javascript Web Scraping
+This repository contains a set of Node.js scripts for web scraping tasks. Each script is designed to perform a specific action related to web scraping and data retrieval.
 
 ## Learning Objectives
 
 ## Tasks Overview
+**0-readme.js**
+This script reads and prints the content of a file.
+
+**1-writeme.js**
+This script writes a string to a file.
+
+**2-statuscode.js**
+This script displays the status code of a GET request to a specified URL.
+
+**3-starwars_title.js**
+This script prints the title of a Star Wars movie based on the episode number.
+
+**4-starwars_count.js**
+This script prints the number of movies where the character “Wedge Antilles” is present.
+
+**5-request_store.js**
+This script gets the contents of a webpage and stores it in a file.
+
+**6-completed_tasks.js**
+This script computes the number of tasks completed by user ID from a specified API URL.
 
 ## Setup
 To get started with the project, ensure you have Node.js installed on your system. [ Visit this site for details about which version may be appropriate for you ](https://github.com/nodejs/Release)
@@ -24,12 +45,13 @@ Before running the scripts, make sure you have installed the request module. You
 ```bash
 $ sudo npm install request --global
 ```
+
 After installing the module, export the NODE_PATH to point to the global node_modules directory:
 ```bash
 $ export NODE_PATH=/usr/lib/node_modules
 ```
 
-Note: The request module has been deprecated since February 2020. However, it’s a simple and powerful module for practicing web scraping in JavaScript.
+**Note:** The request module has been deprecated since February 2020. However, it’s a simple and powerful module for practicing web scraping in JavaScript.
 
 ## Usage
 Clone this repository
