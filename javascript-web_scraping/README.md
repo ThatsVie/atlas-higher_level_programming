@@ -23,7 +23,7 @@ This command runs the script 0-readme.js with the command line argument nonexist
 ![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/65f3b588-c547-49a9-9f8c-b8a88a43a02d)
 
 
-In summary, the script 0-readme.js is responsible for reading the content of a file specified as a command line argument and printing it to the console. If the file exists, its content is printed. If the file does not exist or there is an error during reading, an appropriate error message is displayed.
+The script 0-readme.js is responsible for reading the content of a file specified as a command line argument and printing it to the console. If the file exists, its content is printed. If the file does not exist or there is an error during reading, an appropriate error message is displayed.
 
 ### 1-writeme.js
 
@@ -89,3 +89,55 @@ The script prints code: 404 to the console, indicating that the status code retu
 The commands are testing the script with different URLs to see how it behaves when making GET requests to different endpoints. The script retrieves the status codes returned by the server and prints them to the console, allowing you to verify whether the requests were successful and the resources exist on the server.
 
 ### 3-starwars_title.js
+
+3-starwars_title.js is a Node.js script designed to print the title of a Star Wars movie where the episode number matches a given integer. It uses [This Star Wars API](https://swapi-api.hbtn.io/).
+
+Input this command in your terminal:
+```bash
+./3-starwars_title.js 1
+```
+
+This command runs the script 3-starwars_title.js with the movie ID 1 as an argument.
+
+The script makes a request to the Star Wars API to retrieve information about the movie with episode number 1.
+
+The Star Wars movie with episode number 1 is "A New Hope".
+
+The script prints A New Hope to the console.
+
+Input this command in your terminal: 
+```bash
+./3-starwars_title.js 5
+```
+
+This command runs the script 3-starwars_title.js with the movie ID 5 as an argument.
+
+The script makes a request to the Star Wars API to retrieve information about the movie with episode number 5.
+
+The Star Wars movie with episode number 5 is "Attack of the Clones".
+
+The script prints Attack of the Clones to the console.
+
+Input this command in your terminal:
+```bash
+./3-starwars_title.js Pugs
+```
+
+This command runs the script 3-starwars_title.js with the argument Pugs, which is an invalid movie ID.
+
+The script attempts to make a request to the Star Wars API with the invalid movie ID.
+
+Since Pugs is not a valid movie ID, the request fails, and the server responds with a status code of 404 (Not Found).
+
+The script handles this error by printing the error message Request failed with status: 404 to the console.
+
+![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/83ca9888-49f1-4027-b738-b078cf532bd0)
+
+These commands allow you to retrieve and print the title of a specific Star Wars movie by providing its episode number (movie ID) as a command line argument. If the provided movie ID is invalid, the script handles the error appropriately and prints an error message.
+
+### 4-starwars_count.js
+
+4-starwars_count.js is a Node.js script designed to
+
+
+
