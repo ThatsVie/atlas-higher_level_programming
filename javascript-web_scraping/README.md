@@ -86,7 +86,7 @@ Clone this repository
 git clone https://github.com/ThatsVie/atlas-higher_level_programming.git
 ```
 
-Navigate to javascript_objects_scopes_closures directory
+Navigate to javascript-web_scraping directory
 
 ```bash
 cd javascript-web_scraping
@@ -137,9 +137,11 @@ cat my_file.txt ; echo ""
 
 This command is used to display the contents of the file my_file.txt. 
 
-cat my_file.txt: This command reads the contents of the file my_file.txt and prints it to the terminal.
-;: This is a command separator, allowing multiple commands to be executed sequentially on one line.
-echo "": This command simply prints a newline character to the terminal, providing a clean separation between the output of cat and the command prompt.
+**cat my_file.txt:** This command reads the contents of the file my_file.txt and prints it to the terminal.
+
+**;:** This is a command separator, allowing multiple commands to be executed sequentially on one line.
+
+**echo "":** This command simply prints a newline character to the terminal, providing a clean separation between the output of cat and the command prompt.
 
 ![image](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/b137ee44-5e88-4c1f-abd2-3a8031d8080f)
 
