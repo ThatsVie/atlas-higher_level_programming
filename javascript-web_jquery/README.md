@@ -235,6 +235,22 @@ Together, these files work in tandem to create a web page where users can click 
 <li>6-main.html provides the structure and content of the webpage, while 6-script.js enhances the webpage's functionality by adding interactivity. The JavaScript file is linked to the HTML file via a script tag, allowing it to access and manipulate the HTML elements defined in the HTML file.6-script.js is responsible for responding to user clicks on the "Update the header" div element and updating the text content of the header accordingly.
 </ul> </li> </details>
 
+
+<details>
+<summary>7-main.html and 7-script.js</summary>
+<ul>
+  <li>
+    7-main.html is an HTML file that sets up the structure of a web page. It includes a header, a div element with the id "character", and a footer. It includes a script tag that links to the JavaScript file 7-script.js, allowing it to execute within the HTML document.</li>
+
+<li>7-script.js is a JavaScript file that contains the logic for fetching character data from a specific API endpoint (https://swapi-api.hbtn.io/api/people/5/?format=json) using JQuery's AJAX method $.get(). Once the data is retrieved, it updates the content of the div id="character" element with the character's name extracted from the API response.</li>
+
+<li>7-main.html serves as the HTML structure of the web page, while 7-script.js contains the dynamic behavior of fetching and displaying the character's name. When the HTML file is loaded in a web browser, the JavaScript file is executed, and the character's name is fetched and displayed in the designated div element, as specified in the HTML file.
+
+</ul> </li> </details>
+
+
+
+
 ## Usage
 
 Clone this repository
@@ -401,6 +417,17 @@ The task is to write a JavaScript script that updates the text content of the he
 
 ![6-main html after clicking Update the header](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/247cf342-03d7-45cc-8baa-babdbe0e6ebc)
 
+
+
+<details>
+<summary> 7-main.html and 7-script.js  </summary>
+<ul>
+
+The task requires writing a JavaScript script that fetches character data from a specific URL (https://swapi-api.hbtn.io/api/people/5/?format=json) and displays the character's name in the HTML tag div id="character". The script should utilize the JQuery API for DOM manipulation.
+
+7-script.js uses JQuery to wait for the document to be fully loaded ($(document).ready()). Then, it makes a GET request to the provided URL using $.get(). Upon receiving the response, it updates the text content of the div id="character" element with the character's name extracted from the response data.
+
+![7-main html](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/988841dd-5bdd-4cf2-aadb-b8de13c02bcd)
 
 With love,
 
