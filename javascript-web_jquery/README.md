@@ -199,7 +199,29 @@ When the div element is clicked, it adds the class "red" to the header element u
 
 <li>4-script.js is a JavaScript file containing the script to toggle the class of the header element between "red" and "green" when the user clicks on the "Toggle header" div. It uses jQuery to select the elements and add event listeners. When the "Toggle header" div is clicked, it toggles the class of the header element between "red" and "green" using the .toggleClass() method. </li>
 
-<li>4-main.html provides the structure and elements for the webpage, while 4-script.js provides the functionality to toggle the class of the <header> element in response to user interaction. 4-script.js is linked to 4-main.html using the <script> tag, allowing the browser to execute the JavaScript code when the HTML file is loaded.
+<li>4-main.html provides the structure and elements for the webpage, while 4-script.js provides the functionality to toggle the class of the header element in response to user interaction. 4-script.js is linked to 4-main.html using the script tag, allowing the browser to execute the JavaScript code when the HTML file is loaded.
+</ul> </li> </details>
+
+  <details>
+<summary>5-main.html and 5-script.js</summary>
+<ul>
+  <li>
+    
+5-main.html is an HTML file that defines the structure of a web page.
+It includes a header tag with the text "First HTML page", a div tag with the id "add_item", and a ul tag with the class "my_list". Additionally, it includes a script tag to import the JQuery library and another script tag to link the JavaScript file (5-script.js).
+  
+The purpose of this file is to provide the content and structure for the web page. </li>
+
+<li>5-script.js is a JavaScript file that contains the script responsible for adding a new li element to the list when the user clicks on the "Add item" button.
+It uses JQuery to add a click event listener to the div element with the id "add_item". When this element is clicked, a new li element with the text "Item" is appended to the ul element with the class "my_list".
+  
+The script interacts with the HTML elements defined in 5-main.html using JQuery selectors and methods.
+
+The purpose of this file is to provide the interactivity and behavior for the web page. </li>
+
+<li>5-main.html serves as the markup for the web page, defining its structure and content.
+5-script.js provides the functionality to the web page by adding interactivity through JavaScript.
+Together, these files work in tandem to create a web page where users can click on a button to dynamically add new list items. 
 </ul> </li> </details>
   
 ## Usage
@@ -322,6 +344,32 @@ The task requires writing a JavaScript script that toggles the class of the head
 **Clicking on Toggle header again to show interaction**
 
 ![4-main html toggle again](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/766b510b-0382-43ad-992f-0dfed852d593)
+
+</ul>  </details>
+
+<details>
+<summary> 5-main.html and 5-script.js  </summary>
+<ul>
+  
+5-main.html serves as the markup for the web page, defining its structure and content.
+
+5-script.js provides the functionality to the web page by adding interactivity through JavaScript.
+  
+The task requires writing a JavaScript script that adds a new li element containing the text "Item" to a list (UL.my_list) when the user clicks on the div tag with the id "add_item". The script must use the JQuery API and cannot use document.querySelector().
+
+5-script.js adds a click event listener to the div element with the id "add_item". When the user clicks on this element, the script appends a new li element with the text "Item" to the ul element with the class "my_list". It achieves this by using JQuery's .click() method to listen for clicks on the specified element and .append() method to add the new li element to the list.
+
+**Before clicking Add item**
+
+![5-main html before clicking add item](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/3972013c-32db-42d0-89f2-04eca1b2a0bc)
+
+**After clicking Add item**
+
+![5-main html after clicking add item once](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/315c7dca-8275-491d-855b-c821242affab)
+
+**After clicking Add item a few times**
+
+![5-main html after clicking add item a few times](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/ee2ce9f8-893a-4989-90e2-e3e4a820aa7f)
 
 </ul>  </details>
 
