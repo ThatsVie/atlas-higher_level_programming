@@ -1,4 +1,5 @@
 # Javascript Web Jquery
+This repository contains JavaScript scripts developed using the JQuery library for various web development tasks. Each script performs a specific function, ranging from DOM manipulation to fetching data from external APIs and updating HTML content dynamically.
 
 ## Learning Objectives
 
@@ -98,7 +99,7 @@ You can listen to DOM events using JavaScript by selecting elements and attachin
 Listening to user events involves capturing interactions initiated by users, such as clicks, mouse movements, keyboard inputs, etc. In JavaScript, you can bind event listeners to elements using methods like addEventListener or JQuery methods like on() to respond to user actions effectively.
 </ul> </li> </details>
 
-## Task Overview
+## Task Summary
 
 <details>
 <summary>0-main.html and 0-script.js</summary>
@@ -262,7 +263,22 @@ The JavaScript file (8-script.js) is responsible for fetching data about Star Wa
 The HTML file includes the JavaScript file using a script tag, allowing the JavaScript code to interact with and manipulate the HTML elements defined in the HTML file.
 </ul> </li> </details>
 
-## Usage
+<details>
+<summary>9-main.html and 9-script.js</summary>
+<ul>
+  <li>
+9-main.html is an HTML file that serves as the structure for a web page. It includes a header, a div with the ID hello where the translation of "hello" will be displayed, and a footer section. It also imports JQuery library and a JavaScript file named 9-script.js using script tags. This HTML file is responsible for displaying content to the user. </li>
+
+<li>9-script.js is a JavaScript file that contains the logic for fetching a translation of "hello" from a specified URL and updating the content of the div element with the ID hello accordingly. It uses the JQuery API to make an AJAX GET request to the URL https://hellosalut.stefanbohacek.dev/?lang=fr. If the request is successful, it updates the text content of the div element with the translation obtained from the response data. If the request fails, it displays an error message in the div element. </li>
+
+<li>9-main.html provides the structure and layout for the web page.
+  
+9-script.js provides the functionality for fetching the translation and updating the content dynamically.
+
+9-main.html imports 9-script.js to utilize its functionality, allowing the web page to fetch and display the translation of "hello" to the user.
+</ul> </li> </details>
+
+## Usage/ Task Descriptions with Visuals
 
 Clone this repository
 
@@ -462,6 +478,23 @@ If the AJAX request fails, an error message is displayed in the list.
 
 </ul>  </details>
 
+<details>
+<summary> 9-main.html and 9-script.js  </summary>
+<ul>
+
+This task involves writing a JavaScript script that fetches a translation of "hello" in French from a specific URL and displays it in an HTML div element with the ID hello. The script must use the JQuery API and be imported from the head tag of an HTML document.
+
+9-script.js starts by waiting for the document to be fully loaded using $(function () {...}).
+
+It then makes an AJAX GET request to the specified URL (https://hellosalut.stefanbohacek.dev/?lang=fr).
+
+If the request is successful, the script updates the text content of the div element with the ID hello with the translation of "hello" obtained from the response data.
+
+If the request fails, it displays an error message in the div element.
+
+![9-main html](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/242ee27b-d30c-48b0-8281-7230cab4b908)
+
+</ul>  </details>
 
 With love,
 
