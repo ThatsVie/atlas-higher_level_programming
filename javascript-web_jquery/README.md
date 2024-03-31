@@ -72,7 +72,6 @@ The code in 0-script.js achieves the task specified in the instructions by direc
 
 The purpose of 0-script.js is to add dynamic behavior to the web page by responding to user actions or modifying the content of HTML elements.
 
-**Relationship:**
 
 0-main.html and 0-script.js are related in the sense that 0-main.html includes 0-script.js using a script tag, effectively linking the JavaScript code to the HTML document.
 
@@ -82,6 +81,15 @@ In this specific task, 0-script.js updates the text color of the <header> elemen
 
 Both files work together to create the desired functionality on the web page, demonstrating the interaction between HTML and JavaScript in a web development context.
 
+**1-main.html**
+
+1-main.html is an HTML file that defines the structure of a web page. It includes a header element and a footer element, along with a reference to an external JavaScript file (1-script.js) using the script tag. The HTML file also imports the JQuery library using a CDN link in the <head> section.
+
+**1-script.js**
+
+1-script.js is a JavaScript file containing code that uses the JQuery library to manipulate the HTML elements defined in 1-main.html. It selects the header element using $('header'), a JQuery selector, and changes its text color to red (#FF0000) using the .css() method provided by JQuery.
+
+The relationship between 1-main.html and 1-script.js is that 1-main.html serves as the HTML structure of the web page, while 1-script.js contains the JavaScript code that interacts with the HTML elements defined in 1-main.html. When the HTML file is loaded in a web browser, the browser also executes the JavaScript code from 1-script.js, allowing the manipulation of HTML elements as specified in the script.
 
 ## Usage
 
@@ -126,6 +134,16 @@ The task requires writing a JavaScript script to update the text color of the  h
 
 
 ![viewing 0-main html in browser and inspect open](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/db03bf12-0c75-4542-b530-c2e6b3a9e3fe)
+
+### 1-main.html and 1-script.js
+
+1-main.html provides the structure of the web page, and 1-script.js adds interactivity by manipulating the content of the HTML elements defined in 1-main.html. They are linked together through the script tag, allowing the JavaScript code to interact with the HTML document.
+
+This task requires writing a JavaScript script that changes the text color of the header element to red (#FF0000). However, unlike the previous task, this time, the JQuery API must be used to select the HTML tag, and the use of document.querySelector is prohibited. The script will be tested with the provided HTML file.
+
+1-script.js utilizes the JQuery API to select the <header> element using $('header'). Then, it modifies the text color of the <header> element to red (#FF0000) by using the .css() method provided by JQuery.
+
+![viewing 1-main html in browser and using inspect](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/59428922-95e8-4141-b056-22e50cafc15e)
 
 With love,
 
