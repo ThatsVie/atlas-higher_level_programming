@@ -78,9 +78,11 @@ cd javascript-web_jquery
 5. Right-click on the HTML file and select "Open with Live Server" from the context menu. This option is available if you have the Live Server extension installed and activated.
 6. VS Code will open your HTML file in a new tab in your default web browser, and the Live Server extension will start a local development server.
 7. Your HTML file should now be visible in the web browser at http://localhost:5500/ or a similar URL provided by Live Server.
-8. Interact with your HTML files in the browser to test their functionality, such as clicking on elements or observing any changes made by your JavaScript code.
+8. Right-click on the page and select "Inspect" or press Ctrl+Shift+I to open the browser's developer tools.
+9. Navigate to the "Console" tab in the developer tools to view any JavaScript-related logs or errors.
+10. Interact with your HTML files in the browser to test their functionality, such as clicking on elements or observing any changes made by your JavaScript code.
 
-These instructions guide you through opening your HTML files in VS Code, using the Live Server extension to launch a local development server, and viewing your HTML files in a web browser for testing.
+These instructions guide you through opening your HTML files in VS Code, using the Live Server extension to launch a local development server, viewing your HTML files in a web browser, and accessing the browser's developer tools to monitor JavaScript-related activities.
 
 
 With love,
