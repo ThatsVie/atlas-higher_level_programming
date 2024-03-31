@@ -124,6 +124,9 @@ The task requires writing a JavaScript script to update the text color of the  h
 
 0-scripts.js selects the header element using document.querySelector('header') and assigns it to the header constant. Then, it changes the text color of the header element to red (#FF0000) by setting the style.color property of the header constant.
 
+
+![viewing 0-main html in browser and inspect open](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/db03bf12-0c75-4542-b530-c2e6b3a9e3fe)
+
 With love,
 
 Vie Paula - [Github](https://github.com/ThatsVie)
