@@ -502,5 +502,3 @@ With love,
 Vie Paula - [Github](https://github.com/ThatsVie)
 
 ![OIP](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/611aaca7-adbd-4c3a-8ff5-100969eee9f0)
-
-
