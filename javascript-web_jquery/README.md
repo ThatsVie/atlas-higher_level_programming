@@ -32,14 +32,15 @@ In JQuery, you can select HTML elements using selectors similar to CSS selectors
 
 <details>
 <summary>Differences between ID, class, and tag name selectors: </summary>
+  
 <ul>
-  <li>
 
-ID selectors (#) target a specific element based on its unique ID attribute.</li>
+<li>ID selectors (#) target a specific element based on its unique ID attribute.</li>
 
 <li>Class selectors (.) target elements based on their class attribute, which can be shared among multiple elements.</li>
 
 <li>Tag name selectors target elements based on their HTML tag name.
+  
 </ul> </li> </details>
 
 <details>
