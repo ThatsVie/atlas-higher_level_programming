@@ -163,24 +163,45 @@ Both files work together to create the desired functionality on the web page, de
     
 3-main.html is a HTML file that defines the structure of a web page. It includes the following elements:
 
-A title tag specifying the title of the webpage as "Holberton School".
+A title tag specifying the title of the webpage as "Holberton School". 
+
 A script tag importing the JQuery library from a CDN (Content Delivery Network).
+
 A style tag defining a CSS style with the class .red that sets the text color to red (#FF0000).
+
 The body section contains:
+
 A header element with the text "First HTML page".
+
 A div element with the id red_header and the text "Red header".
+
 A footer element with the text "Holberton School - 2017".
+
 Finally, there's a script tag importing the JavaScript file 3-script.js. </li>
 
 <li>3-script.js is a  JavaScript file containing the script responsible for adding functionality to the webpage. 
 
 Waits for the document to be fully loaded using $(document).ready().
+
 Attaches a click event listener to the div element with the id red_header.
+
 When the div element is clicked, it adds the class "red" to the header element using JQuery's .addClass() method. </li>
 
-<li>The 3-script.js file provides the functionality for the HTML page defined in 3-main.html. It adds interactivity to the webpage by responding to user clicks on the "Red header" div element and modifying the appearance of the header element. The HTML file includes the necessary JavaScript file and JQuery library to enable this functionality. 
+<li>3-script.js provides the functionality for the HTML page defined in 3-main.html. It adds interactivity to the webpage by responding to user clicks on the "Red header" div element and modifying the appearance of the header element. The HTML file includes the necessary JavaScript file and JQuery library to enable this functionality. 
 </ul> </li> </details>
 
+<details>
+<summary>4-main.html and 4-script.js</summary>
+<ul>
+  <li>
+    
+4-main.html is a HTML file that defines the structure of a webpage. It includes a header element with the class "green", a div element with the id "toggle_header", and a footer element. It imports the jQuery library and a JavaScript file (4-script.js). The header's color is initially set to green, and when the "Toggle header" div is clicked, it triggers an action defined in 4-script.js. </li>
+
+<li>4-script.js is a JavaScript file containing the script to toggle the class of the header element between "red" and "green" when the user clicks on the "Toggle header" div. It uses jQuery to select the elements and add event listeners. When the "Toggle header" div is clicked, it toggles the class of the header element between "red" and "green" using the .toggleClass() method. </li>
+
+<li>4-main.html provides the structure and elements for the webpage, while 4-script.js provides the functionality to toggle the class of the <header> element in response to user interaction. 4-script.js is linked to 4-main.html using the <script> tag, allowing the browser to execute the JavaScript code when the HTML file is loaded.
+</ul> </li> </details>
+  
 ## Usage
 
 Clone this repository
@@ -266,7 +287,8 @@ The task requires writing a JavaScript script that updates the text color of the
 <details>
 <summary> 3-main.html and 3-script.js </summary>
 <ul>
-The task requires writing a JavaScript script that adds the class "red" to the <header> element when the user clicks on the <div> element with the id red_header. The script should use the JQuery API for DOM manipulation and cannot use document.querySelector.
+
+The task requires writing a JavaScript script that adds the class "red" to the header element when the user clicks on the div element with the id red_header. The script should use the JQuery API for DOM manipulation and cannot use document.querySelector.
 
 3-script.js waits for the document to be fully loaded using $(document).ready() function. Then, it attaches a click event listener to the div element with the id red_header using JQuery's selector ($('DIV#red_header')). When the div element is clicked, the code adds the class "red" to the header element using JQuery's .addClass() method ($('header').addClass('red')).
 
@@ -278,6 +300,28 @@ The task requires writing a JavaScript script that adds the class "red" to the <
 **After clicking on Red header:**
 
 ![3-main html after clicking red header](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/17c5febd-e989-42db-9bcc-185a61f6995e)
+
+</ul>  </details>
+
+<details>
+<summary> 4-main.html and 4-script.js  </summary>
+<ul>
+  
+The task requires writing a JavaScript script that toggles the class of the header element between "red" and "green" when the user clicks on the div element with the id toggle_header. The header element must always have one class, either "red" or "green", but never both at the same time and never empty.
+
+4-script.js accomplishes the task using JQuery. It adds a click event listener to the div element with the id toggle_header. When clicked, it toggles the class of the header element between "red" and "green" using JQuery's .toggleClass() method. This ensures that the header element always has one class, switching between "red" and "green" on each click.
+
+**Before clicking on Toggle header**
+
+![4-main html before toggle](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/61dfe360-5ea4-4780-9b5f-b3bdd5b1c5f8)
+
+**After clicking on Toggle header**
+
+![4-main html after toggle](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/11fe0b8c-3afc-4267-8794-5fe878a29f28)
+
+**Clicking on Toggle header again to show interaction**
+
+![4-main html toggle again](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/766b510b-0382-43ad-992f-0dfed852d593)
 
 </ul>  </details>
 
