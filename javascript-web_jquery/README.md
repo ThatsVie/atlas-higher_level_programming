@@ -139,7 +139,7 @@ Both files work together to create the desired functionality on the web page, de
   <li>
 1-main.html is an HTML file that defines the structure of a web page. It includes a header element and a footer element, along with a reference to an external JavaScript file (1-script.js) using the script tag. The HTML file also imports the JQuery library using a CDN link in the head section. </li>
 
-<li> 1-script.js is a JavaScript file containing code that uses the JQuery library to manipulate the HTML elements defined in 1-main.html. It selects the header element using $('header'), a JQuery selector, and changes its text color to red (#FF0000) using the .css() method provided by JQuery. </li>
+<li> 1-script.js is a JavaScript file containing code that uses the JQuery library to manipulate the HTML elements defined in 1-main.html. It selects the header element using $ ('header'), a JQuery selector, and changes its text color to red (#FF0000) using the .css() method provided by JQuery. </li>
 
 <li> 1-main.html serves as the HTML structure of the web page, while 1-script.js contains the JavaScript code that interacts with the HTML elements defined in 1-main.html. When the HTML file is loaded in a web browser, the browser also executes the JavaScript code from 1-script.js, allowing the manipulation of HTML elements as specified in the script.
 </ul> </li> </details>
@@ -154,6 +154,31 @@ Both files work together to create the desired functionality on the web page, de
 <li> 2-script.js is a JavaScript file containing code that uses the JQuery library to add a click event listener to the div element with the id red_header. When this div element is clicked, the script changes the text color of the header element to red (#FF0000) using the .css() method provided by JQuery. </li>
 
 <li> 2-main.html defines the structure of the web page, and 2-script.js contains the JavaScript code that interacts with the HTML elements defined in 2-main.html, performing the specified action when the div element with the id red_header is clicked.
+</ul> </li> </details>
+
+<details>
+<summary>3-main.html and 3-script.js</summary>
+<ul>
+  <li>
+    
+3-main.html is a HTML file that defines the structure of a web page. It includes the following elements:
+
+A title tag specifying the title of the webpage as "Holberton School".
+A script tag importing the JQuery library from a CDN (Content Delivery Network).
+A style tag defining a CSS style with the class .red that sets the text color to red (#FF0000).
+The body section contains:
+A header element with the text "First HTML page".
+A div element with the id red_header and the text "Red header".
+A footer element with the text "Holberton School - 2017".
+Finally, there's a script tag importing the JavaScript file 3-script.js. </li>
+
+<li>3-script.js is a  JavaScript file containing the script responsible for adding functionality to the webpage. 
+
+Waits for the document to be fully loaded using $(document).ready().
+Attaches a click event listener to the div element with the id red_header.
+When the div element is clicked, it adds the class "red" to the header element using JQuery's .addClass() method. </li>
+
+<li>The 3-script.js file provides the functionality for the HTML page defined in 3-main.html. It adds interactivity to the webpage by responding to user clicks on the "Red header" div element and modifying the appearance of the header element. The HTML file includes the necessary JavaScript file and JQuery library to enable this functionality. 
 </ul> </li> </details>
 
 ## Usage
@@ -213,7 +238,7 @@ The task requires writing a JavaScript script to update the text color of the  h
 
 This task requires writing a JavaScript script that changes the text color of the header element to red (#FF0000). However, unlike the previous task, this time, the JQuery API must be used to select the HTML tag, and the use of document.querySelector is prohibited. The script will be tested with the provided HTML file.
 
-1-script.js utilizes the JQuery API to select the <header> element using $('header'). Then, it modifies the text color of the <header> element to red (#FF0000) by using the .css() method provided by JQuery.
+1-script.js utilizes the JQuery API to select the header element using $('header'). Then, it modifies the text color of the <header> element to red (#FF0000) by using the .css() method provided by JQuery.
 
 ![viewing 1-main html in browser and using inspect](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/59428922-95e8-4141-b056-22e50cafc15e)
 </ul>  </details>
@@ -237,6 +262,25 @@ The task requires writing a JavaScript script that updates the text color of the
 ![after pressing red header](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/0105f3b3-613e-4529-a6f5-0ac71c7c642c)
 
 </ul>  </details>
+
+<details>
+<summary> 3-main.html and 3-script.js </summary>
+<ul>
+The task requires writing a JavaScript script that adds the class "red" to the <header> element when the user clicks on the <div> element with the id red_header. The script should use the JQuery API for DOM manipulation and cannot use document.querySelector.
+
+3-script.js waits for the document to be fully loaded using $(document).ready() function. Then, it attaches a click event listener to the div element with the id red_header using JQuery's selector ($('DIV#red_header')). When the div element is clicked, the code adds the class "red" to the header element using JQuery's .addClass() method ($('header').addClass('red')).
+
+**Before clicking on Red header:**
+
+![3-main html before clicking red header](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/8bb65451-502f-4281-a618-dd844b312454)
+
+
+**After clicking on Red header:**
+
+![3-main html after clicking red header](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/17c5febd-e989-42db-9bcc-185a61f6995e)
+
+</ul>  </details>
+
 With love,
 
 Vie Paula - [Github](https://github.com/ThatsVie)
