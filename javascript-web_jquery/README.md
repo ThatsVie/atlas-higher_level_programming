@@ -91,6 +91,16 @@ Both files work together to create the desired functionality on the web page, de
 
 The relationship between 1-main.html and 1-script.js is that 1-main.html serves as the HTML structure of the web page, while 1-script.js contains the JavaScript code that interacts with the HTML elements defined in 1-main.html. When the HTML file is loaded in a web browser, the browser also executes the JavaScript code from 1-script.js, allowing the manipulation of HTML elements as specified in the script.
 
+**2-main.html**
+
+2-main.html is an HTML file that defines the structure of a web page. It includes a header element, a div element with the id red_header, and a footer element. It imports the JQuery library using a CDN link in the head section and includes a reference to an external JavaScript file (2-script.js) using the script tag.
+
+**2-script.js**
+
+2-script.js is a JavaScript file containing code that uses the JQuery library to add a click event listener to the div element with the id red_header. When this div element is clicked, the script changes the text color of the header element to red (#FF0000) using the .css() method provided by JQuery.
+
+The relationship between 2-main.html and 2-script.js is similar to the previous tasks. 2-main.html defines the structure of the web page, and 2-script.js contains the JavaScript code that interacts with the HTML elements defined in 2-main.html, performing the specified action when the div element with the id red_header is clicked.
+
 ## Usage
 
 Clone this repository
@@ -116,6 +126,8 @@ cd javascript-web_jquery
 7 .Interact with your HTML files in the browser to test their functionality, such as clicking on elements or observing any changes made by your JavaScript code.
 
 These instructions guide you through starting the local development server, opening the HTML files in the browser for testing, and accessing the browser's developer tools to monitor JavaScript-related activities.
+
+![live server extension](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/d5adcdc4-f2a0-4b4e-87ac-335729146383)
 
 ![vscode go live](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/b9b7a4c9-0209-45c4-acd1-7f207585e86a)
 
@@ -144,6 +156,21 @@ This task requires writing a JavaScript script that changes the text color of th
 1-script.js utilizes the JQuery API to select the <header> element using $('header'). Then, it modifies the text color of the <header> element to red (#FF0000) by using the .css() method provided by JQuery.
 
 ![viewing 1-main html in browser and using inspect](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/59428922-95e8-4141-b056-22e50cafc15e)
+
+### 2-main.html and 2-script.js
+
+2-main.html defines the structure of the web page, and 2-script.js contains the JavaScript code that interacts with the HTML elements defined in 2-main.html, performing the specified action when the div element with the id red_header is clicked.
+
+The task requires writing a JavaScript script that updates the text color of the header element to red (#FF0000) when the user clicks on the div element with the id red_header. The script must use the JQuery API for DOM manipulation and cannot use document.querySelector.
+
+2-script.js attaches a click event listener to the div element with the id red_header using JQuery's selector ($('DIV#red_header')). When the div element is clicked, the code changes the text color of the header element to red (#FF0000) by applying the CSS property using JQuery's .css() method ($('header').css('color', '#FF0000')).
+
+Before clicking on Red header:
+![before pressing red header](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/1a910d68-cc4f-4942-b46d-10fa48cea511)
+
+After clicking on Red header:
+
+![after pressing red header](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/0105f3b3-613e-4529-a6f5-0ac71c7c642c)
 
 With love,
 
