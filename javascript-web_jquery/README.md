@@ -417,7 +417,7 @@ The task is to write a JavaScript script that updates the text content of the he
 
 ![6-main html after clicking Update the header](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/247cf342-03d7-45cc-8baa-babdbe0e6ebc)
 
-
+</ul>  </details>
 
 <details>
 <summary> 7-main.html and 7-script.js  </summary>
@@ -429,6 +429,7 @@ The task requires writing a JavaScript script that fetches character data from a
 
 ![7-main html](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/988841dd-5bdd-4cf2-aadb-b8de13c02bcd)
 
+</ul>  </details>
 With love,
 
 Vie Paula - [Github](https://github.com/ThatsVie)
