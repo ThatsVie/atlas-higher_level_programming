@@ -248,8 +248,19 @@ Together, these files work in tandem to create a web page where users can click 
 
 </ul> </li> </details>
 
+<details>
+<summary>8-main.html and 8-script.js</summary>
+<ul>
+  <li>
+8-main.html is an HTML file that sets up the structure of the web page. It includes a header, an empty unordered list (ul), and a footer. The header indicates that the page is about Star Wars movies. It also includes a script tag that imports the JQuery library and another script tag that links to the JavaScript file 8-script.js.</li>
+
+<li>8-script.js is a JavaScript file that contains the logic to fetch data about Star Wars movies from a specific URL using the JQuery AJAX method. Upon successfully retrieving the data, it iterates through the list of movies and appends the titles as list items (li) to the unordered list (ul). If the request fails, it displays an error message in the list. This script must be executed after the HTML document is fully loaded, so it waits for the document to be ready before making the AJAX request.</li>
 
 
+<li>The HTML file (8-main.html) provides the structure and layout for the web page.
+The JavaScript file (8-script.js) is responsible for fetching data about Star Wars movies and updating the HTML content dynamically.
+The HTML file includes the JavaScript file using a script tag, allowing the JavaScript code to interact with and manipulate the HTML elements defined in the HTML file.
+</ul> </li> </details>
 
 ## Usage
 
@@ -430,6 +441,28 @@ The task requires writing a JavaScript script that fetches character data from a
 ![7-main html](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/988841dd-5bdd-4cf2-aadb-b8de13c02bcd)
 
 </ul>  </details>
+
+<details>
+<summary> 8-main.html and 8-script.js  </summary>
+<ul>
+
+The task involves writing a JavaScript script that fetches movie data from a specific URL (https://swapi-api.hbtn.io/api/films/?format=json) and lists the titles of all the movies in an unordered list (ul). The script must use the JQuery API to make the AJAX request and manipulate the DOM to display the movie titles.
+
+8-script.js starts by waiting for the document to be fully loaded ($(function () { ... })).
+
+It then makes an AJAX GET request to the specified URL using $.ajax().
+
+Upon successful retrieval of data, it iterates through each movie object in the response (data.results) using a for loop.
+
+For each movie, it appends a new li element containing the movie title to the unordered list (#list_movies) using JQuery's .append() method.
+
+If the AJAX request fails, an error message is displayed in the list.
+
+![8-main html](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/0eb83c14-2bdc-42d9-9e76-024715bea684)
+
+</ul>  </details>
+
+
 With love,
 
 Vie Paula - [Github](https://github.com/ThatsVie)
