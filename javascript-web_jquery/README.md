@@ -52,7 +52,35 @@ Listening to user events involves capturing interactions initiated by users, suc
 
 ## Task Overview
 
+**0-main.html:**
 
+0-main.html is an HTML file that serves as the main entry point for the web page.
+
+It contains the structure of the web page, including the header and footer elements.
+
+Inside the body tag, it includes a script tag that references the JavaScript file 0-script.js using the src attribute.
+
+The purpose of 0-main.html is to define the layout and structure of the web page and to include external resources like JavaScript files.
+
+**0-script.js:**
+
+0-script.js is a JavaScript file containing code that manipulates the HTML elements of 0-main.html.
+
+It selects the header element using document.querySelector and updates its text color to red (#FF0000) by modifying its style.color property.
+
+The code in 0-script.js achieves the task specified in the instructions by directly accessing and modifying the DOM elements.
+
+The purpose of 0-script.js is to add dynamic behavior to the web page by responding to user actions or modifying the content of HTML elements.
+
+**Relationship:**
+
+0-main.html and 0-script.js are related in the sense that 0-main.html includes 0-script.js using a script tag, effectively linking the JavaScript code to the HTML document.
+
+When the browser loads 0-main.html, it also loads and executes the JavaScript code in 0-script.js.
+
+In this specific task, 0-script.js updates the text color of the <header> element defined in 0-main.html.
+
+Both files work together to create the desired functionality on the web page, demonstrating the interaction between HTML and JavaScript in a web development context.
 
 
 ## Usage
@@ -73,17 +101,28 @@ cd javascript-web_jquery
 
 1. Open Visual Studio Code (VS Code).
 2. In the upper-left corner of VS Code, click on "File" in the menu.
-3. Select "Open Folder" from the dropdown menu and navigate to the directory where your HTML files are located.(javascript-web_jquery folder.)
-4. Once the folder is open in VS Code, locate your HTML file in the file explorer sidebar.
-5. Right-click on the HTML file and select "Open with Live Server" from the context menu. This option is available if you have the Live Server extension installed and activated.
-6. VS Code will open your HTML file in a new tab in your default web browser, and the Live Server extension will start a local development server.
-7. Your HTML file should now be visible in the web browser at http://localhost:5500/ or a similar URL provided by Live Server.
-8. Right-click on the page and select "Inspect" or press Ctrl+Shift+I to open the browser's developer tools.
-9. Navigate to the "Console" tab in the developer tools to view any JavaScript-related logs or errors.
-10. Interact with your HTML files in the browser to test their functionality, such as clicking on elements or observing any changes made by your JavaScript code.
+3. Select "Open Folder" from the dropdown menu and navigate to the directory where your HTML files are located (specifically, the javascript-web_jquery folder).
+4. Once the folder is open in VS Code, navigate to the bottom right corner and click on "Go Live". This action will start a local development server on port 5500.
+5. VS Code will prompt you to open the browser. Click on the provided link to open your HTML files in the browser. You'll see a list of all your .html and .js files.
+6. From there, you can click on the .html files to view them in the browser. You can also inspect the elements, check the console for JavaScript-related logs or errors by right-clicking on the page and selecting "Inspect" or pressing Ctrl+Shift+I to open the browser's developer tools.
+7 .Interact with your HTML files in the browser to test their functionality, such as clicking on elements or observing any changes made by your JavaScript code.
 
-These instructions guide you through opening your HTML files in VS Code, using the Live Server extension to launch a local development server, viewing your HTML files in a web browser, and accessing the browser's developer tools to monitor JavaScript-related activities.
+These instructions guide you through starting the local development server, opening the HTML files in the browser for testing, and accessing the browser's developer tools to monitor JavaScript-related activities.
 
+![vscode go live](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/b9b7a4c9-0209-45c4-acd1-7f207585e86a)
+
+![vscode open in browser](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/82aeac50-3b22-46bf-9d20-d1e25e527b7a)
+
+![files in browser](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/e39e07f3-f965-4346-9ed5-48ee3a7beeaf)
+
+
+### 0-main.html and 0-script.js
+
+0-main.html provides the structure of the web page, and 0-script.js adds interactivity by manipulating the content of the HTML elements defined in 0-main.html. They are linked together through the script tag, allowing the JavaScript code to interact with the HTML document.
+
+The task requires writing a JavaScript script to update the text color of the  header element to red (#FF0000). The script should use document.querySelector to select the HTML tag and should not utilize the JQuery API.
+
+0-scripts.js selects the header element using document.querySelector('header') and assigns it to the header constant. Then, it changes the text color of the header element to red (#FF0000) by setting the style.color property of the header constant.
 
 With love,
 
