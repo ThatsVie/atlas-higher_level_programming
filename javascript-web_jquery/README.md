@@ -223,7 +223,18 @@ The purpose of this file is to provide the interactivity and behavior for the we
 5-script.js provides the functionality to the web page by adding interactivity through JavaScript.
 Together, these files work in tandem to create a web page where users can click on a button to dynamically add new list items. 
 </ul> </li> </details>
-  
+
+<details>
+<summary>6-main.html and 6-script.js</summary>
+<ul>
+  <li>
+6-main.html is an HTML file that defines the structure of a webpage. It contains a header element with the text "First HTML page", a div element with the id "update_header" which says "Update the header", and a footer with the text "Holberton School - 2017". It includes a reference to the JQuery library and a script tag linking to 6-script.js. The purpose of this HTML file is to provide the content and structure for the webpage. </li>
+
+<li>6-script.js is a JavaScript file containing code that manipulates the DOM using the JQuery library. It adds a click event listener to the div element with the id "update_header". When this div is clicked, it updates the text content of the header element to "New Header!!!" using JQuery. The script utilizes the JQuery API for DOM manipulation. Its purpose is to provide interactivity to the webpage by responding to user actions.</li>
+
+<li>6-main.html provides the structure and content of the webpage, while 6-script.js enhances the webpage's functionality by adding interactivity. The JavaScript file is linked to the HTML file via a script tag, allowing it to access and manipulate the HTML elements defined in the HTML file.6-script.js is responsible for responding to user clicks on the "Update the header" div element and updating the text content of the header accordingly.
+</ul> </li> </details>
+
 ## Usage
 
 Clone this repository
@@ -372,6 +383,24 @@ The task requires writing a JavaScript script that adds a new li element contain
 ![5-main html after clicking add item a few times](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/ee2ce9f8-893a-4989-90e2-e3e4a820aa7f)
 
 </ul>  </details>
+
+<details>
+<summary> 6-main.html and 6-script.js  </summary>
+<ul>
+  
+The task is to write a JavaScript script that updates the text content of the header element to "New Header!!!" when the user clicks on the div element with the id "update_header". The script should use the JQuery API for DOM manipulation.
+
+6-script.js adds a click event listener to the div element with the id "update_header". When this div element is clicked, the text content of the header element is updated to "New Header!!!" using JQuery.
+
+**Before clicking Update the header**
+
+![6-main html before clicking Update the header](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/e81ac7ac-6029-4628-bbd4-b2b2dcb315b4)
+
+
+**After clicking Update the header**
+
+![6-main html after clicking Update the header](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/247cf342-03d7-45cc-8baa-babdbe0e6ebc)
+
 
 With love,
 
