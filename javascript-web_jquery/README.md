@@ -52,7 +52,8 @@ Listening to user events involves capturing interactions initiated by users, suc
 
 ## Task Overview
 
-## SetUp
+
+
 
 ## Usage
 
@@ -67,6 +68,19 @@ Navigate to javascript-web_jquery directory
 ```bash
 cd javascript-web_jquery
 ```
+
+###  Step-by-step instructions for opening and testing your HTML files using VS Code with the Live Server extension:
+
+1. Open Visual Studio Code (VS Code).
+2. In the upper-left corner of VS Code, click on "File" in the menu.
+3. Select "Open Folder" from the dropdown menu and navigate to the directory where your HTML files are located.(javascript-web_jquery folder.)
+4. Once the folder is open in VS Code, locate your HTML file in the file explorer sidebar.
+5. Right-click on the HTML file and select "Open with Live Server" from the context menu. This option is available if you have the Live Server extension installed and activated.
+6. VS Code will open your HTML file in a new tab in your default web browser, and the Live Server extension will start a local development server.
+7. Your HTML file should now be visible in the web browser at http://localhost:5500/ or a similar URL provided by Live Server.
+8. Interact with your HTML files in the browser to test their functionality, such as clicking on elements or observing any changes made by your JavaScript code.
+
+These instructions guide you through opening your HTML files in VS Code, using the Live Server extension to launch a local development server, and viewing your HTML files in a web browser for testing.
 
 
 With love,
