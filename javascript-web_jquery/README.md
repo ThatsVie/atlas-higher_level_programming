@@ -56,7 +56,7 @@ You can modify an HTML element's style using JavaScript by accessing its style p
 <ul>
   <li>
 
-To get an HTML element's content, you can access its innerHTML property. To update the content, you can assign new values to innerHTML or use methods like textContent, innerText, or innerHTML to set the content.
+To get and update an HTML element's content, you can use JavaScript or JQuery. JavaScript provides methods like document.getElementById() or document.querySelector() to select elements, while JQuery simplifies this process with selectors like $('selector'). Once selected, you can update the element's content using methods like .text() or .html() in JQuery, or by directly modifying the textContent or innerHTML properties in JavaScript.
 
 </ul> </li> </details>
 
@@ -65,7 +65,8 @@ To get an HTML element's content, you can access its innerHTML property. To upda
 <ul>
   <li>
 
-You can modify the DOM using JavaScript by creating, removing, or manipulating elements and their attributes, properties, and content. Methods like createElement, appendChild, removeChild, setAttribute, and removeAttribute are commonly used for DOM manipulation.
+
+To modify the DOM (Document Object Model), you can use JavaScript or JQuery to add, remove, or change HTML elements and their attributes dynamically. This involves selecting elements using methods like document.getElementById() or document.querySelector() in JavaScript, or JQuery selectors like $('selector'), and then manipulating them using methods like .append(), .remove(), .addClass(), .removeClass(), etc. JavaScript provides direct access to DOM elements and properties, while JQuery simplifies DOM manipulation with its concise syntax and methods.
 </ul> </li> </details>
 
 <details>
