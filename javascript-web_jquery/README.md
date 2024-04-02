@@ -124,7 +124,9 @@ Inside the body tag, it includes a script tag that references the JavaScript fil
 The purpose of 0-main.html is to define the layout and structure of the web page and to include external resources like JavaScript files.</li>
 
 
-<li> 0-script.js is a JavaScript file containing code that manipulates the HTML elements of 0-main.html.
+<li> 
+  
+0-script.js is a JavaScript file containing code that manipulates the HTML elements of 0-main.html.
 
 It selects the header element using document.querySelector and updates its text color to red (#FF0000) by modifying its style.color property.
 
@@ -133,7 +135,9 @@ The code in 0-script.js achieves the task specified in the instructions by direc
 The purpose of 0-script.js is to add dynamic behavior to the web page by responding to user actions or modifying the content of HTML elements. </li>
 
 
-<li> 0-main.html includes 0-script.js using a script tag, effectively linking the JavaScript code to the HTML document.
+<li>
+  
+0-main.html includes 0-script.js using a script tag, effectively linking the JavaScript code to the HTML document.
 
 When the browser loads 0-main.html, it also loads and executes the JavaScript code in 0-script.js.
 
@@ -147,23 +151,32 @@ Both files work together to create the desired functionality on the web page, de
 <summary>1-main.html and 1-script.js</summary>
 <ul>
   <li>
+    
 1-main.html is an HTML file that defines the structure of a web page. It includes a header element and a footer element, along with a reference to an external JavaScript file (1-script.js) using the script tag. The HTML file also imports the JQuery library using a CDN link in the head section. </li>
 
-<li> 1-script.js is a JavaScript file containing code that uses the JQuery library to manipulate the HTML elements defined in 1-main.html. It selects the header element using $ ('header'), a JQuery selector, and changes its text color to red (#FF0000) using the .css() method provided by JQuery. </li>
+<li> 
+  
+1-script.js is a JavaScript file containing code that uses the JQuery library to manipulate the HTML elements defined in 1-main.html. It selects the header element using $ ('header'), a JQuery selector, and changes its text color to red (#FF0000) using the .css() method provided by JQuery. </li>
 
-<li> 1-main.html serves as the HTML structure of the web page, while 1-script.js contains the JavaScript code that interacts with the HTML elements defined in 1-main.html. When the HTML file is loaded in a web browser, the browser also executes the JavaScript code from 1-script.js, allowing the manipulation of HTML elements as specified in the script.
+<li>
+  
+1-main.html serves as the HTML structure of the web page, while 1-script.js contains the JavaScript code that interacts with the HTML elements defined in 1-main.html. When the HTML file is loaded in a web browser, the browser also executes the JavaScript code from 1-script.js, allowing the manipulation of HTML elements as specified in the script.
 </ul> </li> </details>
 
 <details>
 <summary>2-main.html and 2-script.js</summary>
 <ul>
   <li>
+
 2-main.html is an HTML file that defines the structure of a web page. It includes a header element, a div element with the id red_header, and a footer element. It imports the JQuery library using a CDN link in the head section and includes a reference to an external JavaScript file (2-script.js) using the script tag.</li>
 
+<li> 
+  
+2-script.js is a JavaScript file containing code that uses the JQuery library to add a click event listener to the div element with the id red_header. When this div element is clicked, the script changes the text color of the header element to red (#FF0000) using the .css() method provided by JQuery. </li>
 
-<li> 2-script.js is a JavaScript file containing code that uses the JQuery library to add a click event listener to the div element with the id red_header. When this div element is clicked, the script changes the text color of the header element to red (#FF0000) using the .css() method provided by JQuery. </li>
-
-<li> 2-main.html defines the structure of the web page, and 2-script.js contains the JavaScript code that interacts with the HTML elements defined in 2-main.html, performing the specified action when the div element with the id red_header is clicked.
+<li> 
+  
+2-main.html defines the structure of the web page, and 2-script.js contains the JavaScript code that interacts with the HTML elements defined in 2-main.html, performing the specified action when the div element with the id red_header is clicked.
 </ul> </li> </details>
 
 <details>
@@ -189,7 +202,9 @@ A footer element with the text "Holberton School - 2017".
 
 Finally, there's a script tag importing the JavaScript file 3-script.js. </li>
 
-<li>3-script.js is a  JavaScript file containing the script responsible for adding functionality to the webpage. 
+<li>
+  
+3-script.js is a  JavaScript file containing the script responsible for adding functionality to the webpage. 
 
 Waits for the document to be fully loaded using $(document).ready().
 
@@ -197,7 +212,9 @@ Attaches a click event listener to the div element with the id red_header.
 
 When the div element is clicked, it adds the class "red" to the header element using JQuery's .addClass() method. </li>
 
-<li>3-script.js provides the functionality for the HTML page defined in 3-main.html. It adds interactivity to the webpage by responding to user clicks on the "Red header" div element and modifying the appearance of the header element. The HTML file includes the necessary JavaScript file and JQuery library to enable this functionality. 
+<li>
+  
+3-script.js provides the functionality for the HTML page defined in 3-main.html. It adds interactivity to the webpage by responding to user clicks on the "Red header" div element and modifying the appearance of the header element. The HTML file includes the necessary JavaScript file and JQuery library to enable this functionality. 
 </ul> </li> </details>
 
 <details>
@@ -207,9 +224,13 @@ When the div element is clicked, it adds the class "red" to the header element u
     
 4-main.html is a HTML file that defines the structure of a webpage. It includes a header element with the class "green", a div element with the id "toggle_header", and a footer element. It imports the jQuery library and a JavaScript file (4-script.js). The header's color is initially set to green, and when the "Toggle header" div is clicked, it triggers an action defined in 4-script.js. </li>
 
-<li>4-script.js is a JavaScript file containing the script to toggle the class of the header element between "red" and "green" when the user clicks on the "Toggle header" div. It uses jQuery to select the elements and add event listeners. When the "Toggle header" div is clicked, it toggles the class of the header element between "red" and "green" using the .toggleClass() method. </li>
+<li>
+  
+4-script.js is a JavaScript file containing the script to toggle the class of the header element between "red" and "green" when the user clicks on the "Toggle header" div. It uses jQuery to select the elements and add event listeners. When the "Toggle header" div is clicked, it toggles the class of the header element between "red" and "green" using the .toggleClass() method. </li>
 
-<li>4-main.html provides the structure and elements for the webpage, while 4-script.js provides the functionality to toggle the class of the header element in response to user interaction. 4-script.js is linked to 4-main.html using the script tag, allowing the browser to execute the JavaScript code when the HTML file is loaded.
+<li>
+  
+4-main.html provides the structure and elements for the webpage, while 4-script.js provides the functionality to toggle the class of the header element in response to user interaction. 4-script.js is linked to 4-main.html using the script tag, allowing the browser to execute the JavaScript code when the HTML file is loaded.
 </ul> </li> </details>
 
   <details>
@@ -222,14 +243,18 @@ It includes a header tag with the text "First HTML page", a div tag with the id 
   
 The purpose of this file is to provide the content and structure for the web page. </li>
 
-<li>5-script.js is a JavaScript file that contains the script responsible for adding a new li element to the list when the user clicks on the "Add item" button.
+<li>
+  
+5-script.js is a JavaScript file that contains the script responsible for adding a new li element to the list when the user clicks on the "Add item" button.
 It uses JQuery to add a click event listener to the div element with the id "add_item". When this element is clicked, a new li element with the text "Item" is appended to the ul element with the class "my_list".
   
 The script interacts with the HTML elements defined in 5-main.html using JQuery selectors and methods.
 
 The purpose of this file is to provide the interactivity and behavior for the web page. </li>
 
-<li>5-main.html serves as the markup for the web page, defining its structure and content.
+<li>
+  
+5-main.html serves as the markup for the web page, defining its structure and content.
 5-script.js provides the functionality to the web page by adding interactivity through JavaScript.
 Together, these files work in tandem to create a web page where users can click on a button to dynamically add new list items. 
 </ul> </li> </details>
@@ -238,11 +263,16 @@ Together, these files work in tandem to create a web page where users can click 
 <summary>6-main.html and 6-script.js</summary>
 <ul>
   <li>
+    
 6-main.html is an HTML file that defines the structure of a webpage. It contains a header element with the text "First HTML page", a div element with the id "update_header" which says "Update the header", and a footer with the text "Holberton School - 2017". It includes a reference to the JQuery library and a script tag linking to 6-script.js. The purpose of this HTML file is to provide the content and structure for the webpage. </li>
 
-<li>6-script.js is a JavaScript file containing code that manipulates the DOM using the JQuery library. It adds a click event listener to the div element with the id "update_header". When this div is clicked, it updates the text content of the header element to "New Header!!!" using JQuery. The script utilizes the JQuery API for DOM manipulation. Its purpose is to provide interactivity to the webpage by responding to user actions.</li>
+<li>
+  
+6-script.js is a JavaScript file containing code that manipulates the DOM using the JQuery library. It adds a click event listener to the div element with the id "update_header". When this div is clicked, it updates the text content of the header element to "New Header!!!" using JQuery. The script utilizes the JQuery API for DOM manipulation. Its purpose is to provide interactivity to the webpage by responding to user actions.</li>
 
-<li>6-main.html provides the structure and content of the webpage, while 6-script.js enhances the webpage's functionality by adding interactivity. The JavaScript file is linked to the HTML file via a script tag, allowing it to access and manipulate the HTML elements defined in the HTML file.6-script.js is responsible for responding to user clicks on the "Update the header" div element and updating the text content of the header accordingly.
+<li>
+  
+6-main.html provides the structure and content of the webpage, while 6-script.js enhances the webpage's functionality by adding interactivity. The JavaScript file is linked to the HTML file via a script tag, allowing it to access and manipulate the HTML elements defined in the HTML file.6-script.js is responsible for responding to user clicks on the "Update the header" div element and updating the text content of the header accordingly.
 </ul> </li> </details>
 
 
@@ -250,11 +280,16 @@ Together, these files work in tandem to create a web page where users can click 
 <summary>7-main.html and 7-script.js</summary>
 <ul>
   <li>
-    7-main.html is an HTML file that sets up the structure of a web page. It includes a header, a div element with the id "character", and a footer. It includes a script tag that links to the JavaScript file 7-script.js, allowing it to execute within the HTML document.</li>
+    
+7-main.html is an HTML file that sets up the structure of a web page. It includes a header, a div element with the id "character", and a footer. It includes a script tag that links to the JavaScript file 7-script.js, allowing it to execute within the HTML document.</li>
 
-<li>7-script.js is a JavaScript file that contains the logic for fetching character data from a specific API endpoint (https://swapi-api.hbtn.io/api/people/5/?format=json) using JQuery's AJAX method $.get(). Once the data is retrieved, it updates the content of the div id="character" element with the character's name extracted from the API response.</li>
+<li>
+  
+7-script.js is a JavaScript file that contains the logic for fetching character data from a specific API endpoint (https://swapi-api.hbtn.io/api/people/5/?format=json) using JQuery's AJAX method $.get(). Once the data is retrieved, it updates the content of the div id="character" element with the character's name extracted from the API response.</li>
 
-<li>7-main.html serves as the HTML structure of the web page, while 7-script.js contains the dynamic behavior of fetching and displaying the character's name. When the HTML file is loaded in a web browser, the JavaScript file is executed, and the character's name is fetched and displayed in the designated div element, as specified in the HTML file.
+<li>
+  
+7-main.html serves as the HTML structure of the web page, while 7-script.js contains the dynamic behavior of fetching and displaying the character's name. When the HTML file is loaded in a web browser, the JavaScript file is executed, and the character's name is fetched and displayed in the designated div element, as specified in the HTML file.
 
 </ul> </li> </details>
 
@@ -262,12 +297,17 @@ Together, these files work in tandem to create a web page where users can click 
 <summary>8-main.html and 8-script.js</summary>
 <ul>
   <li>
+    
 8-main.html is an HTML file that sets up the structure of the web page. It includes a header, an empty unordered list (ul), and a footer. The header indicates that the page is about Star Wars movies. It also includes a script tag that imports the JQuery library and another script tag that links to the JavaScript file 8-script.js.</li>
 
-<li>8-script.js is a JavaScript file that contains the logic to fetch data about Star Wars movies from a specific URL using the JQuery AJAX method. Upon successfully retrieving the data, it iterates through the list of movies and appends the titles as list items (li) to the unordered list (ul). If the request fails, it displays an error message in the list. This script must be executed after the HTML document is fully loaded, so it waits for the document to be ready before making the AJAX request.</li>
+<li>
+  
+8-script.js is a JavaScript file that contains the logic to fetch data about Star Wars movies from a specific URL using the JQuery AJAX method. Upon successfully retrieving the data, it iterates through the list of movies and appends the titles as list items (li) to the unordered list (ul). If the request fails, it displays an error message in the list. This script must be executed after the HTML document is fully loaded, so it waits for the document to be ready before making the AJAX request.</li>
 
 
-<li>The HTML file (8-main.html) provides the structure and layout for the web page.
+<li>
+  
+The HTML file (8-main.html) provides the structure and layout for the web page.
 The JavaScript file (8-script.js) is responsible for fetching data about Star Wars movies and updating the HTML content dynamically.
 The HTML file includes the JavaScript file using a script tag, allowing the JavaScript code to interact with and manipulate the HTML elements defined in the HTML file.
 </ul> </li> </details>
@@ -276,11 +316,16 @@ The HTML file includes the JavaScript file using a script tag, allowing the Java
 <summary>9-main.html and 9-script.js</summary>
 <ul>
   <li>
+    
 9-main.html is an HTML file that serves as the structure for a web page. It includes a header, a div with the ID hello where the translation of "hello" will be displayed, and a footer section. It also imports JQuery library and a JavaScript file named 9-script.js using script tags. This HTML file is responsible for displaying content to the user. </li>
 
-<li>9-script.js is a JavaScript file that contains the logic for fetching a translation of "hello" from a specified URL and updating the content of the div element with the ID hello accordingly. It uses the JQuery API to make an AJAX GET request to the URL https://hellosalut.stefanbohacek.dev/?lang=fr. If the request is successful, it updates the text content of the div element with the translation obtained from the response data. If the request fails, it displays an error message in the div element. </li>
+<li>
+  
+9-script.js is a JavaScript file that contains the logic for fetching a translation of "hello" from a specified URL and updating the content of the div element with the ID hello accordingly. It uses the JQuery API to make an AJAX GET request to the URL https://hellosalut.stefanbohacek.dev/?lang=fr. If the request is successful, it updates the text content of the div element with the translation obtained from the response data. If the request fails, it displays an error message in the div element. </li>
 
-<li>9-main.html provides the structure and layout for the web page.
+<li>
+  
+9-main.html provides the structure and layout for the web page.
   
 9-script.js provides the functionality for fetching the translation and updating the content dynamically.
 
