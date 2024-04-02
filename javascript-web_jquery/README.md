@@ -424,6 +424,7 @@ The task requires writing a JavaScript script to update the text color of the  h
 <details>
 <summary> 1-main.html and 1-script.js </summary>
 <ul>
+  
 1-main.html provides the structure of the web page, and 1-script.js adds interactivity by manipulating the content of the HTML elements defined in 1-main.html. They are linked together through the script tag, allowing the JavaScript code to interact with the HTML document.
 
 This task requires writing a JavaScript script that changes the text color of the header element to red (#FF0000). However, unlike the previous task, this time, the JQuery API must be used to select the HTML tag, and the use of document.querySelector is prohibited. The script will be tested with the provided HTML file.
@@ -545,7 +546,7 @@ The task is to write a JavaScript script that updates the text content of the he
 
 The task requires writing a JavaScript script that fetches character data from a specific URL (https://swapi-api.hbtn.io/api/people/5/?format=json) and displays the character's name in the HTML tag div id="character". The script should utilize the JQuery API for DOM manipulation.
 
-7-script.js uses JQuery to wait for the document to be fully loaded ($(document).ready()). Then, it makes a GET request to the provided URL using $.get(). Upon receiving the response, it updates the text content of the div id="character" element with the character's name extracted from the response data.
+7-script.js uses JQuery to wait for the document to be fully loaded ($(document).ready()). Then, it makes a GET request to the provided URL using $ .get(). Upon receiving the response, it updates the text content of the div id="character" element with the character's name extracted from the response data.
 
 ![7-main html](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/988841dd-5bdd-4cf2-aadb-b8de13c02bcd)
 
@@ -559,7 +560,7 @@ The task involves writing a JavaScript script that fetches movie data from a spe
 
 8-script.js starts by waiting for the document to be fully loaded ($(function () { ... })).
 
-It then makes an AJAX GET request to the specified URL using $.ajax().
+It then makes an AJAX GET request to the specified URL using $ .ajax().
 
 Upon successful retrieval of data, it iterates through each movie object in the response (data.results) using a for loop.
 
