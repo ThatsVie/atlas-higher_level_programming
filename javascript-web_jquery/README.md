@@ -81,7 +81,7 @@ To modify the DOM (Document Object Model), you can use JavaScript or JQuery to a
   <li>
 
 
-To make a GET request with JQuery Ajax, you can use the $.ajax() function or shorthand methods like $.get(). You specify the URL to request data from and handle the response using callback functions.
+To make a GET request with JQuery Ajax, you can use the $ .ajax() function or shorthand methods like $ .get(). You specify the URL to request data from and handle the response using callback functions.
 </ul> </li> </details>
 
 <details>
@@ -89,7 +89,7 @@ To make a GET request with JQuery Ajax, you can use the $.ajax() function or sho
 <ul>
   <li>
 
-To make a POST request with JQuery Ajax, you use the $.ajax() function or shorthand methods like $.post(). You specify the URL to send data to, along with the data to be sent in the request body, and handle the response using callback functions.
+To make a POST request with JQuery Ajax, you use the $ .ajax() function or shorthand methods like $ .post(). You specify the URL to send data to, along with the data to be sent in the request body, and handle the response using callback functions.
 </ul> </li> </details>
 
 <details>
