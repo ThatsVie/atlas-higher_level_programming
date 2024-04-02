@@ -410,6 +410,7 @@ Interact with your HTML files in the browser to test their functionality, such a
 <details>
 <summary>0-main.html and 0-script.js </summary>
 <ul> 
+  
 0-main.html provides the structure of the web page, and 0-script.js adds interactivity by manipulating the content of the HTML elements defined in 0-main.html. They are linked together through the script tag, allowing the JavaScript code to interact with the HTML document.
 
 The task requires writing a JavaScript script to update the text color of the  header element to red (#FF0000). The script should use document.querySelector to select the HTML tag and should not utilize the JQuery API.
