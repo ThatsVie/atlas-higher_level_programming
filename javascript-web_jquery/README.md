@@ -29,6 +29,7 @@ In JavaScript, you can select HTML elements using methods like getElementById, g
   <li>
 
 In JQuery, you can select HTML elements using selectors similar to CSS selectors. For example, $('selector') selects elements based on CSS selector syntax. JQuery also provides additional methods for more complex selection criteria and chaining for combining selectors.
+
 </ul> </li> </details>
 
 <details>
@@ -56,6 +57,7 @@ In JQuery, you can select HTML elements using selectors similar to CSS selectors
   <li>
 
 You can modify an HTML element's style using JavaScript by accessing its style property and setting specific CSS properties like element.style.property = value.
+
 </ul> </li> </details>
 
 <details>
@@ -73,6 +75,7 @@ To get and update an HTML element's content, you can use JavaScript or JQuery. J
   <li>
 
 To modify the DOM (Document Object Model), you can use JavaScript or JQuery to add, remove, or change HTML elements and their attributes dynamically. This involves selecting elements using methods like document.getElementById() or document.querySelector() in JavaScript, or JQuery selectors like $('selector'), and then manipulating them using methods like .append(), .remove(), .addClass(), .removeClass(), etc. JavaScript provides direct access to DOM elements and properties, while JQuery simplifies DOM manipulation with its concise syntax and methods.
+
 </ul> </li> </details>
 
 <details>
@@ -82,6 +85,7 @@ To modify the DOM (Document Object Model), you can use JavaScript or JQuery to a
 
 
 To make a GET request with JQuery Ajax, you can use the $ .ajax() function or shorthand methods like $ .get(). You specify the URL to request data from and handle the response using callback functions.
+
 </ul> </li> </details>
 
 <details>
@@ -90,6 +94,7 @@ To make a GET request with JQuery Ajax, you can use the $ .ajax() function or sh
   <li>
 
 To make a POST request with JQuery Ajax, you use the $ .ajax() function or shorthand methods like $ .post(). You specify the URL to send data to, along with the data to be sent in the request body, and handle the response using callback functions.
+
 </ul> </li> </details>
 
 <details>
@@ -106,6 +111,7 @@ You can listen to DOM events using JavaScript by selecting elements and attachin
   <li>
     
 Listening to user events involves capturing interactions initiated by users, such as clicks, mouse movements, keyboard inputs, etc. In JavaScript, you can bind event listeners to elements using methods like addEventListener or JQuery methods like on() to respond to user actions effectively.
+
 </ul> </li> </details>
 
 ## Task Summary
@@ -161,6 +167,7 @@ Both files work together to create the desired functionality on the web page, de
 <li>
   
 1-main.html serves as the HTML structure of the web page, while 1-script.js contains the JavaScript code that interacts with the HTML elements defined in 1-main.html. When the HTML file is loaded in a web browser, the browser also executes the JavaScript code from 1-script.js, allowing the manipulation of HTML elements as specified in the script.
+
 </ul> </li> </details>
 
 <details>
@@ -177,6 +184,7 @@ Both files work together to create the desired functionality on the web page, de
 <li> 
   
 2-main.html defines the structure of the web page, and 2-script.js contains the JavaScript code that interacts with the HTML elements defined in 2-main.html, performing the specified action when the div element with the id red_header is clicked.
+
 </ul> </li> </details>
 
 <details>
@@ -206,15 +214,16 @@ Finally, there's a script tag importing the JavaScript file 3-script.js. </li>
   
 3-script.js is a  JavaScript file containing the script responsible for adding functionality to the webpage. 
 
-Waits for the document to be fully loaded using $(document).ready().
+It waits for the document to be fully loaded using $(document).ready().
 
-Attaches a click event listener to the div element with the id red_header.
+It then attaches a click event listener to the div element with the id red_header.
 
 When the div element is clicked, it adds the class "red" to the header element using JQuery's .addClass() method. </li>
 
 <li>
   
 3-script.js provides the functionality for the HTML page defined in 3-main.html. It adds interactivity to the webpage by responding to user clicks on the "Red header" div element and modifying the appearance of the header element. The HTML file includes the necessary JavaScript file and JQuery library to enable this functionality. 
+
 </ul> </li> </details>
 
 <details>
@@ -231,6 +240,7 @@ When the div element is clicked, it adds the class "red" to the header element u
 <li>
   
 4-main.html provides the structure and elements for the webpage, while 4-script.js provides the functionality to toggle the class of the header element in response to user interaction. 4-script.js is linked to 4-main.html using the script tag, allowing the browser to execute the JavaScript code when the HTML file is loaded.
+
 </ul> </li> </details>
 
   <details>
@@ -257,6 +267,7 @@ The purpose of this file is to provide the interactivity and behavior for the we
 5-main.html serves as the markup for the web page, defining its structure and content.
 5-script.js provides the functionality to the web page by adding interactivity through JavaScript.
 Together, these files work in tandem to create a web page where users can click on a button to dynamically add new list items. 
+
 </ul> </li> </details>
 
 <details>
@@ -273,6 +284,7 @@ Together, these files work in tandem to create a web page where users can click 
 <li>
   
 6-main.html provides the structure and content of the webpage, while 6-script.js enhances the webpage's functionality by adding interactivity. The JavaScript file is linked to the HTML file via a script tag, allowing it to access and manipulate the HTML elements defined in the HTML file.6-script.js is responsible for responding to user clicks on the "Update the header" div element and updating the text content of the header accordingly.
+
 </ul> </li> </details>
 
 
@@ -285,7 +297,7 @@ Together, these files work in tandem to create a web page where users can click 
 
 <li>
   
-7-script.js is a JavaScript file that contains the logic for fetching character data from a specific API endpoint (https://swapi-api.hbtn.io/api/people/5/?format=json) using JQuery's AJAX method $.get(). Once the data is retrieved, it updates the content of the div id="character" element with the character's name extracted from the API response.</li>
+7-script.js is a JavaScript file that contains the logic for fetching character data from a specific API endpoint (https://swapi-api.hbtn.io/api/people/5/?format=json) using JQuery's AJAX method $ .get(). Once the data is retrieved, it updates the content of the div id="character" element with the character's name extracted from the API response.</li>
 
 <li>
   
@@ -310,6 +322,7 @@ Together, these files work in tandem to create a web page where users can click 
 The HTML file (8-main.html) provides the structure and layout for the web page.
 The JavaScript file (8-script.js) is responsible for fetching data about Star Wars movies and updating the HTML content dynamically.
 The HTML file includes the JavaScript file using a script tag, allowing the JavaScript code to interact with and manipulate the HTML elements defined in the HTML file.
+
 </ul> </li> </details>
 
 <details>
@@ -330,6 +343,7 @@ The HTML file includes the JavaScript file using a script tag, allowing the Java
 9-script.js provides the functionality for fetching the translation and updating the content dynamically.
 
 9-main.html imports 9-script.js to utilize its functionality, allowing the web page to fetch and display the translation of "hello" to the user.
+
 </ul> </li> </details>
 
 ## Usage/ Task Descriptions with Visuals
