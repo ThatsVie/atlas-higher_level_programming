@@ -359,20 +359,44 @@ Navigate to javascript-web_jquery directory
 ```bash
 cd javascript-web_jquery
 ```
+
 <details>
 <summary>
 Step-by-step instructions for opening and testing your HTML files using VS Code with the Live Server extension: </summary>
-<ul>
 
-<li>1. Open Visual Studio Code (VS Code). </li>
-<li>2. In the upper-left corner of VS Code, click on "File" in the menu.</li>
-<li>3. Select "Open Folder" from the dropdown menu and navigate to the directory where your HTML files are located (specifically, the javascript-web_jquery folder). </li>
-<li>4. Once the folder is open in VS Code, navigate to the bottom right corner and click on "Go Live". This action will start a local development server on port 5500.</li>
-<li>5. VS Code will prompt you to open the browser. Click on the provided link to open your HTML files in the browser. You'll see a list of all your .html and .js files.</li>
-<li>6. From there, you can click on the .html files to view them in the browser. You can also inspect the elements, check the console for JavaScript-related logs or errors by right-clicking on the page and selecting "Inspect" or pressing Ctrl+Shift+I to open the browser's developer tools.</li>
-<li>7 .Interact with your HTML files in the browser to test their functionality, such as clicking on elements or observing any changes made by your JavaScript code.</li>
 
 These instructions guide you through starting the local development server, opening the HTML files in the browser for testing, and accessing the browser's developer tools to monitor JavaScript-related activities.
+
+<ul>
+
+<li>
+  
+Open Visual Studio Code (VS Code). </li>
+  
+<li>
+  
+In the upper-left corner of VS Code, click on "File" in the menu.</li>
+  
+<li>
+  
+Select "Open Folder" from the dropdown menu and navigate to the directory where your HTML files are located (specifically, the javascript-web_jquery folder). </li>
+  
+<li>
+  
+Once the folder is open in VS Code, navigate to the bottom right corner and click on "Go Live". This action will start a local development server on port 5500.</li>
+  
+<li>
+  
+VS Code will prompt you to open the browser. Click on the provided link to open your HTML files in the browser. You'll see a list of all your .html and .js files.</li>
+  
+<li>
+
+From there, you can click on the .html files to view them in the browser. You can also inspect the elements, check the console for JavaScript-related logs or errors by right-clicking on the page and selecting "Inspect" or pressing Ctrl+Shift+I to open the browser's developer tools.</li>
+  
+<li>
+  
+Interact with your HTML files in the browser to test their functionality, such as clicking on elements or observing any changes made by your JavaScript code.</li>
+
 
 ![live server extension](https://github.com/ThatsVie/atlas-higher_level_programming/assets/143755961/d5adcdc4-f2a0-4b4e-87ac-335729146383)
 
