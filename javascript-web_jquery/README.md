@@ -17,6 +17,7 @@ JQuery simplifies front-end programming by providing a concise and intuitive syn
 
 <ul>
   <li>
+    
 In JavaScript, you can select HTML elements using methods like getElementById, getElementsByClassName, getElementsByTagName, querySelector, and querySelectorAll. These methods allow you to target specific elements in the DOM based on their ID, class, tag name, or CSS selectors.
 
 </ul> </li> </details>
@@ -65,7 +66,6 @@ To get and update an HTML element's content, you can use JavaScript or JQuery. J
 <ul>
   <li>
 
-
 To modify the DOM (Document Object Model), you can use JavaScript or JQuery to add, remove, or change HTML elements and their attributes dynamically. This involves selecting elements using methods like document.getElementById() or document.querySelector() in JavaScript, or JQuery selectors like $('selector'), and then manipulating them using methods like .append(), .remove(), .addClass(), .removeClass(), etc. JavaScript provides direct access to DOM elements and properties, while JQuery simplifies DOM manipulation with its concise syntax and methods.
 </ul> </li> </details>
 
@@ -98,6 +98,7 @@ You can listen to DOM events using JavaScript by selecting elements and attachin
 <summary>How to listen/bind to user events:</summary>
 <ul>
   <li>
+    
 Listening to user events involves capturing interactions initiated by users, such as clicks, mouse movements, keyboard inputs, etc. In JavaScript, you can bind event listeners to elements using methods like addEventListener or JQuery methods like on() to respond to user actions effectively.
 </ul> </li> </details>
 
